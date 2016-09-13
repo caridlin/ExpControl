@@ -1000,7 +1000,6 @@ int HARDWARE_initializeBoards (void)
 }
 
 
-
 int HARDWARE_configureOutputs (t_sequence *seq)
 {
 	switch (config->hardwareType) {
@@ -2496,7 +2495,7 @@ int HARDWARE_boot (int panel, int ctrl)
 //				// ------------------------------------------
 //				addBoard (ID_PCI_DIO_32_HS, 1);
 //		        addBoard (ID_PCI_6713, 2);
-//		//        addBoard (ID_PCI_6713, 3);
+//		        addBoard (ID_PCI_6713, 3);
 //		    }
 //			HARDWARE_setDigitalOutputDirection ();
 //			break;

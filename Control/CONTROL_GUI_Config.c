@@ -479,6 +479,8 @@ int Ini_GetConfig (IniText ini, t_config *c)
 		
 		tmp = (int *)Ini_GetDataArray (ini, CONF_GENERAL, CONF_TAG_CONFIG_analogBoardID, 
 					        &c->nAnalogBoards, VAL_INTEGER);
+		//debug
+		tprintf("%d\n", tmp);
 		if (tmp == NULL) {
 			c->nAnalogBoards = 0;
 		} else {
@@ -487,6 +489,8 @@ int Ini_GetConfig (IniText ini, t_config *c)
 	
 		tmp = (int *) Ini_GetDataArray (ini, CONF_GENERAL, CONF_TAG_CONFIG_digitalBoardID, 
 					        &c->nDigitalBoards, VAL_INTEGER);
+		//debug
+		tprintf("%d\n", tmp);
 		if (tmp == NULL) {
 			c->nDigitalBoards = 0;
 		} else {
