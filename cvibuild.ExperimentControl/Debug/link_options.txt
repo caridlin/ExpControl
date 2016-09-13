@@ -1,61 +1,61 @@
 -nologo
--out:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\ExperimentControl_dbg.exe
+-out:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\ExperimentControl_dbg.exe
 -arch:x86
 -timestamp
 -debug:2
--res:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\resources.res
+-res:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\resources.res
 -entry:_CVIWinMainStartupCodeForDebugging@0
 -base:0x400000
--linked:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\linkersummary.txt
--dlldeps:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\dlldependencies.txt
--licensing:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\linkerlicensing.txt
--browsedeps:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\moduledependencies.txt
--map:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\map_file.txt
+-linked:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\linkersummary.txt
+-dlldeps:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\dlldependencies.txt
+-licensing:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\linkerlicensing.txt
+-browsedeps:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\moduledependencies.txt
+-map:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\map_file.txt
 -stackreserve:1048576
 -stackcommit:4096
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\Adwin.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_CalculateOutput.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_DataSocket.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_DataStructure.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_Definitions.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_DMDIMAGE.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_DMDSHAPE.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_Functions.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_CCD.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_Config.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_DigitalBlocks.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_EditPoints.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_ExtDev.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_Gpib.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_IMPORT.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_LOOP_CONF.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_MAIN.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_Simulate.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_Waveform.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_HARDWARE.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_HARDWARE_adwin.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_HARDWARE_DAQmx.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_HARDWARE_GPIB.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\CONTROL_LoadSave.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\ExperimentControl.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\EXTDEV_DRIVER_DDS.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_Agilent.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_Anritsu.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_Berkeley.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_LeCroy.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_Marconi.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_RohdeSchwarz.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_StanfordResearchSystems.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_ThurlbyThandar.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\imageProcessing.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\INTERFACE_TCP_IP.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\NIUSB_AnalogInput.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Debug\tools.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\Adwin.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_CalculateOutput.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_DataSocket.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_DataStructure.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_Definitions.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_DMDIMAGE.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_DMDSHAPE.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_Functions.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_CCD.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_Config.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_DigitalBlocks.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_EditPoints.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_ExtDev.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_Gpib.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_IMPORT.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_LOOP_CONF.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_MAIN.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_Simulate.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_GUI_Waveform.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_HARDWARE.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_HARDWARE_adwin.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_HARDWARE_DAQmx.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_HARDWARE_GPIB.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\CONTROL_LoadSave.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\ExperimentControl.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\EXTDEV_DRIVER_DDS.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_Agilent.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_Anritsu.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_Berkeley.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_LeCroy.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_Marconi.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_RohdeSchwarz.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_StanfordResearchSystems.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\GPIB_DRIVER_ThurlbyThandar.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\imageProcessing.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\INTERFACE_TCP_IP.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\NIUSB_AnalogInput.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Debug\tools.obj
 -more:c:\program files (x86)\national instruments\cvi2015\bin\msvc\cvistart.lib
 -more:c:\program files (x86)\national instruments\cvi2015\bin\msvc\cvi.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
--more:c:\Users\Manuel\Desktop\ExperimentControl\lib\CORE_RL_magick_.lib
--more:c:\Users\Manuel\Desktop\ExperimentControl\lib\CORE_RL_wand_.lib
+-more:c:\Users\Manuel\Desktop\ExpControl\lib\CORE_RL_magick_.lib
+-more:c:\Users\Manuel\Desktop\ExpControl\lib\CORE_RL_wand_.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cviauto.lib
 -more:c:\ProgramData\National Instruments\CVI2015\bin\msvc\cvidemoa.bli
 -more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cvidotnet.lib
@@ -78,4 +78,4 @@
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib
--more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\WS2_32.Lib
+-more:c:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\WS2_32.Lib

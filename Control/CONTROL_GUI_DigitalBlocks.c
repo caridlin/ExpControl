@@ -861,7 +861,7 @@ void DIGITALBLOCKS_displayChannelNames (t_sequence *seq)
 							   ATTR_TEXT_BGCOLOR,
 							   seq->DIO_invertDisplay[i] ? VAL_CYAN : TABLE_COLOR_BUTTON_INACTIVE[i%2]);
 	}
-	
+	    
 	for (i = 0; i < N_DAC_CHANNELS; i++) {
 		cell = MakePoint (BLOCK_TABLE_COL_channelName, i+1);
 		SetTableCellAttribute (panelSequence, SEQUENCE_TABLE_dac1, cell,
@@ -872,7 +872,7 @@ void DIGITALBLOCKS_displayChannelNames (t_sequence *seq)
 							   seq->AO_channelNames[i] == NULL ? "" : seq->AO_channelNames[i]);
 		
 	}
-	
+		  
 	
 }
     

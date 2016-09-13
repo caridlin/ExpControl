@@ -477,7 +477,7 @@ int Ini_GetConfig (IniText ini, t_config *c)
 	
 	if (config->hardwareType == HARDWARE_TYPE_ADWIN && config->loadAdwinBoardsFromConfig) {
 		
-		tmp = (int*)Ini_GetDataArray (ini, CONF_GENERAL, CONF_TAG_CONFIG_analogBoardID, 
+		tmp = (int *)Ini_GetDataArray (ini, CONF_GENERAL, CONF_TAG_CONFIG_analogBoardID, 
 					        &c->nAnalogBoards, VAL_INTEGER);
 		if (tmp == NULL) {
 			c->nAnalogBoards = 0;
@@ -485,7 +485,7 @@ int Ini_GetConfig (IniText ini, t_config *c)
 			memcpy (c->analogBoardID,tmp,c->nAnalogBoards*sizeof(int));
 		}
 	
-		tmp = (int*)Ini_GetDataArray (ini, CONF_GENERAL, CONF_TAG_CONFIG_digitalBoardID, 
+		tmp = (int *) Ini_GetDataArray (ini, CONF_GENERAL, CONF_TAG_CONFIG_digitalBoardID, 
 					        &c->nDigitalBoards, VAL_INTEGER);
 		if (tmp == NULL) {
 			c->nDigitalBoards = 0;
@@ -493,15 +493,15 @@ int Ini_GetConfig (IniText ini, t_config *c)
 			memcpy (c->digitalBoardID,tmp,c->nDigitalBoards*sizeof(int)); 
 		}
 	
-		// debug:
-		/*tprintf("number of analog boards: %d\n",c->nAnalogBoards);
+		//debug:
+		tprintf("number of analog boards: %d\n",c->nAnalogBoards);
 		for (i=0; i < c->nAnalogBoards; i++){
 			tprintf("analogBoard #%d: id=%d\n",i,c->analogBoardID[i]);	
 		}
 		tprintf("number of digital boards: %d\n",c->nDigitalBoards);
 		for (i=0; i < c->nDigitalBoards; i++){
 			tprintf("digitalBoard #%d: id=%d\n",i,c->digitalBoardID[i]);	
-		}*/
+		}
 		// end debug
 	}
 	

@@ -313,7 +313,7 @@ void getPanelBounds (int panel, Rect *r)
 
 void setPanelBounds (int panel, Rect r, int checkIfOnScreen)
 {
-	int height, width;
+	//int height;
 	
 	if (panel < 0) return;
 	if (r.width < 0) return;
@@ -2648,10 +2648,8 @@ int selectList (const char *titleStr, int upDownArrows, const char **valueStr,
 
 	//up / down
 	if (upDownArrows) {
-		buttonUp  = NewCtrl (panel, CTRL_SQUARE_COMMAND_BUTTON, "­",
-							0, listWidth + 5);
-		buttonDown = NewCtrl (panel, CTRL_SQUARE_COMMAND_BUTTON, "¯",
-							  ctrlHeight(panel, buttonUp)+15, listWidth + 5);
+		buttonUp  = NewCtrl (panel, CTRL_SQUARE_COMMAND_BUTTON, "-", 0, listWidth + 5);
+		buttonDown = NewCtrl (panel, CTRL_SQUARE_COMMAND_BUTTON, "-", ctrlHeight(panel, buttonUp)+15, listWidth + 5);
 		SetCtrlAttribute (panel, buttonDown, ATTR_LABEL_FONT, "Symbol");
 		SetCtrlAttribute (panel, buttonUp, ATTR_LABEL_FONT, "Symbol");
 		SetCtrlAttribute (panel, buttonUp,

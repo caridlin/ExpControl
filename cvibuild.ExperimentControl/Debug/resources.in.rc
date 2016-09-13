@@ -1,6 +1,6 @@
 #include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
 
-2 ICON "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Control\\wheelwork.ico"
+2 ICON "c:\\Users\\Manuel\\Desktop\\ExpControl\\Control\\wheelwork.ico"
 
 STRINGTABLE DISCARDABLE
 BEGIN
@@ -35,6 +35,6 @@ BEGIN
     END
 END
 
-UIR:common.uir UIRFileType "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Control\\UIR_common.uir"
-UIR:ExperimentControl.uir UIRFileType "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Control\\UIR_ExperimentControl.uir"
-UIR:TCP:IP.uir UIRFileType "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Control\\UIR_TCP_IP.uir"
+UIR:common.uir UIRFileType "c:\\Users\\Manuel\\Desktop\\ExpControl\\Control\\UIR_common.uir"
+UIR:ExperimentControl.uir UIRFileType "c:\\Users\\Manuel\\Desktop\\ExpControl\\Control\\UIR_ExperimentControl.uir"
+UIR:TCP:IP.uir UIRFileType "c:\\Users\\Manuel\\Desktop\\ExpControl\\Control\\UIR_TCP_IP.uir"

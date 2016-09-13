@@ -1,0 +1,44 @@
+[TITLE_initPanel]
+Class="Function"
+Prototype="void TITLE_initPanel(int lowerStartWindow);"
+
+[initPanels]
+Class="Function"
+Prototype="int initPanels(int outPanel, int outCtrl);"
+
+[MENU_About]
+Class="Function"
+Prototype="void MENU_About(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[TITLE_close_CB]
+Class="Function"
+Prototype="int TITLE_close_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[parseCommandLine]
+Class="Function"
+Prototype="void parseCommandLine(int argc, char **argv);"
+
+[launchExperimentControl]
+Class="Function"
+Prototype="int launchExperimentControl();"
+
+[test]
+Class="Function"
+Prototype="void test();"
+
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[quitProgram]
+Class="Function"
+Prototype="void quitProgram(int remoteQuit);"
+
+[MAIN_MENU_QuitProgram]
+Class="Function"
+Prototype="void MAIN_MENU_QuitProgram(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[test2]
+Class="Function"
+Prototype="void test2();"
+

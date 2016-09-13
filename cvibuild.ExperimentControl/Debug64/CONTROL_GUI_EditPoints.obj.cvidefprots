@@ -1,0 +1,136 @@
+[POINTS_DEBUG_display]
+Class="Function"
+Prototype="void POINTS_DEBUG_display(const char *str, t_point *p, int nPoints);"
+
+[CONTROLS_init]
+Class="Function"
+Prototype="void CONTROLS_init(t_controls *c);"
+
+[TABLE_insertRow]
+Class="Function"
+Prototype="void TABLE_insertRow(t_controls *c, int position);"
+
+[TABLE_setCellTimeDouble]
+Class="Function"
+Prototype="void TABLE_setCellTimeDouble(int panel, int table, Point p, double dTime);"
+
+[TABLE_setCellValueYesNo]
+Class="Function"
+Prototype="void TABLE_setCellValueYesNo(int panel, int table, Point p, int value);"
+
+[TABLE_getCellValueYesNo]
+Class="Function"
+Prototype="void TABLE_getCellValueYesNo(int panel, int table, Point p, int *value);"
+
+[TABLE_setCellValueYesNo2]
+Class="Function"
+Prototype="void TABLE_setCellValueYesNo2(int panel, int table, Point p, int value);"
+
+[TABLE_getCellValueYesNo2]
+Class="Function"
+Prototype="void TABLE_getCellValueYesNo2(int panel, int table, Point p, int *value);"
+
+[TABLE_isCellYesNo]
+Class="Function"
+Prototype="int TABLE_isCellYesNo(int panel, int table, Point p);"
+
+[TABLE_isCellDimmed]
+Class="Function"
+Prototype="int TABLE_isCellDimmed(int panel, int table, Point p);"
+
+[TABLE_setColumnAttributeStepType]
+Class="Function"
+Prototype="void TABLE_setColumnAttributeStepType(int panel, int table, int col);"
+
+[TABLE_setColumnAttributesYesNo]
+Class="Function"
+Prototype="void TABLE_setColumnAttributesYesNo(int panel, int table, int col);"
+
+[TABLE_setColors]
+Class="Function"
+Prototype="void TABLE_setColors(int panel, int control);"
+
+[TABLE_changeRow]
+Class="Function"
+Prototype="void TABLE_changeRow(int panel, int control, Point p, int setColors);"
+
+[TABLE_runPopupMenu]
+Class="Function"
+Prototype="void TABLE_runPopupMenu(int panel, int control, int top, int left, void *callbackData);"
+
+[TABLE_processEvents_CB]
+Class="Function"
+Prototype="int TABLE_processEvents_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[POINTS_defineControls]
+Class="Function"
+Prototype="void POINTS_defineControls(t_controls *c, int panel, int table, int graph, int repetition, int invalid, int tableRowHeight);"
+
+[POINTS_setParameterValues]
+Class="Function"
+Prototype="void POINTS_setParameterValues(t_controls *c, double timeMultiply, char *valueLabel, char *valueLabelIncr, double min, double max, int digits, int showStepRep, int voltageVisible);"
+
+[POINTS_tableToGraph]
+Class="Function"
+Prototype="void POINTS_tableToGraph(t_controls *c, int updateTable);"
+
+[POINTS_createTableColumns]
+Class="Function"
+Prototype="void POINTS_createTableColumns(t_controls *c);"
+
+[POINTS_initControls]
+Class="Function"
+Prototype="void POINTS_initControls(t_controls *c);"
+
+[POINTS_displayPoint]
+Class="Function"
+Prototype="void POINTS_displayPoint(t_controls *c, t_point *p, int i);"
+
+[POINTS_duplicate]
+Class="Function"
+Prototype="void POINTS_duplicate(t_controls *c, t_point *p, int nPoints);"
+
+[POINTS_listOfPointsToTable]
+Class="Function"
+Prototype="void POINTS_listOfPointsToTable(t_controls *c, t_point *p, int nPoints);"
+
+[POINTS_tableToListOfPoints]
+Class="Function"
+Prototype="void POINTS_tableToListOfPoints(t_controls *c, t_point **points, int *nPoints, int saveAsLast);"
+
+[POINTS_consistent]
+Class="Function"
+Prototype="int POINTS_consistent(t_point *p, int nPoints);"
+
+[POINTS_calculateValues]
+Class="Function"
+Prototype="void POINTS_calculateValues(t_point *p, int nPoints, int repetition, int allowNegativeTimes);"
+
+[POINTS_plot]
+Class="Function"
+Prototype="int POINTS_plot(int panel, int graph, t_point *p, int nPoints, int repetition, double timeMultiply, int retainGraph);"
+
+[POINTS_showInvalid]
+Class="Function"
+Prototype="void POINTS_showInvalid(int panel, int control, t_point *p, int nPoints);"
+
+[POINTS_showGraph]
+Class="Function"
+Prototype="void POINTS_showGraph(t_controls *c, t_point *p, int nPoints, int repetition);"
+
+[POINTS_processEvents_CB]
+Class="Function"
+Prototype="int POINTS_processEvents_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[POINTS_POPUP_incr_done]
+Class="Function"
+Prototype="int POINTS_POPUP_incr_done(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[POINTS_shiftValues]
+Class="Function"
+Prototype="void POINTS_shiftValues(t_point *p, int nPoints, double shift);"
+
+[POINTS_hasNegativeTime]
+Class="Function"
+Prototype="int POINTS_hasNegativeTime(t_point *p, int nPoints);"
+
