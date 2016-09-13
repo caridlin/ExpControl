@@ -1,0 +1,256 @@
+[FUNCTION_init]
+Class="Function"
+Prototype="void FUNCTION_init(t_function *f);"
+
+[FUNCTION_free]
+Class="Function"
+Prototype="void FUNCTION_free(t_function *f);"
+
+[FUNCTION_new]
+Class="Function"
+Prototype="t_function *FUNCTION_new(int nParameters, const char *identifier);"
+
+[FUNCTION_exponential]
+Class="Function"
+Prototype="double FUNCTION_exponential(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_exponential2]
+Class="Function"
+Prototype="double FUNCTION_exponential2(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_exponential3]
+Class="Function"
+Prototype="double FUNCTION_exponential3(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_sin1]
+Class="Function"
+Prototype="double FUNCTION_sin1(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_sin2]
+Class="Function"
+Prototype="double FUNCTION_sin2(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_cos]
+Class="Function"
+Prototype="double FUNCTION_cos(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_sshape1]
+Class="Function"
+Prototype="double FUNCTION_sshape1(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addSShape1]
+Class="Function"
+Prototype="void FUNCTION_addSShape1();"
+
+[FUNCTION_ramp1_V0]
+Class="Function"
+Prototype="double FUNCTION_ramp1_V0(double x, double *p, double duration);"
+
+[FUNCTION_ramp1]
+Class="Function"
+Prototype="double FUNCTION_ramp1(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_ramp2_V0]
+Class="Function"
+Prototype="double FUNCTION_ramp2_V0(double x, double *p, double duration);"
+
+[FUNCTION_ramp2]
+Class="Function"
+Prototype="double FUNCTION_ramp2(double x, double *p, double duration);"
+
+[FUNCTION_addRamp1]
+Class="Function"
+Prototype="void FUNCTION_addRamp1();"
+
+[FUNCTION_addSin1]
+Class="Function"
+Prototype="void FUNCTION_addSin1();"
+
+[FUNCTION_addSin2]
+Class="Function"
+Prototype="void FUNCTION_addSin2();"
+
+[FUNCTION_addCos]
+Class="Function"
+Prototype="void FUNCTION_addCos();"
+
+[FUNCTION_addExp]
+Class="Function"
+Prototype="void FUNCTION_addExp();"
+
+[FUNCTION_addExp2]
+Class="Function"
+Prototype="void FUNCTION_addExp2();"
+
+[FUNCTION_addExp3]
+Class="Function"
+Prototype="void FUNCTION_addExp3();"
+
+[FUNCTION_sech]
+Class="Function"
+Prototype="double FUNCTION_sech(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_sech_sqr]
+Class="Function"
+Prototype="double FUNCTION_sech_sqr(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addSech]
+Class="Function"
+Prototype="void FUNCTION_addSech();"
+
+[FUNCTION_addSechSqr]
+Class="Function"
+Prototype="void FUNCTION_addSechSqr();"
+
+[FUNCTION_tanh]
+Class="Function"
+Prototype="double FUNCTION_tanh(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addTanh]
+Class="Function"
+Prototype="void FUNCTION_addTanh();"
+
+[FUNCTION_tanh2]
+Class="Function"
+Prototype="double FUNCTION_tanh2(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addTanh2]
+Class="Function"
+Prototype="void FUNCTION_addTanh2();"
+
+[FUNCTION_tanhSqr]
+Class="Function"
+Prototype="double FUNCTION_tanhSqr(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addTanhSqr]
+Class="Function"
+Prototype="void FUNCTION_addTanhSqr();"
+
+[FUNCTION_gauss]
+Class="Function"
+Prototype="double FUNCTION_gauss(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addGauss]
+Class="Function"
+Prototype="void FUNCTION_addGauss();"
+
+[FUNCTION_gauss2]
+Class="Function"
+Prototype="double FUNCTION_gauss2(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addGauss2]
+Class="Function"
+Prototype="void FUNCTION_addGauss2();"
+
+[FUNCTION_lorentz1]
+Class="Function"
+Prototype="double FUNCTION_lorentz1(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addLorentz1]
+Class="Function"
+Prototype="void FUNCTION_addLorentz1();"
+
+[FUNCTION_blackman]
+Class="Function"
+Prototype="double FUNCTION_blackman(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addBlackman]
+Class="Function"
+Prototype="void FUNCTION_addBlackman();"
+
+[FUNCTION_sech2]
+Class="Function"
+Prototype="double FUNCTION_sech2(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addSech2]
+Class="Function"
+Prototype="void FUNCTION_addSech2();"
+
+[FUNCTION_HS1]
+Class="Function"
+Prototype="double FUNCTION_HS1(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addHS1Sweep]
+Class="Function"
+Prototype="void FUNCTION_addHS1Sweep();"
+
+[FUNCTION_HS1_fixed_cycle_num]
+Class="Function"
+Prototype="double FUNCTION_HS1_fixed_cycle_num(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addHS1Sweep_fixed_cycle_num]
+Class="Function"
+Prototype="void FUNCTION_addHS1Sweep_fixed_cycle_num();"
+
+[FUNCTION_RectPulse]
+Class="Function"
+Prototype="double FUNCTION_RectPulse(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addRectPulse]
+Class="Function"
+Prototype="void FUNCTION_addRectPulse();"
+
+[FUNCTION_RectPulse2]
+Class="Function"
+Prototype="double FUNCTION_RectPulse2(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addRectPulse2]
+Class="Function"
+Prototype="void FUNCTION_addRectPulse2();"
+
+[FUNCTION_CrazyLinear]
+Class="Function"
+Prototype="double FUNCTION_CrazyLinear(double x, double *p, double duration, int reverseTime);"
+
+[FUNCTION_addCrazyLinear]
+Class="Function"
+Prototype="void FUNCTION_addCrazyLinear();"
+
+[FUNCTION_createBitmap]
+Class="Function"
+Prototype="void FUNCTION_createBitmap(t_function *f, int panel, int ctrl);"
+
+[FUNCTION_displayBitmapInCanvas]
+Class="Function"
+Prototype="void FUNCTION_displayBitmapInCanvas(int panel, int ctrl, int id);"
+
+[FUNCTION_initializeAll]
+Class="Function"
+Prototype="void FUNCTION_initializeAll();"
+
+[FUNCTION_ptr]
+Class="Function"
+Prototype="t_function *FUNCTION_ptr(int nr);"
+
+[FUNCTION_identifier]
+Class="Function"
+Prototype="const char *FUNCTION_identifier(int functionID);"
+
+[FUNCTION_idFromIdentifier]
+Class="Function"
+Prototype="int FUNCTION_idFromIdentifier(const char *identifier);"
+
+[FUNCTION_addAllNamesToRing]
+Class="Function"
+Prototype="void FUNCTION_addAllNamesToRing(int panel, int ctrl);"
+
+[FUNCTION_nFunctions]
+Class="Function"
+Prototype="int FUNCTION_nFunctions();"
+
+[FUNCTION_getFormula]
+Class="Function"
+Prototype="const char *FUNCTION_getFormula(int id);"
+
+[FUNCTION_nParameters]
+Class="Function"
+Prototype="int FUNCTION_nParameters(int functionID);"
+
+[FUNCTION_maxParameters]
+Class="Function"
+Prototype="int FUNCTION_maxParameters();"
+
+[FUNCTION_setSpecialParameters]
+Class="Function"
+Prototype="int FUNCTION_setSpecialParameters(double *functionParameters, int functionID, int repetition);"
+

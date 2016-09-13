@@ -1,0 +1,169 @@
+[FileInfo]
+filename = "testseq.seq"
+ProgramVersion = 5.51
+
+[DAC_SETUP]
+nChannels = 32
+Timebase_50ns = 100
+Timebase = 1
+PatternInterval = 5
+Trigger = -1
+tableRowHeight = "48,Z48"
+
+[DIO_SETUP]
+Timebase_50ns = 20
+Timebase = -3
+PatternInterval = 20
+OutputPorts = 4
+nChannels = 96
+lockChannel = ""
+
+[TableConfig0]
+name = "Config 1"
+DIOvisible Line0001 = "96,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+DIOvisible Line0002 = ",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+DIOvisible Line0003 = ",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+AOvisible Line0001 = "48,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+AOvisible Line0002 = ",1,1,1,1,1,1,1,1,1"
+
+[SequenceInfo]
+nRuns = 1
+nRepetitions = 10
+nCopies = 1
+considerWatchdog = 1
+seqShortName = "testseq"
+nDigitalBlocks = 2
+nWaveforms = 5
+wfmTableSortMode = 0
+nGpibCommands = 0
+nCCDSettings = 1
+enableFocusFeedback = 1
+manualPifocFocusVoltage = 0
+
+[DigitalBlock1]
+Name = "Init"
+Time = 20000
+Channels = "96,Z96"
+alternate = "96,Z96"
+isAbsoluteTimeReference = 1
+waveforms Line0001 = "0,-3,1,-3,2,-3,3,-3,4,-3,5,-3,6,-3,7,-3,8,-3,9,-3,10,-3,11,-3,12,-3,13,-3,14,-3,"
+waveforms Line0002 = "15,-3,16,-3,17,-3,18,-3,19,-3,20,-3,21,-3,22,-3,23,-3,24,-3,25,-3,26,-3,27,-3,28"
+waveforms Line0003 = ",-3,29,-3,30,-3,31,-3,32,-3,33,-3,34,-3,35,-3,36,-3,37,-3,38,-3,39,-3,40,-3,41,-"
+waveforms Line0004 = "3,42,-3,43,-3,44,-3,45,-3,46,-3,47,-3"
+constVoltages = ""
+
+[DigitalBlock2]
+Time = 20000
+Channels = "96,Z96"
+alternate = "96,Z96"
+
+[Waveform1]
+wfmType = 6
+Name = "untitled"
+channel = -2
+addrType = 1
+addrCalibration Line0001 = "25,-49.961,-71.707,481.14,553.95,5.2,51.524,-71.303,-26.832,579.4,4.8,-44.15,45."
+addrCalibration Line0002 = "55,4.26667,500,10000,1.5,3.5,Z4,1,1,,0.06"
+addrCalibrationStepTo = "25,Z25"
+addrCalibrationStep = "25,Z25"
+addrCenter = "2,256,256"
+addrTestFilename Line0001 = "z:\\singleatoms\\data\\_2011\\02\\14\\154_test images in idle sequence\\154_4656"
+addrTestFilename Line0002 = "_subtr.sif"
+tScale = 0
+addrImageSize = 100
+addrTrajParams = "5,100,100,120,100,5"
+
+[Waveform2]
+wfmType = 6
+Name = "untitled_2"
+channel = -2
+addrType = 2
+addrCalibration Line0001 = "25,-49.961,-71.707,481.14,553.95,5.2,51.524,-71.303,-26.832,579.4,4.8,-44.15,45."
+addrCalibration Line0002 = "55,4.26667,500,10000,1.5,3.5,Z4,1,1,,0.06"
+addrCalibrationStepTo = "25,Z25"
+addrCalibrationStep = "25,Z25"
+addrCenter = "2,256,256"
+tScale = 0
+addrImageSize = 100
+DMDshapeID = "MPQ"
+DMDshapeParametersFrom = "5,,40,0.8,,"
+DMDshapeParametersTo = "5,200,300,0.01,100,2"
+DMDshapeParametersVary = "5,Z3,1,"
+DMDsmoothEdges = 0
+DMDbitmapSize = "2,400,400"
+DMDenable = 1
+
+[Waveform3]
+wfmType = 6
+Name = "untitled_3"
+channel = -2
+addrType = 2
+addrCalibration Line0001 = "25,-49.961,-71.707,481.14,553.95,5.2,51.524,-71.303,-26.832,579.4,4.8,-44.15,45."
+addrCalibration Line0002 = "55,4.26667,500,10000,1.5,3.5,Z4,1,1,,0.06"
+addrCalibrationStepTo = "25,Z25"
+addrCalibrationStep = "25,Z25"
+addrCenter = "2,256,256"
+tScale = 0
+addrImageSize = 100
+DMDshapeID = ""
+DMDenable = 1
+
+[Waveform4]
+wfmType = 6
+Name = "dmd single site"
+channel = -2
+addrType = 2
+addrCalibration Line0001 = "25,-49.961,-71.707,481.14,553.95,5.2,51.524,-71.303,-26.832,579.4,4.8,-44.15,45."
+addrCalibration Line0002 = "55,4.26667,500,10000,1.5,3.5,Z4,1,1,,0.06"
+addrCalibrationStepTo = "25,Z25"
+addrCalibrationStep = "25,Z25"
+addrCenter = "2,256,256"
+tScale = 0
+addrImageSize = 100
+addrMatrix Line0001 = "32,4294967295,4294967295,4294967295,4294967295,4294967295,4294967295,4294967295,"
+addrMatrix Line0002 = "4294967295,4294967295,4294967295,4294966399,4227880063,4227890303,4227880063,429"
+addrMatrix Line0003 = "4966399,4294965247,4294959103,4294967295,4294966783,4294967295,4294967295,429496"
+addrMatrix Line0004 = "7295,4294967295,4294967295,4294967295,4294967295,4294967295,4294967295,429496729"
+addrMatrix Line0005 = "5,4294967295,4294967295,4294967295"
+DMDshapeID = "ADDRESSING"
+DMDshapeParametersFrom = "7,,,4,,4,4,90"
+DMDshapeParametersTo = "7,,,0.01,Z4"
+DMDshapeParametersVary = "7,Z7"
+DMDsmoothEdges = 0
+DMDbitmapSize = "2,400,400"
+DMDenable = 1
+
+[Waveform5]
+wfmType = 6
+Name = "single site"
+channel = -2
+addrType = 0
+addrCalibration Line0001 = "25,-49.961,-71.707,481.14,553.95,5.2,51.524,-71.303,-26.832,579.4,4.8,-44.15,45."
+addrCalibration Line0002 = "55,4.26667,500,10000,1.5,3.5,Z4,1,1,,0.06"
+addrCalibrationStepTo = "25,Z25"
+addrCalibrationStep = "25,Z25"
+addrCenter = "2,256,256"
+tScale = 0
+addrImageSize = 100
+
+[CCDSettings1]
+enableCCD = 1
+cameraType = 1
+shutter = 1
+cooler = 1
+fanMode = 0
+temperature = -80
+acquisition = 1
+preamplifierGain = 3
+shiftSpeed = 2
+readoutRate = 2
+picturesPerRepetition = 3
+picturesPerRepetition = 3
+exposureTime_ms = 10
+EMCCDgain = 20
+exposureTime_ms = 10
+takeSubimage = 0
+binsize = 1
+evaluateSubimage = 0
+imageProcessing = 0
+

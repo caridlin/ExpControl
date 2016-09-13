@@ -1,0 +1,228 @@
+[Ini_PutGpibDeviceInfo]
+Class="Function"
+Prototype="void Ini_PutGpibDeviceInfo(struct IniStructForwardReferenceTag *ini, t_config *c, int deviceNr);"
+
+[Ini_GetGpibDeviceInfo]
+Class="Function"
+Prototype="void Ini_GetGpibDeviceInfo(struct IniStructForwardReferenceTag *ini, t_config *c, int deviceNr);"
+
+[Ini_PutConfig]
+Class="Function"
+Prototype="void Ini_PutConfig(struct IniStructForwardReferenceTag *ini, t_config *c);"
+
+[CONFIG_write]
+Class="Function"
+Prototype="int CONFIG_write(t_config *c);"
+
+[CONFIG_readSequences]
+Class="Function"
+Prototype="int CONFIG_readSequences(struct IniStructForwardReferenceTag *ini, t_config *c);"
+
+[Ini_GetConfig]
+Class="Function"
+Prototype="int Ini_GetConfig(struct IniStructForwardReferenceTag *ini, t_config *c);"
+
+[CONFIG_read]
+Class="Function"
+Prototype="int CONFIG_read(t_config *c, int readSequences);"
+
+[deviceNrAO]
+Class="Function"
+Prototype="int deviceNrAO(int nr);"
+
+[deviceNrDIO]
+Class="Function"
+Prototype="int deviceNrDIO(int nr);"
+
+[addBoard]
+Class="Function"
+Prototype="void addBoard(int typeCode, int deviceNo);"
+
+[getBoardName]
+Class="Function"
+Prototype="char *getBoardName(int deviceNo);"
+
+[CONFIG_panelMinimumHeight]
+Class="Function"
+Prototype="int CONFIG_panelMinimumHeight();"
+
+[CONFIG_resizePanel]
+Class="Function"
+Prototype="void CONFIG_resizePanel();"
+
+[CONFIG_panelChanged]
+Class="Function"
+Prototype="int CONFIG_panelChanged(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_initPanel]
+Class="Function"
+Prototype="void CONFIG_initPanel();"
+
+[CONFIG_initPanelGeneralSettings]
+Class="Function"
+Prototype="void CONFIG_initPanelGeneralSettings();"
+
+[CONFIG_initPanelGpib]
+Class="Function"
+Prototype="void CONFIG_initPanelGpib();"
+
+[setDefaultDir]
+Class="Function"
+Prototype="void setDefaultDir(const char *path);"
+
+[CONFIG_displayBoardParameters]
+Class="Function"
+Prototype="void CONFIG_displayBoardParameters(t_sequence *seq);"
+
+[CONFIG_getBoardParameters]
+Class="Function"
+Prototype="void CONFIG_getBoardParameters(t_sequence *seq);"
+
+[CONFIG_displayGpibSettings]
+Class="Function"
+Prototype="void CONFIG_displayGpibSettings();"
+
+[CONFIG_displayExternalDevices]
+Class="Function"
+Prototype="void CONFIG_displayExternalDevices();"
+
+[CONFIG_getGpibSettings]
+Class="Function"
+Prototype="void CONFIG_getGpibSettings();"
+
+[CONFIG_GENERAL_changeVisibility]
+Class="Function"
+Prototype="void CONFIG_GENERAL_changeVisibility();"
+
+[CONFIG_GENERAL_setValues]
+Class="Function"
+Prototype="void CONFIG_GENERAL_setValues(t_sequence *seq);"
+
+[CONFIG_GENERAL_getValues]
+Class="Function"
+Prototype="void CONFIG_GENERAL_getValues(t_sequence *seq);"
+
+[CONFIG_displayAllSettings]
+Class="Function"
+Prototype="void CONFIG_displayAllSettings(t_sequence *seq);"
+
+[BoardSettingsEdited]
+Class="Function"
+Prototype="int BoardSettingsEdited(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BTN_Setup_Done]
+Class="Function"
+Prototype="int BTN_Setup_Done(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BTN_Setup_Abort]
+Class="Function"
+Prototype="int BTN_Setup_Abort(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_GPIB_autoDetectDevices]
+Class="Function"
+Prototype="int CONFIG_GPIB_autoDetectDevices(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_GPIB_deviceSettingsEditable]
+Class="Function"
+Prototype="int CONFIG_GPIB_deviceSettingsEditable(int device);"
+
+[CONFIG_GPIB_deviceSelected]
+Class="Function"
+Prototype="int CONFIG_GPIB_deviceSelected(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[fillDigitalChannelNamesToRing]
+Class="Function"
+Prototype="void fillDigitalChannelNamesToRing(int panel, int control);"
+
+[CONFIG_GPIB_deviceSettings_displayItems]
+Class="Function"
+Prototype="void CONFIG_GPIB_deviceSettings_displayItems(int gpibAddress, t_sequence *seq, t_gpibDevice *dev);"
+
+[CONGIG_GPIB_deviceSettingsChanged]
+Class="Function"
+Prototype="int CONGIG_GPIB_deviceSettingsChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_GPIB_EditDeviceSettings]
+Class="Function"
+Prototype="int CONFIG_GPIB_EditDeviceSettings(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_GPIB_abortDeviceSettings]
+Class="Function"
+Prototype="int CONFIG_GPIB_abortDeviceSettings(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_GPIB_doneDeviceSettings]
+Class="Function"
+Prototype="int CONFIG_GPIB_doneDeviceSettings(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_parameterChanged]
+Class="Function"
+Prototype="int GPIB_parameterChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_SIGNALS_initPanel]
+Class="Function"
+Prototype="void CONFIG_SIGNALS_initPanel();"
+
+[CONFIG_SIGNALS_setParameters]
+Class="Function"
+Prototype="void CONFIG_SIGNALS_setParameters(t_sequence *seq);"
+
+[CONFIG_savePathBrowse_callback]
+Class="Function"
+Prototype="int CONFIG_savePathBrowse_callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_imageFilePathBrowse_callback]
+Class="Function"
+Prototype="int CONFIG_imageFilePathBrowse_callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_convertPathBrowse_callback]
+Class="Function"
+Prototype="int CONFIG_convertPathBrowse_callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_idleSequenceDataPath_callback]
+Class="Function"
+Prototype="int CONFIG_idleSequenceDataPath_callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_pifocFocusVoltageLogFilePath_callback]
+Class="Function"
+Prototype="int CONFIG_pifocFocusVoltageLogFilePath_callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_isOfTypeIdleChanged]
+Class="Function"
+Prototype="int CONFIG_isOfTypeIdleChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_autoFocusSettingsChanged]
+Class="Function"
+Prototype="int CONFIG_autoFocusSettingsChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_BUTTON_clicked]
+Class="Function"
+Prototype="int CONFIG_BUTTON_clicked(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_getPathSuffixToday]
+Class="Function"
+Prototype="char *CONFIG_getPathSuffixToday();"
+
+[CONFIG_createTodaysDataPath]
+Class="Function"
+Prototype="void CONFIG_createTodaysDataPath(t_config *c);"
+
+[CONFIG_getCurrentStartNumber]
+Class="Function"
+Prototype="int CONFIG_getCurrentStartNumber();"
+
+[CONFIG_BTN_abort_CB]
+Class="Function"
+Prototype="int CONFIG_BTN_abort_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_BTN_adwinGetSystemInfo]
+Class="Function"
+Prototype="int CONFIG_BTN_adwinGetSystemInfo(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CONFIG_BTN_adwinBoot]
+Class="Function"
+Prototype="int CONFIG_BTN_adwinBoot(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BTN_updateAutofocusVals]
+Class="Function"
+Prototype="int BTN_updateAutofocusVals(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

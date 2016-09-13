@@ -1,0 +1,88 @@
+[agilentLoadStr]
+Class="Function"
+Prototype="const char *agilentLoadStr(int load);"
+
+[GPIB_deviceParameters_Agilent33220A]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_Agilent33220A();"
+
+[GPIB_deviceParameters_Agilent33120A]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_Agilent33120A();"
+
+[GPIB_deviceParameters_AgilentN5182A]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_AgilentN5182A();"
+
+[GPIB_deviceParameters_AgilentN5182B]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_AgilentN5182B();"
+
+[GPIB_deviceParameters_AgilentE4432B]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_AgilentE4432B();"
+
+[GPIB_deviceParameters_Keithley3390]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_Keithley3390();"
+
+[GPIB_deviceParameters_Agilent33250A]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_Agilent33250A();"
+
+[GPIB_deviceParameters_Agilent83751A]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_Agilent83751A();"
+
+[GPIB_deviceParameters_Agilent6612C]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_Agilent6612C();"
+
+[GPIB_deviceParameters_AgilentE3643A]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_AgilentE3643A();"
+
+[GPIB_showDeviceMessage_Agilent33250A]
+Class="Function"
+Prototype="int GPIB_showDeviceMessage_Agilent33250A(t_gpibCommand *g, char *str, int showMessage);"
+
+[GPIB_transmitFreq_AgilentE4432B]
+Class="Function"
+Prototype="int GPIB_transmitFreq_AgilentE4432B(t_sequence *seq, t_gpibCommand *g, int dummy, int dummy2);"
+
+[GPIB_transmitFreq_Agilent83751A]
+Class="Function"
+Prototype="int GPIB_transmitFreq_Agilent83751A(t_sequence *seq, t_gpibCommand *g, int dummy, int dummy2);"
+
+[GPIB_transmitFreq_Agilent5182B]
+Class="Function"
+Prototype="int GPIB_transmitFreq_Agilent5182B(t_sequence *seq, t_gpibCommand *g, int dummy, int dummy2);"
+
+[GPIB_transmitWaveform_Agilent33220A]
+Class="Function"
+Prototype="int GPIB_transmitWaveform_Agilent33220A(t_sequence *seq, t_gpibCommand *g, int dummy1, int dummy2);"
+
+[GPIB_transmitWaveform_Keithley3390]
+Class="Function"
+Prototype="int GPIB_transmitWaveform_Keithley3390(t_sequence *dummy, t_gpibCommand *g, int dummy1, int dummy2);"
+
+[GPIB_transmitWaveform_Agilent33120A]
+Class="Function"
+Prototype="int GPIB_transmitWaveform_Agilent33120A(t_sequence *dummy, t_gpibCommand *g, int dummy1, int dummy2);"
+
+[GPIB_transmitFreq_Agilent33250A]
+Class="Function"
+Prototype="int GPIB_transmitFreq_Agilent33250A(t_sequence *seq, t_gpibCommand *g, int dummy1, int dummy2);"
+
+[GPIB_transmitWaveform_Agilent33250A]
+Class="Function"
+Prototype="int GPIB_transmitWaveform_Agilent33250A(t_sequence *s, t_gpibCommand *g, int dummy1, int dummy2);"
+
+[GPIB_transmitCommand_6612C]
+Class="Function"
+Prototype="int GPIB_transmitCommand_6612C(t_sequence *s, t_gpibCommand *g, int dummy, int dummy2);"
+
+[GPIB_transmitCommand_E3643A]
+Class="Function"
+Prototype="int GPIB_transmitCommand_E3643A(t_sequence *s, t_gpibCommand *g, int dummy, int dummy2);"
+

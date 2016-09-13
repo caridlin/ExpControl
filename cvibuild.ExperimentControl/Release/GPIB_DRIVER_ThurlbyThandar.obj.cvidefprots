@@ -1,0 +1,16 @@
+[GPIB_deviceParameters_ThurlbyThandarPL330DP]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_ThurlbyThandarPL330DP();"
+
+[GPIB_transmitCommand_PL330DP]
+Class="Function"
+Prototype="int GPIB_transmitCommand_PL330DP(t_sequence *s, t_gpibCommand *g, int dummy1, int dummy2);"
+
+[GPIB_transmitVoltage_PL330DP]
+Class="Function"
+Prototype="int GPIB_transmitVoltage_PL330DP(int gpibAddress, double voltage, double current, int channel, int switchOn);"
+
+[test_tplp]
+Class="Function"
+Prototype="void test_tplp();"
+

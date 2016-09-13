@@ -1,0 +1,28 @@
+[GPIB_deviceParameters_SRS_PS350]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_SRS_PS350();"
+
+[GPIB_transmitCommand_Stanford]
+Class="Function"
+Prototype="int GPIB_transmitCommand_Stanford(t_sequence *s, t_gpibCommand *g, int dummy1, int dummy2);"
+
+[GPIB_getSettings_Stanford]
+Class="Function"
+Prototype="int GPIB_getSettings_Stanford(t_gpibCommand *g);"
+
+[GPIB_waitUntilStabilized_Stanford]
+Class="Function"
+Prototype="int GPIB_waitUntilStabilized_Stanford(t_gpibCommand *g);"
+
+[GPIB_fetchFreq_SRS_SG384]
+Class="Function"
+Prototype="int GPIB_fetchFreq_SRS_SG384(t_gpibCommand *g, double freqHz);"
+
+[GPIB_transmitFreq_SRS_SG384]
+Class="Function"
+Prototype="int GPIB_transmitFreq_SRS_SG384(t_sequence *seq, t_gpibCommand *g, int dummy, int dummy2);"
+
+[GPIB_deviceParameters_SRS_SG384]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_SRS_SG384();"
+

@@ -1,0 +1,84 @@
+[printState]
+Class="Function"
+Prototype="void printState();"
+
+[DATASOCKET_error]
+Class="Function"
+Prototype="int DATASOCKET_error(int errorCode, const char *functionName);"
+
+[DATASOCKET_serverRunning]
+Class="Function"
+Prototype="int DATASOCKET_serverRunning();"
+
+[DATASOCKET_initServer]
+Class="Function"
+Prototype="int DATASOCKET_initServer(int launchServer);"
+
+[DATASOCKET_closeServer]
+Class="Function"
+Prototype="int DATASOCKET_closeServer();"
+
+[watchdogOn]
+Class="Function"
+Prototype="int watchdogOn(t_sequence *seq);"
+
+[watchdogConfigure]
+Class="Function"
+Prototype="int watchdogConfigure();"
+
+[WATCHDOG_setLed1]
+Class="Function"
+Prototype="void WATCHDOG_setLed1(int draw);"
+
+[WATCHDOG_setLed2]
+Class="Function"
+Prototype="void WATCHDOG_setLed2(int draw);"
+
+[WATCHDOG_handshake]
+Class="Function"
+Prototype="void WATCHDOG_handshake();"
+
+[WATCHDOG_getStatus]
+Class="Function"
+Prototype="void WATCHDOG_getStatus();"
+
+[WATCHDOG_setReceived]
+Class="Function"
+Prototype="void WATCHDOG_setReceived(int newStatus);"
+
+[DS_CommandReceived]
+Class="Function"
+Prototype="void DS_CommandReceived(int dsHandle, int event, void *callbackData);"
+
+[DS_watchdog_dataChanged]
+Class="Function"
+Prototype="void DS_watchdog_dataChanged(int dsHandle, int event, void *callbackData);"
+
+[DATASOCKET_disconnectFromServer]
+Class="Function"
+Prototype="int DATASOCKET_disconnectFromServer();"
+
+[DATASOCKET_setWaitingForTrigger]
+Class="Function"
+Prototype="int DATASOCKET_setWaitingForTrigger(int state);"
+
+[DATASOCKET_connectToServer]
+Class="Function"
+Prototype="int DATASOCKET_connectToServer(const char *serverName);"
+
+[WATCHDOG_LED_CB]
+Class="Function"
+Prototype="int WATCHDOG_LED_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[WATCHDOG_setLedCtrl1]
+Class="Function"
+Prototype="void WATCHDOG_setLedCtrl1(int panel, int ctrl);"
+
+[WATCHDOG_setLedCtrl2]
+Class="Function"
+Prototype="void WATCHDOG_setLedCtrl2(int panel, int ctrl);"
+
+[WATCHDOG_setStatusCtrl]
+Class="Function"
+Prototype="void WATCHDOG_setStatusCtrl(int panel, int ctrl);"
+

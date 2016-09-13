@@ -1,0 +1,542 @@
+cls()
+print ("==============================================================")
+print ("       ExperimentControl  -  AndorRemoteScript V5.23f")
+print ("==============================================================")
+
+thisCamera=GetSerialNumber()
+thisCamera$=str$(thisCamera)
+
+path$="Z:\singleatoms\data\"
+if (thisCamera == 8187) then path$="Z:\singleatoms\temp\"
+iniFilename$=path$;thisCamera$;"_remote.ini"
+output(1250,850,600,200)
+
+// load empty image if no pic is open, to avoid error
+if (IsDataset(0) == 0) then 
+	//load(#0,"empty.sif")
+	//workaround: it is not allowed to directly create #0!
+	create(#999_sig,512,512)
+	#0 = #999
+	CloseWindow(#999)
+	MoveWindow(#0, 0, 0, 700, 800)
+endif
+
+configpath$="Z:\singleatoms\data\Andor Configuration files\"
+idleSequenceDataPath$="Z:\singleatoms\data\idleSequenceImages\000"  // is overwritten by config from labview
+
+print("camera serial number: ",thisCamera)
+
+:rem
+:rem default settings
+:rem whyever this default settings has to be set ...
+
+SetAcquisitionMode(3) :rem Kinetics
+SetTriggerMode(1)     :rem 0: internal 1:external triggering
+SetDataType(1)		  :rem Counts
+SetShutter(1,1)		  :rem always open
+
+vsSpeed  = GetFastestRecommendedVSSpeed()
+amp = 0 // always keep 0
+hsSpeed = GetNumberHSSpeeds(amp)  
+
+// load default settings from config file
+// ####### LoadConfig seems to be a non implemented function in andor basic ... ######
+select case thisCamera
+	case 2257  // iXon MOT
+		configfilename$=configpath$;"X-2257-MOT Cam.cfg"
+		//LoadConfig(configfilename$)
+		SetShutter(1,1)		  :rem always open
+		break
+	case 8188  // iKon Lattice
+		configfilename$=configpath$;"CCD-8188 lattice  22.06.09.cfg"
+		//LoadConfig(configfilename$)
+		SetTemperature (-80)
+		cooler (1)
+		SetFanMode(0) // 0: high, 1: low, 2: off
+		readoutSpeed = 2
+		SetHSSpeed(readoutSpeed) 
+		SetVSSpeed(vsSpeed)
+		break
+	case 3364  // iXon flourescence red
+		configfilename$=configpath$;"X-3364-lattice Fluorescence Cam.cfg"
+		//LoadConfig(configfilename$)
+		SetShutter(1,1)		  :rem always open
+		SetTriggerMode(1)     :rem 0: internal 1:external triggering
+		SetTemperature (-80)
+		cooler (1)
+		SetFanMode(0) // 0: high, 1: low, 2: off
+		readoutSpeed = 0
+		SetHSSpeed(readoutSpeed) 
+		SetVSSpeed(vsSpeed)
+		break
+	case 4656  // iXon fluorescence blue
+		configfilename$=configpath$;"X-4656-red fluo-07-01-2011.cfg" //"X-4656-blue fluor.cfg"
+		//LoadConfig(configfilename$)
+		SetShutter(1,1)		  :rem always open
+		SetTriggerMode(1)     :rem 0: internal 1:external triggering
+		SetTemperature (-80)
+		cooler (1)
+		SetFanMode(0) // 0: high, 1: low, 2: off
+		readoutSpeed = 0
+		SetHSSpeed(readoutSpeed) 
+		SetVSSpeed(vsSpeed)
+		break
+	case 4376  // iXon DU885 - test camera (used in preparation lab)
+		configfilename$=""
+		//LoadConfig(configfilename$)
+		SetTriggerMode(0)     :rem 0: internal 1:external triggering
+		SetTemperature (-80)
+		cooler (1)
+		SetFanMode(0) // 0: high, 1: low, 2: off
+		break
+	case 8187 //  2nd ikon (used in preparation lab)
+		configfilename$=""
+		//LoadConfig(configfilename$)
+		SetTriggerMode(0)     :rem 0: internal 1:external triggering
+		SetTemperature (-80)
+		cooler (1)
+		SetFanMode(0) // 0: high, 1: low, 2: off
+		readoutSpeed = 2
+		SetHSSpeed(readoutSpeed) 
+		SetVSSpeed(vsSpeed)
+		break
+selend
+
+:rem
+:rem overwrite important default settings ??
+:rem
+
+SetAcquisitionMode(3) :rem Kinetics
+SetTriggerMode(1)     :rem 0: internal 1:external triggering
+SetDataType(1)		  :rem Counts
+SetShutter(1,1)		  :rem always open
+
+print("config filename:      ";configfilename$)
+print("Shift speed: ";getvsspeed(vsSpeed);" µs, ReadoutRate: ";GetHSSpeed(amp,readoutSpeed);" MHz")
+
+:rem
+:rem
+:rem
+
+while 1  :rem main loop
+
+print ("==============================================================")
+gosub .SUBloadAndParseIniFile
+
+for cycleNo = 1 to nCycles
+	gosub .SUBsetAcquisitionParameters 
+	run()
+//	if IsDataSet (0) then MoveWindow(#0, 0, 0, 700, 800)
+	print ("imageProcessing: ";imageProcessing)
+	gosub .SUBimageProcessing
+	gosub .SUBsaveRawData
+	gosub .SUBpixelCount
+next // for cycle...
+	
+wend
+
+end
+
+
+
+rem
+rem
+rem
+.SUBimageProcessing
+	suffix$=""
+	gosub .SUBcalculateROIforEvaluation
+	print ("start image processing")
+	select case imageProcessing
+    	case 1 // divide pictures
+			gosub .SUBdividePix
+			gosub .SUBsaveData
+
+			break
+		case 2 // subtract pictures
+			gosub .SUBsubtractPix
+			gosub .SUBsaveData
+	    	break
+	    case 3 // exponate pictures
+			gosub .SUBexponatePix
+			gosub .SUBsaveData
+	    	break
+//	    case 4  // sum pictures
+//	    	gosub .SUBsumpictures
+//	    	break
+	    case else
+	    	copy (#0,#100)
+	    	break
+	selend
+
+	//if Isdataset(0) 
+	MoveWindow(#100, 800, 0, 700, 800)
+	scale (#100, xFrom, xTo, yFrom, yTo)
+
+
+return
+
+
+
+
+rem
+rem
+rem
+.SUBloadAndParseIniFile
+iniFileOK = 0
+while (!iniFileOK) 
+    gosub .SUBwaitUntilIniFileAppears
+    gosub .SUBparseIniFile
+    gosub .SUBcalculateDaytimeInSeconds
+    dateOK = !strcomp(iniFileDate$,date$(),0)
+    timeOK = ((daytimeInSeconds - iniFileDaytimeInSeconds) < 30)
+    iniFileOK = dateOK && timeOK
+    if (!iniFileOK) then print ("File to old: ";iniFileDate$;" ";iniFileTime$)
+    kill(iniFilename$)
+wend
+nPictures = picturesPerRepetition * nRepetitions
+return
+
+
+rem
+rem
+rem
+.SUBcalculateDaytimeInSeconds
+	now$ = time$()
+	daytimeInSeconds = val(left$(now$,2))*3600 + val(mid$(now$,4,2))*60 + val(mid$(now$,7,2))
+return
+
+rem
+rem
+rem
+.SUBcreateFilename
+	print(".SUBcreateFilename")
+    if (nCycles > 1) then
+		filename$ = suffix$;"_";right$("000";str$(cycleNo),3);".sif"
+	else
+	    filename$ = suffix$;".sif"
+	endif
+	if (fromIdleSequence) then
+		filename$ = idleSequenceDataPath$;filename$
+	else
+		filename$ = dataPath$;filename$
+	endif
+	print ("Saving ";filename$;"    ")
+return
+
+
+rem
+rem
+rem
+.SUBsaveData
+if (saveData) then
+    gosub .SUBcreateFilename
+	save(#100,filename$)
+	print ("Done.")
+endif
+return
+
+
+rem
+rem
+rem
+.SUBsaveRawData
+if (saveRawData && saveData) then 
+	if Isdataset(1) then CloseWindow (#1)
+	suffix$ = "_raw"
+	gosub .SUBcreateFilename
+	save(#0,filename$)
+	print ("Done.")
+	CloseWindow (#1)
+endif
+return
+
+rem
+rem
+rem
+.SUBsetAcquisitionParameters
+if takeSubimage then
+	subXFrom = subimageCenterX-subimageSizeX/2
+	subXTo = subimageCenterX+subimageSizeX/2-1
+	subYFrom = subimageCenterY-subimageSizeY/2
+	subYTo = subimageCenterY+subimageSizeY/2-1
+else
+	subXFrom = 1
+	subYFrom = 1
+	subXTo = detectorx()
+	subYTo = detectory()
+endif
+print ("Taking ";nPictures;" Pictures (";cycleNo;" of ";nCycles;")... (";subXFrom;",";subYFrom;")->(";subXTo;",";subYTo;"), ";binsize;"x";binsize;" bin,";exposureTime;" ms exposure");
+SetImage(subXFrom, subXTo, binsize, subYFrom, subYTo, binsize)
+if IsDataset(0) then scale(#0, subXFrom, subXTo, subYFrom, subYTo)
+SetExposureTime(exposureTime/1000)
+SetKineticNumber(nPictures)
+SetOutputAmp (!enableEMCCD)
+if (enableEMCCD == 1) then 
+	SetGain (EMCCDgain)
+	print (", EMCCDgain: ";EMCCDgain)
+else
+	print ()
+endif
+
+
+return
+
+
+rem
+rem  calculate region of interest for evaluation of data
+rem
+.SUBcalculateROIforEvaluation
+if evaluateSubimage then
+	xFrom = evalCenterX-evalSizeX/2
+	xTo = evalCenterX+evalSizeX/2-1 
+	yFrom = evalCenterY-evalSizeY/2
+	yTo = evalCenterY+evalSizeY/2-1
+else
+	if takeSubimage then
+		xFrom = subXFrom
+		yFrom = subYFrom
+		xTo = subXTo
+		yTo = subYTo
+	else
+		xFrom = 1
+		yFrom = 1
+		xTo = detectorx()
+		yTo = detectory()
+	endif
+endif
+
+return
+
+
+:rem
+:rem   dividePictures
+:rem
+.SUBdividePix
+
+print ("Dividing pictures...(";xFrom;",";yFrom;")-->(";xTo;",";yTo;")")
+create(#100,"Picture Series",xTo-xFrom+1,yTo-yFrom+1,nRepetitions)
+for j = 1 to nRepetitions
+  i = (j-1)*3 + 1
+  #100_sig{j}=abs((#0_sig{i}[xFrom<<xTo,yFrom<<yTo]-#0_sig{i+2}[xFrom<<xTo,yFrom<<yTo])/(#0_sig{i+1}[xFrom<<xTo,yFrom<<yTo]-#0_sig{i+2}[xFrom<<xTo,yFrom<<yTo]))
+next
+
+suffix$="_div" : rem is appended to the filename
+return
+
+
+:rem
+:rem   subtract Pictures
+:rem
+:rem   picture order (r: real image, b: background image:   
+:rem   rbrbrb (nRepetitions==3,picturesPerRepetition=2)
+.SUBsubtractPixOld
+
+print ("Subtracting pictures...(";xFrom;",";yFrom;")-->(";xTo;",";yTo;")")
+create(#100,"Picture Series",xTo-xFrom+1,yTo-yFrom+1,nRepetitions)
+for j = 1 to nRepetitions
+  i = (j-1)*2 + 1
+  #100_sig{j}=#0_sig{i}[xFrom<<xTo,yFrom<<yTo]-#0_sig{i+1}[xFrom<<xTo,yFrom<<yTo]
+next
+
+suffix$="_subtr" : rem is appended to the filename
+return
+
+
+
+:rem
+:rem   subtract Pictures (more than two images per sequence; even number!)
+:rem   picture order (r: real image, b: background image:  
+:rem   example:   
+:rem   rrrbbbrrrbbb (nRepetitions==2,picturesPerRepetition=6)
+.SUBsubtractPix
+
+bgImagesReversedOrder=0
+
+print ("Subtracting pictures...(";xFrom;",";yFrom;")-->(";xTo;",";yTo;")")
+create(#100,"Picture Series",xTo-xFrom+1,yTo-yFrom+1,nRepetitions*picturesPerRepetition/2)
+for j = 0 to nRepetitions-1 
+  for k = 0 to picturesPerRepetition/2 - 1
+  	i = j*picturesPerRepetition + k + 1 // +1 because of andor counting starts at 1 !!
+  	destIdx = j*picturesPerRepetition/2 + k + 1  // +1 because of andor counting starts at 1 !!
+  	if (bgImagesReversedOrder==0) then
+ 		#100_sig{destIdx}=#0_sig{i}[xFrom<<xTo,yFrom<<yTo]-#0_sig{i+picturesPerRepetition/2}[xFrom<<xTo,yFrom<<yTo]
+ 	else
+  		ibg = (j+1)*picturesPerRepetition - k
+ 		#100_sig{destIdx}=#0_sig{i}[xFrom<<xTo,yFrom<<yTo]-#0_sig{ibg}[xFrom<<xTo,yFrom<<yTo]
+ 	endif
+  next
+next
+
+suffix$="_subtr" : rem is appended to the filename
+return
+
+
+
+:rem
+:rem   exponate Pictures
+:rem
+.SUBexponatePix
+
+print ("Exponating pictures...(";xFrom;",";yFrom;")-->(";xTo;",";yTo;")")
+create(#100,"Exponated",xTo-xFrom+1,yTo-yFrom+1,nRepetitions)
+scaleFactor=10000
+for j = 1 to nRepetitions
+  #100_sig{j}=exp(-#0_sig{j}[xFrom<<xTo,yFrom<<yTo]/scaleFactor)
+next
+
+suffix$="_exp" : rem is appended to the filename
+return
+
+
+:rem
+:rem   pixelCount
+:rem
+.SUBpixelCount
+if pixelCount then 
+	print ("Pixel count...(";xFrom;",";yFrom;")-->(";xTo;",";yTo;")")
+	suffix$="pixelCount"
+	if (nCycles > 1) then
+		filename$ = dataPath$;suffix$;"_";right$("000";str$(cycleNo),3)
+		filename1$ = filename$;".txt"
+		filename2$ = filename$;"short.txt"
+	else
+		filename1$ = dataPath$;suffix$;".txt"
+		filename2$ = dataPath$;suffix$;"short.txt"
+	endif
+	err=read(filename1$,line$)
+	if (err==0) then kill (filename1$)
+	err=read(filename2$,line$)
+	if (err==0) then kill (filename2$)
+	print ("Saving ";filename1$)
+	for j = 1 to nRepetitions
+		sum = 0
+		sumsqr = 0
+		avg = Mean (#100_sig{j})
+		for x = xFrom to xTo
+			for y = yFrom to yTo
+				value = #100_sig{j}[x,y]
+				sum = sum + value
+				sumsqr = sumsqr + (value-avg)*(value-avg)
+			next //y
+		next //x
+			n = (xTo-xFrom+1) * (yTo-YFrom+1)
+		stddev = sumsqr / (n-1)
+		print (j, sum, stddev)
+		write (filename1$, j, sum, stddev)
+		write (filename2$, sum)
+	next //j
+	close ()
+endif
+return
+
+
+:rem
+:rem     sum all pictures
+:rem
+.SUBsumpictures
+
+
+return
+
+
+
+
+
+:rem
+:rem     waits until the file 'filename$' appears
+:rem
+.SUBwaitUntilIniFileAppears
+err=-4
+print ("Waiting for ";iniFilename$;"...";)
+while (err==-4)
+   err=read(iniFilename$,line$)
+wend
+return
+
+
+:rem
+:rem     parsing the .ini file
+:rem
+.SUBparseIniFile
+a=0
+takeSubimage = 0
+evaluateSubimage = 0
+saveRawData = 0
+nCycles = 1
+pixelCount = 0
+dataPath$ = ""
+saveData = 1
+fromIdleSequence = 0
+idleSequenceDataPath$ = ""
+while(a==0)
+    a=read(iniFilename$,line$)
+    //print("read:",line$)
+    pos = instr(line$,"=")
+    strlen = len(line$)
+    if (pos > 2) then
+	    tag$=left$(line$,pos-2)
+	    value$=right$(line$,strlen-pos-1)
+	    if (asc(value$)==34) then
+	        value$=mid$(value$,2,len(value$)-2)
+	    endif
+	else 
+	    tag$=""
+	endif
+	value=val(value$)
+//	print (line$)
+//	print ("value$=";value$, "value=", value)
+	// !strcomp(tag$,"exposureTime_ms",0) is check for equality!!
+	if (!strcomp(tag$,"exposureTime_ms",0)) then exposureTime=value
+	if (!strcomp(tag$,"picturesPerRepetition",0)) then picturesPerRepetition = value
+	if (!strcomp(tag$,"nRepetitions",0)) then nRepetitions = value
+	if (!strcomp(tag$,"nCycles",0)) then nCycles = value
+	if (!strcomp(tag$,"pixelCount",0)) then pixelCount = value
+	if (!strcomp(tag$,"EMCCDgain",0)) then EMCCDgain = value
+	if (!strcomp(tag$,"enableEMCCD",0)) then enableEMCCD = value
+	if (!strcomp(tag$,"takeSubimage",0)) then takeSubimage = value
+	if (!strcomp(tag$,"subimageCenterX",0)) then subimageCenterX = value
+	if (!strcomp(tag$,"subimageCenterY",0)) then subimageCenterY = value
+	if (!strcomp(tag$,"subimageSizeX",0)) then subimageSizeX = value
+	if (!strcomp(tag$,"subimageSizeY",0)) then subimageSizeY = value
+	if (!strcomp(tag$,"binsize",0)) then binsize = value
+	if (!strcomp(tag$,"evaluateSubimage",0)) then evaluateSubimage = value
+	if (!strcomp(tag$,"fullROI",0)) then fullROI = value
+	if (!strcomp(tag$,"evaluateCenterX",0)) then evalCenterX = value
+	if (!strcomp(tag$,"evaluateCenterY",0)) then evalCenterY = value
+	if (!strcomp(tag$,"evaluateSizeX",0)) then evalSizeX = value
+	if (!strcomp(tag$,"evaluateSizeY",0)) then evalSizeY = value
+	if (!strcomp(tag$,"startNo",0)) then startNo = value
+	if (!strcomp(tag$,"imageProcessing",0)) then imageProcessing = value
+	if (!strcomp(tag$,"date",0)) then iniFileDate$ = value$
+	if (!strcomp(tag$,"time",0)) then iniFileTime$ = value$
+	if (!strcomp(tag$,"daytimeInSeconds",0)) then iniFileDaytimeInSeconds = value
+	if (!strcomp(tag$,"dataPath",0)) then dataPath$ = value$
+	if (!strcomp(tag$,"dataPath Line0001",0)) then dataPath$ = value$
+	if (!strcomp(tag$,"dataPath Line0002",0)) then dataPath$ = dataPath$;value$
+	if (!strcomp(tag$,"dataPath Line0003",0)) then dataPath$ = dataPath$;value$
+	if (!strcomp(tag$,"saveRawData",0)) then saveRawData = value
+	if (!strcomp(tag$,"saveData",0)) then saveData = value
+	//if (!strcomp(tag$,"fromIdleSequence",0)) then fromIdleSequence = value
+	//if (!strcomp(tag$,"idleSequenceDataPath",0)) then idleSequenceDataPath$ = value
+wend
+dataPath$ = dataPath$;"_";thisCamera$
+gosub .SUBremoveDoubleSlashIndataPath
+close ()
+return
+
+
+:rem
+:rem
+:rem
+
+
+.SUBremoveDoubleSlashIndataPath
+	pos=1
+	while (pos != 0)
+	    // change all "\\" into "\"
+    	pos = instr(dataPath$,"\\")
+		if (pos != 0) then dataPath$=left$(dataPath$,pos);right$(dataPath$,len(dataPath$)-pos-1)
+	wend
+return
+
+

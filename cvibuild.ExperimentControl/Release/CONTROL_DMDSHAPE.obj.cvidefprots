@@ -1,0 +1,108 @@
+[DMDSHAPE_init]
+Class="Function"
+Prototype="void DMDSHAPE_init(t_DMDshape *f);"
+
+[DMDSHAPE_free]
+Class="Function"
+Prototype="void DMDSHAPE_free(t_DMDshape *f);"
+
+[DMDSHAPE_new]
+Class="Function"
+Prototype="t_DMDshape *DMDSHAPE_new(int nParameters, const char *identifier);"
+
+[DMDSHAPE_addCommonParameters]
+Class="Function"
+Prototype="int DMDSHAPE_addCommonParameters(t_DMDshape *f, int p);"
+
+[DMDSHAPE_rotateScaleAndMoveCanvasImageMagickBatch]
+Class="Function"
+Prototype="void DMDSHAPE_rotateScaleAndMoveCanvasImageMagickBatch(int panel, int ctrl, double rotationAngle, double scale, int offsetx, int offsety, t_waveform *dmdWaveform);"
+
+[DMDSHAPE_rotateScaleAndMoveCanvas]
+Class="Function"
+Prototype="void DMDSHAPE_rotateScaleAndMoveCanvas(int panel, int ctrl, double rotationAngle, double scale, int offsetx, int offsety, t_waveform *dmdWaveform);"
+
+[DMDSHAPE_drawRing]
+Class="Function"
+Prototype="void DMDSHAPE_drawRing(double *p, int panel, int ctrl, t_waveform *dmdWaveform, int repetition, int picNum);"
+
+[DMDSHAPE_addRing]
+Class="Function"
+Prototype="void DMDSHAPE_addRing();"
+
+[DMDSHAPE_drawBox]
+Class="Function"
+Prototype="void DMDSHAPE_drawBox(double *p, int panel, int ctrl, t_waveform *dmdWaveform, int repetition, int picNum);"
+
+[DMDSHAPE_addBox]
+Class="Function"
+Prototype="void DMDSHAPE_addBox();"
+
+[DMDSHAPE_drawSine]
+Class="Function"
+Prototype="void DMDSHAPE_drawSine(double *p, int panel, int ctrl, t_waveform *dmdWaveform, int repetition, int picNum);"
+
+[DMDSHAPE_addSine]
+Class="Function"
+Prototype="void DMDSHAPE_addSine();"
+
+[DMDSHAPE_drawSimpleGrid]
+Class="Function"
+Prototype="void DMDSHAPE_drawSimpleGrid(double *p, int panel, int ctrl, t_waveform *dmdWaveform, int repetition, int picNum);"
+
+[DMDSHAPE_addSimpleGrid]
+Class="Function"
+Prototype="void DMDSHAPE_addSimpleGrid();"
+
+[DMDSHAPE_drawMPQ]
+Class="Function"
+Prototype="void DMDSHAPE_drawMPQ(double *p, int panel, int ctrl, t_waveform *dmdWaveform, int repetition, int picNum);"
+
+[DMDSHAPE_addMPQ]
+Class="Function"
+Prototype="void DMDSHAPE_addMPQ();"
+
+[DMDSHAPE_singleSiteAddressing]
+Class="Function"
+Prototype="void DMDSHAPE_singleSiteAddressing(double *p, int panel, int ctrl, t_waveform *dmdWaveform, int repetition, int picNum);"
+
+[DMDSHAPE_addSingleSiteAddressing]
+Class="Function"
+Prototype="void DMDSHAPE_addSingleSiteAddressing();"
+
+[DMDSHAPE_initializeAll]
+Class="Function"
+Prototype="void DMDSHAPE_initializeAll();"
+
+[DMDSHAPE_ptr]
+Class="Function"
+Prototype="t_DMDshape *DMDSHAPE_ptr(int nr);"
+
+[DMDSHAPE_identifier]
+Class="Function"
+Prototype="const char *DMDSHAPE_identifier(int shapeID);"
+
+[DMDSHAPE_idFromIdentifier]
+Class="Function"
+Prototype="int DMDSHAPE_idFromIdentifier(const char *identifier);"
+
+[DMDSHAPE_addAllNamesToRing]
+Class="Function"
+Prototype="void DMDSHAPE_addAllNamesToRing(int panel, int ctrl);"
+
+[DMDSHAPE_nFunctions]
+Class="Function"
+Prototype="int DMDSHAPE_nFunctions();"
+
+[DMDSHAPE_getDescription]
+Class="Function"
+Prototype="const char *DMDSHAPE_getDescription(int id);"
+
+[DMDSHAPE_nParameters]
+Class="Function"
+Prototype="int DMDSHAPE_nParameters(int shapeID);"
+
+[DMDSHAPE_maxParameters]
+Class="Function"
+Prototype="int DMDSHAPE_maxParameters();"
+

@@ -1,0 +1,24 @@
+New algo (_new):
+
+Phase error too large. phi1= -0.002 +- 0.035,  phi2= -0.325 +- 0.033
+Atom 1: (120.7,289.9), ampl=1610, sigma=3.20
+Atom 2: (185.9,124.1), ampl=1447, sigma=3.08
+Atom 3: (242.7,158.1), ampl=1767, sigma=3.13
+Atom 4: (247.8,230.8), ampl=2038, sigma=3.25
+Atom 5: (265.2,298.0), ampl=1907, sigma=3.49
+Atom 6: (298.2,301.3), ampl=1579, sigma=3.39
+Atom 7: (306.7,119.5), ampl=1723, sigma=3.29
+Atom 8: (338.4,225.9), ampl=1776, sigma=3.12
+Voltage offsets: U1=-0.017, U2=0.003
+
+Old algo:
+Phase error too large. phi1= -0.006 +- 0.032,  phi2= -0.330 +- 0.028
+Atom 1: (120.7,289.9), ampl=1626, sigma=3.17
+Atom 2: (174.2,118.0), ampl=1358, sigma=3.48
+Atom 3: (242.7,158.1), ampl=1789, sigma=3.09
+Atom 4: (247.8,230.8), ampl=2074, sigma=3.18
+Atom 5: (265.2,297.9), ampl=1981, sigma=3.34
+Atom 6: (298.2,301.3), ampl=1569, sigma=3.44
+Atom 7: (306.7,119.5), ampl=1747, sigma=3.23
+Atom 8: (338.4,225.9), ampl=1786, sigma=3.10
+Voltage offsets: U1=-0.017, U2=0.003

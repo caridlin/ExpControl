@@ -1,0 +1,164 @@
+[activeGpibCommandNo]
+Class="Function"
+Prototype="int activeGpibCommandNo();"
+
+[activeGpibCommand]
+Class="Function"
+Prototype="t_gpibCommand *activeGpibCommand();"
+
+[GPIB_panelMinimumHeight]
+Class="Function"
+Prototype="int GPIB_panelMinimumHeight();"
+
+[GPIB_resizePanel]
+Class="Function"
+Prototype="void GPIB_resizePanel();"
+
+[GPIB_setDeviceLimits]
+Class="Function"
+Prototype="void GPIB_setDeviceLimits(t_gpibCommand *g);"
+
+[GPIB_showCommand]
+Class="Function"
+Prototype="void GPIB_showCommand(t_sequence *seq, t_gpibCommand *g);"
+
+[GPIB_changeVisibility]
+Class="Function"
+Prototype="void GPIB_changeVisibility(t_gpibCommand *g);"
+
+[GPIB_initPanel]
+Class="Function"
+Prototype="void GPIB_initPanel();"
+
+[GPIB_commandTypeStr]
+Class="Function"
+Prototype="const char *GPIB_commandTypeStr(int type);"
+
+[GPIB_fillWaveformNamesToAllRings]
+Class="Function"
+Prototype="void GPIB_fillWaveformNamesToAllRings(t_sequence *seq);"
+
+[GPIB_createListNameEntry]
+Class="Function"
+Prototype="char *GPIB_createListNameEntry(t_gpibCommand *g);"
+
+[GPIB_fillCommandNamesToListbox]
+Class="Function"
+Prototype="void GPIB_fillCommandNamesToListbox(t_sequence *seq, int panel, int control, int activeValue, int simpleMode);"
+
+[GPIB_displayValues]
+Class="Function"
+Prototype="void GPIB_displayValues(t_sequence *seq, int nr);"
+
+[GPIB_BTN_Reset]
+Class="Function"
+Prototype="int GPIB_BTN_Reset(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_AttributeChanged]
+Class="Function"
+Prototype="int GPIB_AttributeChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIBPulse_attributeChanged]
+Class="Function"
+Prototype="int GPIBPulse_attributeChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIBWfm_attributeChanged]
+Class="Function"
+Prototype="int GPIBWfm_attributeChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_editCommand]
+Class="Function"
+Prototype="void GPIB_editCommand(t_sequence *seq, int nr);"
+
+[GPIB_NameChanged]
+Class="Function"
+Prototype="int GPIB_NameChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_getFirstDevice]
+Class="Function"
+Prototype="int GPIB_getFirstDevice(int type);"
+
+[GPIB_newCommand_Done]
+Class="Function"
+Prototype="int GPIB_newCommand_Done(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_newCommand]
+Class="Function"
+Prototype="int GPIB_newCommand(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_newCommand_Abort]
+Class="Function"
+Prototype="int GPIB_newCommand_Abort(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_deleteSelectedCommand]
+Class="Function"
+Prototype="void GPIB_deleteSelectedCommand();"
+
+[GPIB_deleteCommand_CB]
+Class="Function"
+Prototype="int GPIB_deleteCommand_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_listboxClicked]
+Class="Function"
+Prototype="int GPIB_listboxClicked(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_transmitCommand_CB]
+Class="Function"
+Prototype="int GPIB_transmitCommand_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_commandStringGetCtrlValues]
+Class="Function"
+Prototype="void GPIB_commandStringGetCtrlValues(t_gpibCommand *g);"
+
+[GPIB_commandString_setValues]
+Class="Function"
+Prototype="void GPIB_commandString_setValues(t_gpibCommand *g);"
+
+[GPIBcomand_attributeChanged]
+Class="Function"
+Prototype="int GPIBcomand_attributeChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_freq_setValues]
+Class="Function"
+Prototype="void GPIB_freq_setValues(t_gpibCommand *g);"
+
+[GPIBfreq_attributeChanged]
+Class="Function"
+Prototype="int GPIBfreq_attributeChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_power_setValues]
+Class="Function"
+Prototype="void GPIB_power_setValues(t_gpibCommand *g);"
+
+[GPIB_power_getValues]
+Class="Function"
+Prototype="void GPIB_power_getValues(t_gpibCommand *g);"
+
+[GPIB_pulses_setValues]
+Class="Function"
+Prototype="void GPIB_pulses_setValues(t_gpibCommand *g);"
+
+[GPIB_pulses_getValues]
+Class="Function"
+Prototype="void GPIB_pulses_getValues(t_gpibCommand *g);"
+
+[GPIB_wfm_setValues]
+Class="Function"
+Prototype="void GPIB_wfm_setValues(t_sequence *seq, t_gpibCommand *g);"
+
+[GPIBpower_attributeChanged]
+Class="Function"
+Prototype="int GPIBpower_attributeChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_TabChanged]
+Class="Function"
+Prototype="int GPIB_TabChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_autodetect_CB]
+Class="Function"
+Prototype="int GPIB_autodetect_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GPIB_freq_TestDataAcquisition_CB]
+Class="Function"
+Prototype="int GPIB_freq_TestDataAcquisition_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

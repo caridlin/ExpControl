@@ -1,0 +1,4 @@
+[GPIB_deviceParameters_Marconi2030]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_Marconi2030();"
+

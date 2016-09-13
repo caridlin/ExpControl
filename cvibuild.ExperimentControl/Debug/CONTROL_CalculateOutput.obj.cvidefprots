@@ -1,0 +1,300 @@
+[DEBUG_displaySample]
+Class="Function"
+Prototype="void DEBUG_displaySample(t_analogSample *a);"
+
+[DEBUG_displaySamples]
+Class="Function"
+Prototype="void DEBUG_displaySamples(t_outputData *o, int device);"
+
+[DEBUG_displayOutBuf]
+Class="Function"
+Prototype="void DEBUG_displayOutBuf(t_analogSample *buf, int nSamples);"
+
+[WFM_calculateOffsetAndDuration]
+Class="Function"
+Prototype="void WFM_calculateOffsetAndDuration(t_waveform *wfm, int repetition, int nRepetitions, int allowNegativeTimes);"
+
+[WFM_getStepOutputVoltage]
+Class="Function"
+Prototype="double WFM_getStepOutputVoltage(t_sequence *seq, t_waveform *wfm);"
+
+[WFM_estimateDigitizeStepsize]
+Class="Function"
+Prototype="int WFM_estimateDigitizeStepsize(t_waveform *wfm, int nDigitalPoints, t_digitizeParameters *p);"
+
+[WFM_calculateNPoints]
+Class="Function"
+Prototype="int WFM_calculateNPoints(t_waveform *wfm, unsigned long nDigitalPoints, unsigned long maxNValues, t_transferFunction *f, double addVoltage, t_digitizeParameters *p, int fastMode);"
+
+[WFM_displayDigitizedValues]
+Class="Function"
+Prototype="void WFM_displayDigitizedValues(t_waveform *wfm);"
+
+[WFM_digitizePoints]
+Class="Function"
+Prototype="unsigned long WFM_digitizePoints(t_sequence *seq, t_waveform *wfm, unsigned long maxNValues, t_digitizeParameters *p);"
+
+[WFM_digitizeFile]
+Class="Function"
+Prototype="unsigned long WFM_digitizeFile(t_sequence *seq, t_waveform *wfm, unsigned long maxNValues, t_digitizeParameters *p);"
+
+[WFM_digitizeFunction]
+Class="Function"
+Prototype="unsigned long WFM_digitizeFunction(t_sequence *seq, t_waveform *wfm, unsigned long maxNValues, t_digitizeParameters *p);"
+
+[WFM_ADDR_convertVoltagesToImageCoords]
+Class="Function"
+Prototype="struct ListStructTag *WFM_ADDR_convertVoltagesToImageCoords(t_waveform *wfm1, t_waveform *wfm2, dPoint offset);"
+
+[WFM_ADDR_lastVoltagesList]
+Class="Function"
+Prototype="struct ListStructTag *WFM_ADDR_lastVoltagesList(t_waveform *wfm1, t_waveform *wfm2);"
+
+[WFM_ADDR_voltageListToImageCoords]
+Class="Function"
+Prototype="struct ListStructTag *WFM_ADDR_voltageListToImageCoords(t_waveform *wfm, struct ListStructTag *lastVoltagesList, dPoint Uoffset);"
+
+[WFM_ADDR_trajSpiral]
+Class="Function"
+Prototype="dPoint WFM_ADDR_trajSpiral(int i, double *para);"
+
+[WFM_ADDR_trajCalculateImageCoords]
+Class="Function"
+Prototype="struct ListStructTag *WFM_ADDR_trajCalculateImageCoords(t_waveform *wfm, t_image *img);"
+
+[WFM_ADDR_convertMatrixToImageCoordsSingleSite]
+Class="Function"
+Prototype="struct ListStructTag *WFM_ADDR_convertMatrixToImageCoordsSingleSite(t_waveform *wfm, t_image *img, int matrixNum);"
+
+[WFM_ADDR_convertMatrixToImageCoordsDMD]
+Class="Function"
+Prototype="struct ListStructTag *WFM_ADDR_convertMatrixToImageCoordsDMD(t_waveform *wfm, t_image *img, int matrixNum);"
+
+[WFM_ADDR_convertMatrixToImageCoords]
+Class="Function"
+Prototype="struct ListStructTag *WFM_ADDR_convertMatrixToImageCoords(t_waveform *wfm, t_image *img, int matrixNum);"
+
+[WFM_ADDR_ctrlVoltageToImage]
+Class="Function"
+Prototype="dPoint WFM_ADDR_ctrlVoltageToImage(t_waveform *wfm, double U1, double U2);"
+
+[WFM_ADDR_imageToCtrlVoltage]
+Class="Function"
+Prototype="dPoint WFM_ADDR_imageToCtrlVoltage(t_waveform *wfm, dPoint p, dPoint *err);"
+
+[WFM_ADDR_voltageOffsetFromPhaseDifference]
+Class="Function"
+Prototype="dPoint WFM_ADDR_voltageOffsetFromPhaseDifference(t_waveform *wfm, t_image *img, Point testPoint);"
+
+[WFM_ADDR_offsetThisRepetition]
+Class="Function"
+Prototype="void WFM_ADDR_offsetThisRepetition(t_waveform *wfm, int repetition, int nRepetitions);"
+
+[WFM_ADDR_matrixNumThisRepetition]
+Class="Function"
+Prototype="int WFM_ADDR_matrixNumThisRepetition(t_waveform *wfm, int rep, int nRep, int picNum);"
+
+[WFM_ADDR_createWaveform]
+Class="Function"
+Prototype="t_waveform *WFM_ADDR_createWaveform(t_sequence *seq, t_waveform *wfm, double phi1, double phi2);"
+
+[WFM_digitize]
+Class="Function"
+Prototype="unsigned long WFM_digitize(t_sequence *seq, t_waveform *wfm, t_digitizeParameters *p, int allowAddrLinkWfm);"
+
+[SEQUENCE_digitizeAllWaveforms]
+Class="Function"
+Prototype="void SEQUENCE_digitizeAllWaveforms(t_sequence *seq, int startCh, int endCh, int simulate);"
+
+[SEQUENCE_initBlockCount]
+Class="Function"
+Prototype="void SEQUENCE_initBlockCount(t_sequence *seq);"
+
+[DIGITALBLOCK_getNext]
+Class="Function"
+Prototype="t_digitalBlock *DIGITALBLOCK_getNext(t_digitalBlock *p);"
+
+[SEQUENCE_effectiveNumberOfBlocks]
+Class="Function"
+Prototype="unsigned long SEQUENCE_effectiveNumberOfBlocks(t_sequence *seq);"
+
+[DIGITALBLOCK_getMaxLengthOfWaveform]
+Class="Function"
+Prototype="unsigned long DIGITALBLOCK_getMaxLengthOfWaveform(t_digitalBlock *p, int channel, int repetition, int nRepetitions);"
+
+[OUTPUTDATA_checkMemoryForAOValues]
+Class="Function"
+Prototype="void OUTPUTDATA_checkMemoryForAOValues(t_outputData *out, int ch, unsigned long bytesToAdd);"
+
+[DIGITALBLOCK_getWaveformsAndDuration]
+Class="Function"
+Prototype="int DIGITALBLOCK_getWaveformsAndDuration(t_sequence *seq, t_digitalBlock *b);"
+
+[SEQUENCE_insertBlockNumbersAndReferences]
+Class="Function"
+Prototype="int SEQUENCE_insertBlockNumbersAndReferences(t_sequence *seq, int *nTriggerDuringSeq);"
+
+[OUTPUTDATA_getTimebases]
+Class="Function"
+Prototype="void OUTPUTDATA_getTimebases(t_sequence *seq);"
+
+[OUTPUTDATA_appendBlockAOValues]
+Class="Function"
+Prototype="unsigned long OUTPUTDATA_appendBlockAOValues(t_outputData *out, t_digitalBlock *bl, int ch, int repetition, int nRepetitions);"
+
+[OUTPUTDATA_displayAllAnalogData]
+Class="Function"
+Prototype="void OUTPUTDATA_displayAllAnalogData(t_outputData *o);"
+
+[sampleStr]
+Class="Function"
+Prototype="char *sampleStr(t_analogSample *s);"
+
+[OUTPUTDATA_displayAllAnalogSamples]
+Class="Function"
+Prototype="void OUTPUTDATA_displayAllAnalogSamples(t_outputData *o, int device);"
+
+[OUTPUTDATA_displayAllDigitalData]
+Class="Function"
+Prototype="void OUTPUTDATA_displayAllDigitalData(t_outputData *o);"
+
+[OUTPUTDATA_displayBuffer]
+Class="Function"
+Prototype="void OUTPUTDATA_displayBuffer(unsigned long *buffer, unsigned long bufSize);"
+
+[OUTPUTDATA_displayAllDigitalEvents]
+Class="Function"
+Prototype="void OUTPUTDATA_displayAllDigitalEvents(t_outputData *o);"
+
+[OUTPUTDATA_createListOfDigitalEvents]
+Class="Function"
+Prototype="int OUTPUTDATA_createListOfDigitalEvents(t_sequence *seq);"
+
+[OUTPUTDATA_calculateDigitalValues]
+Class="Function"
+Prototype="int OUTPUTDATA_calculateDigitalValues(t_sequence *seq);"
+
+[OUTPUTDATA_adjustLengthOfSequence]
+Class="Function"
+Prototype="int OUTPUTDATA_adjustLengthOfSequence(t_sequence *seq);"
+
+[OUTPUTDATA_initializeChannelVectors]
+Class="Function"
+Prototype="void OUTPUTDATA_initializeChannelVectors(t_sequence *seq);"
+
+[OUTPUTDATA_calculate_DACchannels]
+Class="Function"
+Prototype="int OUTPUTDATA_calculate_DACchannels(t_sequence *seq, int simulate);"
+
+[OUTPUTDATA_setConfigCounter]
+Class="Function"
+Prototype="void OUTPUTDATA_setConfigCounter(t_sequence *seq);"
+
+[OUTPUTDATA_ADWIN_initTriggerSources]
+Class="Function"
+Prototype="void OUTPUTDATA_ADWIN_initTriggerSources(t_sequence *seq);"
+
+[OUTPUTDATA_ADWIN_calculateGPIBCommandsDuringSequence]
+Class="Function"
+Prototype="void OUTPUTDATA_ADWIN_calculateGPIBCommandsDuringSequence(t_sequence *seq);"
+
+[OUTPUTDATA_ADWIN_displayGPIBCommandsDuringSequence]
+Class="Function"
+Prototype="void OUTPUTDATA_ADWIN_displayGPIBCommandsDuringSequence(t_adwinData *a);"
+
+[OUTPUTDATA_calculate]
+Class="Function"
+Prototype="int OUTPUTDATA_calculate(t_sequence *seq, int firstRepetition, int simulate);"
+
+[OUTPUTDATA_ADWIN_displayAnalogValue]
+Class="Function"
+Prototype="void OUTPUTDATA_ADWIN_displayAnalogValue(int nr, long timestamp, long v);"
+
+[OUTPUTDATA_ADWIN_displayAnalogValues]
+Class="Function"
+Prototype="void OUTPUTDATA_ADWIN_displayAnalogValues(t_adwinData *a);"
+
+[OUTPUTDATA_ADWIN_displayDigitalValue]
+Class="Function"
+Prototype="void OUTPUTDATA_ADWIN_displayDigitalValue(int nr, long timestamp, long *values);"
+
+[OUTPUTDATA_ADWIN_displayDigitalValues]
+Class="Function"
+Prototype="void OUTPUTDATA_ADWIN_displayDigitalValues(t_adwinData *a);"
+
+[OUTPUTDATA_ADWIN_generateDigitalDataFromValues]
+Class="Function"
+Prototype="int OUTPUTDATA_ADWIN_generateDigitalDataFromValues(t_outputData *o);"
+
+[OUTPUTDATA_ADWIN_generateAnalogDataFromValues]
+Class="Function"
+Prototype="int OUTPUTDATA_ADWIN_generateAnalogDataFromValues(t_outputData *o);"
+
+[OUTPUTDATA_ADWIN_generateTriggerTimes]
+Class="Function"
+Prototype="int OUTPUTDATA_ADWIN_generateTriggerTimes(t_outputData *o);"
+
+[OUTPUTDATA_ADWIN_initPhaseFeedback]
+Class="Function"
+Prototype="int OUTPUTDATA_ADWIN_initPhaseFeedback(t_sequence *seq);"
+
+[OUTPUTDATA_ADWIN_createData]
+Class="Function"
+Prototype="int OUTPUTDATA_ADWIN_createData(t_sequence *seq, t_outputData *o);"
+
+[OUTPUTDATA_generateAnalogSamplesFromValues]
+Class="Function"
+Prototype="unsigned long OUTPUTDATA_generateAnalogSamplesFromValues(t_outputData *o, int device);"
+
+[DIGITALEVENT_getIndexFromTime]
+Class="Function"
+Prototype="int DIGITALEVENT_getIndexFromTime(struct ListStructTag *list, long long start);"
+
+[OUTPUTDATA_deleteDuplicateTimesInEventList]
+Class="Function"
+Prototype="void OUTPUTDATA_deleteDuplicateTimesInEventList(t_outputData *o);"
+
+[OUTPUTDATA_allocateMemoryForDIOValues]
+Class="Function"
+Prototype="void OUTPUTDATA_allocateMemoryForDIOValues(t_outputData *o, int nValues);"
+
+[OUTPUTDATA_convertEventListIntoDIOValues]
+Class="Function"
+Prototype="int OUTPUTDATA_convertEventListIntoDIOValues(t_outputData *o);"
+
+[OUTPUTDATA_insertVariablePulsesIntoEventList]
+Class="Function"
+Prototype="int OUTPUTDATA_insertVariablePulsesIntoEventList(t_sequence *seq);"
+
+[OUTPUTDATA_writeDIOBytesToOutputBuffer_DBLBUF]
+Class="Function"
+Prototype="unsigned long OUTPUTDATA_writeDIOBytesToOutputBuffer_DBLBUF(t_outputData *o, unsigned long **buffers, unsigned long bufferSizeSamples);"
+
+[OUTPUTDATA_writeAOBytesToOutputBuffer_DBLBUF]
+Class="Function"
+Prototype="unsigned long OUTPUTDATA_writeAOBytesToOutputBuffer_DBLBUF(t_outputData *o, short **buffers, unsigned long bufferSizeSamples);"
+
+[OUTPUTDATA_writeDIOBytesTEST]
+Class="Function"
+Prototype="void OUTPUTDATA_writeDIOBytesTEST(t_sequence *seq);"
+
+[OUTPUTDATA_hasChanged]
+Class="Function"
+Prototype="int OUTPUTDATA_hasChanged(t_outputData *out, int ch);"
+
+[OUTPUTDATA_getFirstOutputValue]
+Class="Function"
+Prototype="long OUTPUTDATA_getFirstOutputValue(t_outputData *out, int ch, unsigned int *position);"
+
+[OUTPUTDATA_isChannelConstant]
+Class="Function"
+Prototype="int OUTPUTDATA_isChannelConstant(t_outputData *out, int ch);"
+
+[OUTPUTDATA_rememberLastValues]
+Class="Function"
+Prototype="void OUTPUTDATA_rememberLastValues(t_outputData *out, int ch);"
+
+[SEQUENCE_SWEEPS_createList]
+Class="Function"
+Prototype="void SEQUENCE_SWEEPS_createList(t_sequence *s);"
+

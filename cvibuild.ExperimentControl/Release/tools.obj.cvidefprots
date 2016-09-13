@@ -1,0 +1,932 @@
+[getTmpString]
+Class="Function"
+Prototype="char *getTmpString();"
+
+[getTmpStr]
+Class="Function"
+Prototype="char *getTmpStr();"
+
+[roundDiv]
+Class="Function"
+Prototype="int roundDiv(double x, double y);"
+
+[strAddLeadingSpaces]
+Class="Function"
+Prototype="char *strAddLeadingSpaces(const char *str, int totalLength);"
+
+[checked]
+Class="Function"
+Prototype="int checked(int panel, int control);"
+
+[ctrlHeight]
+Class="Function"
+Prototype="int ctrlHeight(int panel, int control);"
+
+[ctrlWidth]
+Class="Function"
+Prototype="int ctrlWidth(int panel, int control);"
+
+[ctrlLabelWidth]
+Class="Function"
+Prototype="int ctrlLabelWidth(int panel, int control);"
+
+[ctrlTop]
+Class="Function"
+Prototype="int ctrlTop(int panel, int control);"
+
+[ctrlLeft]
+Class="Function"
+Prototype="int ctrlLeft(int panel, int control);"
+
+[ctrlBottom]
+Class="Function"
+Prototype="int ctrlBottom(int panel, int control);"
+
+[ctrlRight]
+Class="Function"
+Prototype="int ctrlRight(int panel, int control);"
+
+[ctrlRightAlign]
+Class="Function"
+Prototype="void ctrlRightAlign(int panel, int control, int rightPos);"
+
+[panelTop]
+Class="Function"
+Prototype="int panelTop(int panel);"
+
+[panelLeft]
+Class="Function"
+Prototype="int panelLeft(int panel);"
+
+[panelRight]
+Class="Function"
+Prototype="int panelRight(int panel);"
+
+[panelBottom]
+Class="Function"
+Prototype="int panelBottom(int panel);"
+
+[panelHeight]
+Class="Function"
+Prototype="int panelHeight(int panel);"
+
+[panelWidth]
+Class="Function"
+Prototype="int panelWidth(int panel);"
+
+[panelFrameThickness]
+Class="Function"
+Prototype="int panelFrameThickness(int panel);"
+
+[panelTitleThickness]
+Class="Function"
+Prototype="int panelTitleThickness(int panel);"
+
+[panelMenuHeight]
+Class="Function"
+Prototype="int panelMenuHeight(int panel);"
+
+[panelHidden]
+Class="Function"
+Prototype="int panelHidden(int panel);"
+
+[panelTitleStr]
+Class="Function"
+Prototype="char *panelTitleStr(int panel);"
+
+[getPanelPos]
+Class="Function"
+Prototype="void getPanelPos(int panel, Point *p);"
+
+[getPanelBounds]
+Class="Function"
+Prototype="void getPanelBounds(int panel, Rect *r);"
+
+[setPanelBounds]
+Class="Function"
+Prototype="void setPanelBounds(int panel, Rect r, int checkIfOnScreen);"
+
+[copyPanelBounds]
+Class="Function"
+Prototype="int copyPanelBounds(int panel, Rect *r);"
+
+[setCtrlPos]
+Class="Function"
+Prototype="void setCtrlPos(int panel, int control, int top, int left);"
+
+[setCtrlBoundingRect]
+Class="Function"
+Prototype="void setCtrlBoundingRect(int panel, int control, int top, int left, int height, int width);"
+
+[copyCtrlBoundingRect]
+Class="Function"
+Prototype="void copyCtrlBoundingRect(int toPanel, int toControl, int fromPanel, int fromControl);"
+
+[screenHeight]
+Class="Function"
+Prototype="int screenHeight();"
+
+[screenWidth]
+Class="Function"
+Prototype="int screenWidth();"
+
+[getCtrlStr]
+Class="Function"
+Prototype="char *getCtrlStr(int panel, int control);"
+
+[setCtrlStr]
+Class="Function"
+Prototype="void setCtrlStr(int panel, int control, const char *str);"
+
+[setCtrlStrf]
+Class="Function"
+Prototype="void setCtrlStrf(int panel, int control, char *format, ...);"
+
+[extractDirAndFileName]
+Class="Function"
+Prototype="void extractDirAndFileName(const char *pathName, char **driveName, char **fileName);"
+
+[extractDir]
+Class="Function"
+Prototype="char *extractDir(const char *pathName);"
+
+[extractFilename]
+Class="Function"
+Prototype="char *extractFilename(const char *pathName);"
+
+[extractSuffix]
+Class="Function"
+Prototype="char *extractSuffix(const char *pathName);"
+
+[changeSuffix]
+Class="Function"
+Prototype="char *changeSuffix(char *result, const char *filename, const char *newSuffix);"
+
+[intToStr]
+Class="Function"
+Prototype="char *intToStr(int i);"
+
+[intToStr0]
+Class="Function"
+Prototype="char *intToStr0(int digits, int i);"
+
+[strToInt]
+Class="Function"
+Prototype="int strToInt(const char *str);"
+
+[doubleToStr]
+Class="Function"
+Prototype="char *doubleToStr(double d);"
+
+[doubleToStrDC]
+Class="Function"
+Prototype="char *doubleToStrDC(double d, int nDigits, int color);"
+
+[doubleToStrDCU]
+Class="Function"
+Prototype="char *doubleToStrDCU(double d, int nDigits, const char *units, int color);"
+
+[doubleToStrDCUF]
+Class="Function"
+Prototype="char *doubleToStrDCUF(double d, int nDigits, const char *units, int color);"
+
+[doubleToStrDCUFI]
+Class="Function"
+Prototype="char *doubleToStrDCUFI(double d, int nDigits, const char *units, int color);"
+
+[doubleToStrD]
+Class="Function"
+Prototype="char *doubleToStrD(double d, int nDigits);"
+
+[strBreakLines]
+Class="Function"
+Prototype="void strBreakLines(char *s, int maxCharsPerLine);"
+
+[strAlloc]
+Class="Function"
+Prototype="char *strAlloc(const char *str);"
+
+[strnewcopy]
+Class="Function"
+Prototype="char *strnewcopy(char *oldtarget, const char *source);"
+
+[iprintf]
+Class="Function"
+Prototype="char *iprintf(const char *fmtStr, int intValue);"
+
+[appendText]
+Class="Function"
+Prototype="void appendText(int panel, int ctrl, const char *txt);"
+
+[setStdTextOut]
+Class="Function"
+Prototype="void setStdTextOut(int panel, int ctrl);"
+
+[stdAppendText]
+Class="Function"
+Prototype="void stdAppendText(const char *txt);"
+
+[errmsg]
+Class="Function"
+Prototype="void errmsg(char *format, ...);"
+
+[strui64]
+Class="Function"
+Prototype="char *strui64(unsigned long long i);"
+
+[vpprintf]
+Class="Function"
+Prototype="inline void vpprintf(int panel, int ctrl, char *format, char *c);"
+
+[pprintf]
+Class="Function"
+Prototype="void pprintf(int panel, int ctrl, char *format, ...);"
+
+[DEBUG_tprintf]
+Class="Function"
+Prototype="void DEBUG_tprintf(char *format, ...);"
+
+[tprintf]
+Class="Function"
+Prototype="void tprintf(char *format, ...);"
+
+[strf]
+Class="Function"
+Prototype="char *strf(char *format, ...);"
+
+[ConfirmPopupf]
+Class="Function"
+Prototype="int ConfirmPopupf(const char *string1, const char *format, ...);"
+
+[stdPrintText]
+Class="Function"
+Prototype="void stdPrintText(const char *txt);"
+
+[cls]
+Class="Function"
+Prototype="void cls(int panel, int ctrl);"
+
+[stdCls]
+Class="Function"
+Prototype="void stdCls();"
+
+[stdDisplay]
+Class="Function"
+Prototype="void stdDisplay();"
+
+[setMouseToControl]
+Class="Function"
+Prototype="void setMouseToControl(int panel, int control);"
+
+[displayFileInTextBox]
+Class="Function"
+Prototype="int displayFileInTextBox(const char *filename, int panel, int control);"
+
+[textboxToBuffer]
+Class="Function"
+Prototype="void textboxToBuffer(int panel, int control, char **buffer);"
+
+[getAbsolutePanelPos]
+Class="Function"
+Prototype="int getAbsolutePanelPos(int attr, int panel);"
+
+[appendJustification]
+Class="Function"
+Prototype="char *appendJustification(char *buf, int pix, justType just);"
+
+[appendVLine]
+Class="Function"
+Prototype="char *appendVLine(char *buf);"
+
+[colorStr]
+Class="Function"
+Prototype="char *colorStr(int bg, int fg);"
+
+[fgColor]
+Class="Function"
+Prototype="char *fgColor(int fg);"
+
+[appendColorSpec]
+Class="Function"
+Prototype="char *appendColorSpec(char *buf, int bg, int fg);"
+
+[appendColorSpecMax]
+Class="Function"
+Prototype="char *appendColorSpecMax(char *buf, int bufLen, int bg, int fg);"
+
+[timeStop]
+Class="Function"
+Prototype="unsigned long timeStop(unsigned int start_time);"
+
+[timeStop_s]
+Class="Function"
+Prototype="double timeStop_s(unsigned int startTime);"
+
+[counterTest]
+Class="Function"
+Prototype="int counterTest();"
+
+[dataTypeSize]
+Class="Function"
+Prototype="int dataTypeSize(int dataType);"
+
+[stringAppendToBuffer]
+Class="Function"
+Prototype="char *stringAppendToBuffer(char *lineStr, unsigned int *lineSize, unsigned int *appendPos, const char *string);"
+
+[Int_PutZeroes]
+Class="Function"
+Prototype="void Int_PutZeroes(char *tmpStr, int nZero);"
+
+[Ini_PutDataArray]
+Class="Function"
+Prototype="int Ini_PutDataArray(struct IniStructForwardReferenceTag *ini, const char *sectionName, const char *tagName, void *dataArray, int dataArraySize, int dataType);"
+
+[Ini_PutDataArray_Comp]
+Class="Function"
+Prototype="int Ini_PutDataArray_Comp(struct IniStructForwardReferenceTag *ini, const char *sectionName, const char *tagName, void *dataArray, int dataArraySize, int dataType);"
+
+[explodeIntArray]
+Class="Function"
+Prototype="int explodeIntArray(int *intArray, int bufSize, char *source);"
+
+[implodeIntArray]
+Class="Function"
+Prototype="void implodeIntArray(char *destination, const int *intArray, const int arrayLength);"
+
+[explodeDoubleArray]
+Class="Function"
+Prototype="int explodeDoubleArray(int *doubleArray, int bufSize, char *source);"
+
+[implodeDoubleArray]
+Class="Function"
+Prototype="void implodeDoubleArray(char *destination, const double *doubleArray, const int arrayLength);"
+
+[Ini_GetDataArraySize]
+Class="Function"
+Prototype="char *Ini_GetDataArraySize(struct IniStructForwardReferenceTag *ini, const char *sectionName, const char *tagName, unsigned long *dataArraySize);"
+
+[Ini_WriteToRegistry_New]
+Class="Function"
+Prototype="int Ini_WriteToRegistry_New(struct IniStructForwardReferenceTag *theIniText, int rootKey, const char *baseKeyName);"
+
+[parseStringIntoArray]
+Class="Function"
+Prototype="void parseStringIntoArray(char *startCh, void *array, unsigned long arraySize, int dataType);"
+
+[parseStringIntoArray_Comp]
+Class="Function"
+Prototype="void parseStringIntoArray_Comp(char *startCh, void *array, unsigned long arraySize, int dataType);"
+
+[Ini_GetDataArray]
+Class="Function"
+Prototype="void *Ini_GetDataArray(struct IniStructForwardReferenceTag *ini, const char *sectionName, const char *tagName, unsigned long *dataArraySize, int dataType);"
+
+[Ini_GetDataArrayEx]
+Class="Function"
+Prototype="int Ini_GetDataArrayEx(struct IniStructForwardReferenceTag *ini, const char *sectionName, const char *tagName, void *dataArray, unsigned long dataArraySize, int dataType);"
+
+[Ini_GetDataArrayEx_Comp]
+Class="Function"
+Prototype="int Ini_GetDataArrayEx_Comp(struct IniStructForwardReferenceTag *ini, const char *sectionName, const char *tagName, void *dataArray, unsigned long dataArraySize, int dataType);"
+
+[Ini_DisplayContents]
+Class="Function"
+Prototype="void Ini_DisplayContents(struct IniStructForwardReferenceTag *ini, int debugWindow);"
+
+[Ini_PutDouble0]
+Class="Function"
+Prototype="int Ini_PutDouble0(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, double value);"
+
+[Ini_PutUInt0]
+Class="Function"
+Prototype="int Ini_PutUInt0(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, unsigned int Unsigned_Integer_Value);"
+
+[Ini_PutInt0]
+Class="Function"
+Prototype="int Ini_PutInt0(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, int Integer_Value);"
+
+[Ini_Put_Int64]
+Class="Function"
+Prototype="int Ini_Put_Int64(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, long long I64);"
+
+[Ini_Get_Int64]
+Class="Function"
+Prototype="int Ini_Get_Int64(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, long long *I64);"
+
+[Ini_PutInt640]
+Class="Function"
+Prototype="int Ini_PutInt640(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, long long I64);"
+
+[Ini_PutPoint]
+Class="Function"
+Prototype="int Ini_PutPoint(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, Point p);"
+
+[Ini_GetPoint]
+Class="Function"
+Prototype="int Ini_GetPoint(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, Point *r);"
+
+[Ini_PutRect]
+Class="Function"
+Prototype="int Ini_PutRect(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, Rect r);"
+
+[Ini_GetRect]
+Class="Function"
+Prototype="int Ini_GetRect(struct IniStructForwardReferenceTag *Handle, const char *Section_Name, const char *Tag_Name, Rect *r);"
+
+[Ini_PutString0]
+Class="Function"
+Prototype="int Ini_PutString0(struct IniStructForwardReferenceTag *theIniText, const char *section, const char *itemName, const char *value);"
+
+[arrayToStrShort]
+Class="Function"
+Prototype="char *arrayToStrShort(short *array, unsigned long size);"
+
+[arrayToStr]
+Class="Function"
+Prototype="char *arrayToStr(unsigned long *array, unsigned long size);"
+
+[xMod]
+Class="Function"
+Prototype="unsigned long xMod(unsigned long x, unsigned long div);"
+
+[xMod64]
+Class="Function"
+Prototype="unsigned long long xMod64(unsigned long long x, unsigned long long div);"
+
+[xRound]
+Class="Function"
+Prototype="unsigned long xRound(unsigned long x, unsigned long div);"
+
+[pow10]
+Class="Function"
+Prototype="double pow10(double x);"
+
+[displayFileError]
+Class="Function"
+Prototype="int displayFileError(const char *filename);"
+
+[getErrorFileOperation]
+Class="Function"
+Prototype="const char *getErrorFileOperation(int error);"
+
+[getErrorMkDir]
+Class="Function"
+Prototype="const char *getErrorMkDir(int error);"
+
+[mkDir]
+Class="Function"
+Prototype="int mkDir(const char *path);"
+
+[mkDirs]
+Class="Function"
+Prototype="int mkDirs(const char *path);"
+
+[deleteDir]
+Class="Function"
+Prototype="int deleteDir(const char *path);"
+
+[deleteDirContents]
+Class="Function"
+Prototype="int deleteDirContents(const char *path);"
+
+[messagePopupSaveChanges]
+Class="Function"
+Prototype="int messagePopupSaveChanges(char *filename);"
+
+[putFrame]
+Class="Function"
+Prototype="void putFrame(int panel, int ctrl1, int ctrl2, int width, int color);"
+
+[eventStr]
+Class="Function"
+Prototype="char *eventStr(int event, int eventData1, int eventData2);"
+
+[listCopyPaste]
+Class="Function"
+Prototype="void listCopyPaste(int panel, int list, int indexIncrement, int selected);"
+
+[panelCallbackRemovePopup]
+Class="Function"
+Prototype="int panelCallbackRemovePopup(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TOOLS_CALLBACK_Abort]
+Class="Function"
+Prototype="int TOOLS_CALLBACK_Abort(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TOOLS_CALLBALK_selectList_Done]
+Class="Function"
+Prototype="int TOOLS_CALLBALK_selectList_Done(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TOOLS_CALLBALK_selectList_Up]
+Class="Function"
+Prototype="int TOOLS_CALLBALK_selectList_Up(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TOOLS_CALLBALK_selectList_Down]
+Class="Function"
+Prototype="int TOOLS_CALLBALK_selectList_Down(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TOOLS_CALLBALK_selectList_List]
+Class="Function"
+Prototype="int TOOLS_CALLBALK_selectList_List(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[selectList]
+Class="Function"
+Prototype="int selectList(const char *titleStr, int upDownArrows, const char **valueStr, int *values, int nValues, int *selected, int *nSelected);"
+
+[strReplaceChar]
+Class="Function"
+Prototype="void strReplaceChar(char *string, char remove, char replace);"
+
+[ui64ToDouble]
+Class="Function"
+Prototype="double ui64ToDouble(unsigned long long time);"
+
+[ulongCompare]
+Class="Function"
+Prototype="int ulongCompare(void *item1, void *item2);"
+
+[monthStr]
+Class="Function"
+Prototype="const char *monthStr(int month);"
+
+[strCatMax]
+Class="Function"
+Prototype="void strCatMax(char *dest, char *source, int destBufferLen);"
+
+[strMaxN]
+Class="Function"
+Prototype="char *strMaxN(const char *string, int len);"
+
+[Ini_OutputToBuffer]
+Class="Function"
+Prototype="int Ini_OutputToBuffer(void *outputBuffer, char *outputString);"
+
+[Ini_WriteToBuffer]
+Class="Function"
+Prototype="int Ini_WriteToBuffer(struct IniStructForwardReferenceTag *ini, char **buffer, unsigned long *bytesWritten, const char *startStr, int putBufferSizeAtTop);"
+
+[Ini_InputFromBuffer]
+Class="Function"
+Prototype="int Ini_InputFromBuffer(void *inputSource, char *inputBuffer, int maxLineLength, int *endOfSource, int *lineNumRead);"
+
+[Ini_ReadFromBuffer]
+Class="Function"
+Prototype="int Ini_ReadFromBuffer(struct IniStructForwardReferenceTag *ini, char *buffer, unsigned long bufferSize);"
+
+[getCtrlValLabel]
+Class="Function"
+Prototype="void getCtrlValLabel(int panel, int control, char *dest);"
+
+[setCtrlValLabel]
+Class="Function"
+Prototype="void setCtrlValLabel(int panel, int control, char *str);"
+
+[cutCommandString]
+Class="Function"
+Prototype="void cutCommandString(const char *commandStr, char **partStr, int *nParts);"
+
+[listboxCheckOnlyActiveItem]
+Class="Function"
+Prototype="void listboxCheckOnlyActiveItem(int panel, int control);"
+
+[listboxCheckOnlyOneItem_callback]
+Class="Function"
+Prototype="int listboxCheckOnlyOneItem_callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[arrayFind]
+Class="Function"
+Prototype="int arrayFind(int *array, int arrSize, int searchVal);"
+
+[makeNiceNumber]
+Class="Function"
+Prototype="double makeNiceNumber(double value, int steps, int digits);"
+
+[setTreeCellTxt]
+Class="Function"
+Prototype="void setTreeCellTxt(int panel, int ctrl, int item, int col, char *txt);"
+
+[setTreeCellTxtColor]
+Class="Function"
+Prototype="void setTreeCellTxtColor(int panel, int ctrl, int item, int col, char *txt, int color);"
+
+[isArrayNotEqual_int]
+Class="Function"
+Prototype="int isArrayNotEqual_int(int *array, unsigned int arraySize, int cmpVal);"
+
+[isInArray_int]
+Class="Function"
+Prototype="int isInArray_int(int *array, unsigned int arraySize, int cmpVal);"
+
+[isArrayNotEqual_dbl]
+Class="Function"
+Prototype="int isArrayNotEqual_dbl(double *array, unsigned int arraySize, double cmpVal);"
+
+[setNumListItems]
+Class="Function"
+Prototype="int setNumListItems(int panel, int ctrl, int nItems);"
+
+[setNumTreeItems]
+Class="Function"
+Prototype="int setNumTreeItems(int panel, int ctrl, int nItems);"
+
+[setNumTreeColumns]
+Class="Function"
+Prototype="int setNumTreeColumns(int panel, int ctrl, int nItems);"
+
+[setNumTableRows]
+Class="Function"
+Prototype="int setNumTableRows(int panel, int ctrl, int nItems, int rowHeight);"
+
+[setNumTableColumns]
+Class="Function"
+Prototype="int setNumTableColumns(int panel, int ctrl, int nItems);"
+
+[deleteAllTableColumns]
+Class="Function"
+Prototype="void deleteAllTableColumns(int panel, int ctrl);"
+
+[setTableCellAttribute]
+Class="Function"
+Prototype="void setTableCellAttribute(int panel, int control, Point cell, int attribute, int value);"
+
+[setTableCellValDouble]
+Class="Function"
+Prototype="void setTableCellValDouble(int panel, int control, Point cell, double value);"
+
+[setTableCellValInt]
+Class="Function"
+Prototype="void setTableCellValInt(int panel, int control, Point cell, int value);"
+
+[dateStr]
+Class="Function"
+Prototype="char *dateStr(char sepatator);"
+
+[isDateToday]
+Class="Function"
+Prototype="int isDateToday(const char *date, char separator);"
+
+[timeStr]
+Class="Function"
+Prototype="char *timeStr();"
+
+[daytimeInMinutes]
+Class="Function"
+Prototype="int daytimeInMinutes();"
+
+[daytimeInSeconds]
+Class="Function"
+Prototype="int daytimeInSeconds();"
+
+[getDateAndTime]
+Class="Function"
+Prototype="void getDateAndTime(char *dateStr, char *timeStr);"
+
+[getDateAndTimeFromFile]
+Class="Function"
+Prototype="void getDateAndTimeFromFile(const char *filename, char *dateStr, char *timeStr);"
+
+[generateFilename]
+Class="Function"
+Prototype="char *generateFilename(const char *dir, const char *suffix, const char *name, int checkForDuplicates);"
+
+[errorStringUtility]
+Class="Function"
+Prototype="const char *errorStringUtility(int errorCode);"
+
+[filenameCharCheck]
+Class="Function"
+Prototype="char *filenameCharCheck(const char *old);"
+
+[setCtrlHot2]
+Class="Function"
+Prototype="void setCtrlHot2(int panel, int control, int hot);"
+
+[setCtrlHot]
+Class="Function"
+Prototype="void setCtrlHot(int panel, int control, int hot);"
+
+[abs64]
+Class="Function"
+Prototype="long long abs64(long long x);"
+
+[_int64]
+Class="Function"
+Prototype="long long *_int64();"
+
+[_int64p]
+Class="Function"
+Prototype="void _int64p(long long **x);"
+
+[writeString]
+Class="Function"
+Prototype="int writeString(int file, const char *s);"
+
+[displayPanel2]
+Class="Function"
+Prototype="void displayPanel2(int panel);"
+
+[fRound]
+Class="Function"
+Prototype="double fRound(double value);"
+
+[fileSize]
+Class="Function"
+Prototype="int fileSize(const char *filename);"
+
+[swapInt]
+Class="Function"
+Prototype="void swapInt(int *i1, int *i2);"
+
+[textboxCheckMaxLines]
+Class="Function"
+Prototype="void textboxCheckMaxLines(int panel, int ctrl, int maxLines);"
+
+[CVI_PlaySound]
+Class="Function"
+Prototype="int CVI_PlaySound(char *fileName, short asynchronous);"
+
+[CVI_PlaySoundEx]
+Class="Function"
+Prototype="int CVI_PlaySoundEx(char *fileName, short asynchronous, short loop, short playDefault, short stopCurrentSound);"
+
+[CVI_StopCurrentSound]
+Class="Function"
+Prototype="void CVI_StopCurrentSound();"
+
+[ZIPfile]
+Class="Function"
+Prototype="int ZIPfile(const char *filesToZip, const char *zipFilename, int deleteOriginal);"
+
+[UNZIP_getFileList]
+Class="Function"
+Prototype="int UNZIP_getFileList(const char *tmpPath, char **filenames, int nFilenames);"
+
+[UNZIPfileToTmpDir]
+Class="Function"
+Prototype="int UNZIPfileToTmpDir(const char *filename, const char *tmpPath);"
+
+[getFirstFile]
+Class="Function"
+Prototype="char *getFirstFile(const char *path, const char *searchMask);"
+
+[Ini_ReadFromZipFile]
+Class="Function"
+Prototype="int Ini_ReadFromZipFile(struct IniStructForwardReferenceTag *ini, const char *filename, const char *searchStr);"
+
+[Ini_ReadFromFileGen]
+Class="Function"
+Prototype="int Ini_ReadFromFileGen(struct IniStructForwardReferenceTag *ini, const char *filename, const char *searchStr);"
+
+[getGeneralErrorStringTools]
+Class="Function"
+Prototype="char *getGeneralErrorStringTools(int err);"
+
+[displayIniFileError]
+Class="Function"
+Prototype="int displayIniFileError(const char *filename, int err);"
+
+[saveBufferToFile]
+Class="Function"
+Prototype="int saveBufferToFile(const char *filename, char *buffer, unsigned int bufSize);"
+
+[PROTOCOLFILE_open]
+Class="Function"
+Prototype="int PROTOCOLFILE_open(const char *filename);"
+
+[PROTOCOLFILE_printf]
+Class="Function"
+Prototype="int PROTOCOLFILE_printf(char *format, ...);"
+
+[PROTOCOLFILE_close]
+Class="Function"
+Prototype="int PROTOCOLFILE_close();"
+
+[recurseDirectoryIntoTreeItem]
+Class="Function"
+Prototype="int recurseDirectoryIntoTreeItem(int panel, int ctrl, const char *path, const char *searchExtenstion, int getSubfolders, int startItem);"
+
+[recurseDirectoryIntoTree]
+Class="Function"
+Prototype="int recurseDirectoryIntoTree(int panel, int ctrl, const char *path, const char *searchExtenstion);"
+
+[freePhysicalMemory]
+Class="Function"
+Prototype="double freePhysicalMemory();"
+
+[displayMemoryInfo]
+Class="Function"
+Prototype="void displayMemoryInfo();"
+
+[HELPTXT_initPanel]
+Class="Function"
+Prototype="void HELPTXT_initPanel();"
+
+[HELPTXT_showHelp]
+Class="Function"
+Prototype="void HELPTXT_showHelp(int top, int left, const char *string);"
+
+[iArraySum]
+Class="Function"
+Prototype="int iArraySum(int *array, int indexStart, int indexEnd);"
+
+[isFileWriteProtected]
+Class="Function"
+Prototype="int isFileWriteProtected(const char *filename, int *state);"
+
+[changeCommaInPoint_CB]
+Class="Function"
+Prototype="int changeCommaInPoint_CB(int panel, int chainCtrlId, int event, void *callbackData, int eventData1, int eventData2);"
+
+[enableCommaInNumeric]
+Class="Function"
+Prototype="void enableCommaInNumeric(int panel, int control);"
+
+[tableAllCells]
+Class="Function"
+Prototype="Rect tableAllCells(int panel, int ctrl);"
+
+[memfill]
+Class="Function"
+Prototype="int memfill(void *ptrDest, void *ptrSource, unsigned int sourceBytes, unsigned int nCopies);"
+
+[memcmp2]
+Class="Function"
+Prototype="int memcmp2(void *buf1, void *buf2, unsigned int blockSize, unsigned int nBlocks);"
+
+[DEBUGOUT_resizePanel]
+Class="Function"
+Prototype="void DEBUGOUT_resizePanel();"
+
+[DEBUGOUT_callback]
+Class="Function"
+Prototype="int DEBUGOUT_callback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DEBUGOUT_initPanel]
+Class="Function"
+Prototype="void DEBUGOUT_initPanel();"
+
+[DEBUGOUT_discardPanel]
+Class="Function"
+Prototype="void DEBUGOUT_discardPanel();"
+
+[DEBUGOUT_printf]
+Class="Function"
+Prototype="void DEBUGOUT_printf(char *format, ...);"
+
+[changeNameSuffix]
+Class="Function"
+Prototype="void changeNameSuffix(char *name, int maxlen, const char *suffixStr);"
+
+[strValid]
+Class="Function"
+Prototype="char *strValid(char *stringPtr);"
+
+[isLeapYear]
+Class="Function"
+Prototype="int isLeapYear(int year);"
+
+[daysPerMonth]
+Class="Function"
+Prototype="int daysPerMonth(int month, int year);"
+
+[sech]
+Class="Function"
+Prototype="double sech(double x);"
+
+[displayUIRError]
+Class="Function"
+Prototype="int displayUIRError(int errorCode, const char *subroutine);"
+
+[MakeDPoint]
+Class="Function"
+Prototype="dPoint MakeDPoint(double x, double y);"
+
+[MainThread_MessagePopup]
+Class="Function"
+Prototype="void MainThread_MessagePopup(void *callbackData);"
+
+[PostMessagePopup]
+Class="Function"
+Prototype="int PostMessagePopup(const char *title, const char *message);"
+
+[PostMessagePopupf]
+Class="Function"
+Prototype="void PostMessagePopupf(const char *titleStr, const char *format, ...);"
+
+[MainThread_GenericMessagePopup]
+Class="Function"
+Prototype="int MainThread_GenericMessagePopup(void *callbackData);"
+
+[PostGenericMessagePopup]
+Class="Function"
+Prototype="int PostGenericMessagePopup(const char *title, const char *message, const char *buttonLabel1, const char *buttonLabel2, const char *buttonLabel3, char *responseBuffer, unsigned int maxResponseLength, int buttonAlignment, int activeControl, int enterButton, int escapeButton);"
+
+[explode]
+Class="Function"
+Prototype="int explode(char **arr, char *str, char delimiter);"
+
+[lightenColor]
+Class="Function"
+Prototype="int lightenColor(int color, float correctionFactor);"
+

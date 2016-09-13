@@ -1,0 +1,39 @@
+-nologo
+-out:c:\Users\Manuel\Desktop\ExperimentControl\Watchdog\cvibuild.watchdog\Debug\watchdog_dbg.exe
+-arch:x86
+-timestamp
+-debug:2
+-loadextmod
+-res:c:\Users\Manuel\Desktop\ExperimentControl\Watchdog\cvibuild.watchdog\Debug\resources.res
+-entry:_CVIWinMainStartupCodeForDebugging@0
+-base:0x400000
+-linked:c:\Users\Manuel\Desktop\ExperimentControl\Watchdog\cvibuild.watchdog\Debug\linkersummary.txt
+-dlldeps:c:\Users\Manuel\Desktop\ExperimentControl\Watchdog\cvibuild.watchdog\Debug\dlldependencies.txt
+-licensing:c:\Users\Manuel\Desktop\ExperimentControl\Watchdog\cvibuild.watchdog\Debug\linkerlicensing.txt
+-browsedeps:c:\Users\Manuel\Desktop\ExperimentControl\Watchdog\cvibuild.watchdog\Debug\moduledependencies.txt
+-stackreserve:5242880
+-stackcommit:4096
+-in:c:\Users\Manuel\Desktop\ExperimentControl\Watchdog\cvibuild.watchdog\Debug\tools.obj
+-in:c:\Users\Manuel\Desktop\ExperimentControl\Watchdog\cvibuild.watchdog\Debug\watchdog.obj
+-more:c:\program files (x86)\national instruments\cvi2015\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2015\bin\msvc\cvi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cviauto.lib
+-more:c:\ProgramData\National Instruments\CVI2015\bin\msvc\cvidemoa.bli
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cvitdms.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\gpib.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2015\toolslib\toolbox\msvc\toolbox.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

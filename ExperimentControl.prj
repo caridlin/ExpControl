@@ -1,0 +1,1754 @@
+[Project Header]
+Version = 1500
+Pathname = "/c/Users/Manuel/Desktop/ExperimentControl/ExperimentControl.prj"
+Project Label = "ExperimentControl"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2015"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2015"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Files = 93
+Target Type = "Executable"
+Flags = 2064
+Copied From Locked InstrDrv Directory = False
+Copied from VXIPNP Directory = False
+Locked InstrDrv Name = ""
+Don't Display Deploy InstrDrv Dialog = False
+
+[Folders]
+Folder 0 = "Source Files"
+FolderEx 0 = "Source Files"
+Folder 1 = "Include Files"
+FolderEx 1 = "Include Files"
+Folder 2 = "User Interface Files"
+FolderEx 2 = "User Interface Files"
+Folder 3 = "DAQ Tasks"
+FolderEx 3 = "DAQ Tasks"
+Folder 4 = "Image Magick"
+FolderEx 4 = "Image Magick"
+Folder 5 = "Instrument Files"
+FolderEx 5 = "Instrument Files"
+
+[File 0001]
+File Type = "CSource"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/Adwin.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/Adwin.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0002]
+File Type = "CSource"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_CalculateOutput.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_CalculateOutput.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0003]
+File Type = "CSource"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_DataSocket.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_DataSocket.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0004]
+File Type = "CSource"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_DataStructure.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_DataStructure.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0005]
+File Type = "CSource"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_Definitions.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_Definitions.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0006]
+File Type = "CSource"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_DMDIMAGE.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_DMDIMAGE.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0007]
+File Type = "CSource"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_DMDSHAPE.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_DMDSHAPE.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0008]
+File Type = "CSource"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_Functions.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_Functions.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0009]
+File Type = "CSource"
+Res Id = 9
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_CCD.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_CCD.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0010]
+File Type = "CSource"
+Res Id = 10
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_Config.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_Config.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0011]
+File Type = "CSource"
+Res Id = 11
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_DigitalBlocks.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_DigitalBlocks.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0012]
+File Type = "CSource"
+Res Id = 12
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_EditPoints.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_EditPoints.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0013]
+File Type = "CSource"
+Res Id = 13
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_ExtDev.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_ExtDev.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0014]
+File Type = "CSource"
+Res Id = 14
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_Gpib.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_Gpib.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0015]
+File Type = "CSource"
+Res Id = 15
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_IMPORT.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_IMPORT.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0016]
+File Type = "CSource"
+Res Id = 16
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_LOOP_CONF.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_LOOP_CONF.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0017]
+File Type = "CSource"
+Res Id = 17
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_MAIN.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_MAIN.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0018]
+File Type = "CSource"
+Res Id = 18
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_Simulate.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_Simulate.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0019]
+File Type = "CSource"
+Res Id = 19
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_Waveform.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_Waveform.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0020]
+File Type = "CSource"
+Res Id = 20
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_HARDWARE.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_HARDWARE.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0021]
+File Type = "CSource"
+Res Id = 21
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_HARDWARE_adwin.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_HARDWARE_adwin.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0022]
+File Type = "CSource"
+Res Id = 22
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_HARDWARE_DAQmx.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_HARDWARE_DAQmx.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0023]
+File Type = "CSource"
+Res Id = 23
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_HARDWARE_GPIB.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_HARDWARE_GPIB.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0024]
+File Type = "CSource"
+Res Id = 24
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_LoadSave.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_LoadSave.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0025]
+File Type = "CSource"
+Res Id = 25
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/ExperimentControl.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/ExperimentControl.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0026]
+File Type = "CSource"
+Res Id = 26
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/EXTDEV_DRIVER_DDS.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/EXTDEV_DRIVER_DDS.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0027]
+File Type = "CSource"
+Res Id = 27
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_Agilent.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_Agilent.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0028]
+File Type = "CSource"
+Res Id = 28
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_Anritsu.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_Anritsu.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0029]
+File Type = "CSource"
+Res Id = 29
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_Berkeley.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_Berkeley.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0030]
+File Type = "CSource"
+Res Id = 30
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_LeCroy.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_LeCroy.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0031]
+File Type = "CSource"
+Res Id = 31
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_Marconi.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_Marconi.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0032]
+File Type = "CSource"
+Res Id = 32
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_RohdeSchwarz.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_RohdeSchwarz.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0033]
+File Type = "CSource"
+Res Id = 33
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_StanfordResearchSystems.c"
+Path Line0001 = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_StanfordResearchSy"
+Path Line0002 = "stems.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0034]
+File Type = "CSource"
+Res Id = 34
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_ThurlbyThandar.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_ThurlbyThandar.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0035]
+File Type = "CSource"
+Res Id = 35
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "imageProcessing/imageProcessing.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/imageProcessing/imageProcessing.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0036]
+File Type = "CSource"
+Res Id = 36
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/INTERFACE_TCP_IP.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/INTERFACE_TCP_IP.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0037]
+File Type = "CSource"
+Res Id = 37
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/tools.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/tools.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0038]
+File Type = "Include"
+Res Id = 38
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "includes/Adwin.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/includes/Adwin.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0039]
+File Type = "Include"
+Res Id = 39
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/alp.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/alp.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0040]
+File Type = "Include"
+Res Id = 40
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_CalculateOutput.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_CalculateOutput.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0041]
+File Type = "Include"
+Res Id = 41
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_DataSocket.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_DataSocket.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0042]
+File Type = "Include"
+Res Id = 42
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_DataStructure.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_DataStructure.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0043]
+File Type = "Include"
+Res Id = 43
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_Definitions.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_Definitions.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0044]
+File Type = "Include"
+Res Id = 44
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_DMDIMAGE.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_DMDIMAGE.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0045]
+File Type = "Include"
+Res Id = 45
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_DMDSHAPE.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_DMDSHAPE.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0046]
+File Type = "Include"
+Res Id = 46
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_Functions.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_Functions.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0047]
+File Type = "Include"
+Res Id = 47
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_CCD.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_CCD.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0048]
+File Type = "Include"
+Res Id = 48
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_Config.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_Config.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0049]
+File Type = "Include"
+Res Id = 49
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_DigitalBlocks.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_DigitalBlocks.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0050]
+File Type = "Include"
+Res Id = 50
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_EditPoints.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_EditPoints.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0051]
+File Type = "Include"
+Res Id = 51
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_ExtDev.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_ExtDev.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0052]
+File Type = "Include"
+Res Id = 52
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_Gpib.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_Gpib.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0053]
+File Type = "Include"
+Res Id = 53
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_Import.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_Import.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0054]
+File Type = "Include"
+Res Id = 54
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_LOOP_CONF.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_LOOP_CONF.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0055]
+File Type = "Include"
+Res Id = 55
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_MAIN.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_MAIN.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0056]
+File Type = "Include"
+Res Id = 56
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_Simulate.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_Simulate.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0057]
+File Type = "Include"
+Res Id = 57
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_GUI_Waveform.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_GUI_Waveform.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0058]
+File Type = "Include"
+Res Id = 58
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_HARDWARE.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_HARDWARE.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0059]
+File Type = "Include"
+Res Id = 59
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_HARDWARE_Adwin.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_HARDWARE_Adwin.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0060]
+File Type = "Include"
+Res Id = 60
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_HARDWARE_DAQmx.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_HARDWARE_DAQmx.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0061]
+File Type = "Include"
+Res Id = 61
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_HARDWARE_GPIB.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_HARDWARE_GPIB.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0062]
+File Type = "Include"
+Res Id = 62
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/CONTROL_LoadSave.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/CONTROL_LoadSave.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0063]
+File Type = "Include"
+Res Id = 63
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/ExperimentControl.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/ExperimentControl.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0064]
+File Type = "Include"
+Res Id = 64
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/EXTDEV_DRIVER_DDS.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/EXTDEV_DRIVER_DDS.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0065]
+File Type = "Include"
+Res Id = 65
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/general.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/general.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0066]
+File Type = "Include"
+Res Id = 66
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_Agilent.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_Agilent.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0067]
+File Type = "Include"
+Res Id = 67
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_Anritsu.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_Anritsu.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0068]
+File Type = "Include"
+Res Id = 68
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_Berkeley.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_Berkeley.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0069]
+File Type = "Include"
+Res Id = 69
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_LeCroy.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_LeCroy.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0070]
+File Type = "Include"
+Res Id = 70
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_Marconi.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_Marconi.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0071]
+File Type = "Include"
+Res Id = 71
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_RohdeSchwarz.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_RohdeSchwarz.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0072]
+File Type = "Include"
+Res Id = 72
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_StanfordResearchSystems.h"
+Path Line0001 = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_StanfordResearchSy"
+Path Line0002 = "stems.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0073]
+File Type = "Include"
+Res Id = 73
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/GPIB_DRIVER_ThurlbyThandar.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/GPIB_DRIVER_ThurlbyThandar.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0074]
+File Type = "Include"
+Res Id = 74
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "imageProcessing/imageProcessing.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/imageProcessing/imageProcessing.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0075]
+File Type = "Include"
+Res Id = 75
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/INCLUDES_CONTROL.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/INCLUDES_CONTROL.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0076]
+File Type = "Include"
+Res Id = 76
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/INTERFACE_TCP_IP.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/INTERFACE_TCP_IP.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0077]
+File Type = "Include"
+Res Id = 77
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/tools.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/tools.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0078]
+File Type = "Include"
+Res Id = 78
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/UIR_common.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/UIR_common.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0079]
+File Type = "Include"
+Res Id = 79
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/UIR_ExperimentControl.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/UIR_ExperimentControl.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0080]
+File Type = "Include"
+Res Id = 80
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/UIR_TCP_IP.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/UIR_TCP_IP.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0081]
+File Type = "Include"
+Res Id = 81
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Watchdog/watchdog_variables.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Watchdog/watchdog_variables.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0082]
+File Type = "User Interface Resource"
+Res Id = 82
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/UIR_common.uir"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/UIR_common.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+Folder Id = 2
+
+[File 0083]
+File Type = "User Interface Resource"
+Res Id = 83
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/UIR_ExperimentControl.uir"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/UIR_ExperimentControl.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+Folder Id = 2
+
+[File 0084]
+File Type = "User Interface Resource"
+Res Id = 84
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Control/UIR_TCP_IP.uir"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/Control/UIR_TCP_IP.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+Folder Id = 2
+
+[File 0085]
+File Type = "CSource"
+Res Id = 85
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "NIUSB_AnalogInput.c"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/NIUSB_AnalogInput.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "DAQ Tasks"
+Folder Id = 3
+
+[File 0086]
+File Type = "Include"
+Res Id = 86
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "NIUSB_AnalogInput.h"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/NIUSB_AnalogInput.h"
+Exclude = False
+Project Flags = 0
+Folder = "DAQ Tasks"
+Folder Id = 3
+
+[File 0087]
+File Type = "Unknown"
+Res Id = 87
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "NIUSB_AnalogInput.mxb"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/NIUSB_AnalogInput.mxb"
+Exclude = False
+Project Flags = 0
+Folder = "DAQ Tasks"
+Folder Id = 3
+
+[File 0088]
+File Type = "Library"
+Res Id = 88
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "lib/CORE_RL_magick_.lib"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/lib/CORE_RL_magick_.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Image Magick"
+Folder Id = 4
+
+[File 0089]
+File Type = "Library"
+Res Id = 89
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "lib/CORE_RL_wand_.lib"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/lib/CORE_RL_wand_.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Image Magick"
+Folder Id = 4
+
+[File 0090]
+File Type = "Unknown"
+Res Id = 90
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "image_magick.txt"
+Path = "/c/Users/Manuel/Desktop/ExperimentControl/image_magick.txt"
+Exclude = False
+Project Flags = 0
+Folder = "Image Magick"
+Folder Id = 4
+
+[File 0091]
+File Type = "Function Panel"
+Res Id = 91
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel To Override = "CVI"
+Path Rel Path = "toolslib/datasock/dataskt.fp"
+Path = "/c/Program Files (x86)/National Instruments/CVI2015/toolslib/datasock/dataskt.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+Folder Id = 5
+
+[File 0092]
+File Type = "Function Panel"
+Res Id = 92
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel To Override = "CVI"
+Path Rel Path = "toolslib/toolbox/inifile.fp"
+Path = "/c/Program Files (x86)/National Instruments/CVI2015/toolslib/toolbox/inifile.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+Folder Id = 5
+
+[File 0093]
+File Type = "Library"
+Res Id = 93
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel Path = "sdk/lib/msvc/WS2_32.Lib"
+Path = "/c/Program Files (x86)/Windows Kits/8.1/Lib/winv6.3/um/x86/WS2_32.Lib"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+Folder Id = 5
+
+[Custom Build Configs]
+Num Custom Build Configs = 0
+
+[Default Build Config Debug]
+Config Name = "Debug"
+Is 64-Bit = False
+Is Release = False
+Default Calling Convention = "cdecl"
+Optimization Level = "No optimizations"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "Common"
+Warning List None = "4,9,84,105,106,107,108,109,110,111"
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = True
+Enable Pointer Mismatch Warning = True
+Enable Unreachable Code Warning = True
+Enable Assignment In Conditional Warning = True
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = True
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN /DEXPERIMENTCONTROL=1"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "Control/wheelwork.ico"
+Icon File = "/c/Users/Manuel/Desktop/ExperimentControl/Control/wheelwork.ico"
+Application Title = "Experiment Control"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = True
+Generate Map File = True
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "5,0,0,0"
+Numeric Prod Version = "5,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "Experiment Control (Debug x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = ""
+File Version Ex = ""
+Internal Name = "ExperimentControl_dbg"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © S. Kuhr, 2009"
+Legal Copyright Ex = "Copyright © S. Kuhr, 2009"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "ExperimentControl_dbg.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Experiment Control"
+Product Name Ex = "Experiment Control"
+Product Version = "5"
+Product Version Ex = "5"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release]
+Config Name = "Release"
+Is 64-Bit = False
+Is Release = True
+Default Calling Convention = "cdecl"
+Optimization Level = "No optimizations"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "None"
+Warning List None = "4,9,84,105,106,107,108,109,110,111"
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = False
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Assignment In Conditional Warning = False
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = True
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN /DEXPERIMENTCONTROL=1"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "Control/wheelwork.ico"
+Icon File = "/c/Users/Manuel/Desktop/ExperimentControl/Control/wheelwork.ico"
+Application Title = "Experiment Control"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = True
+Generate Map File = True
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "5,0,0,0"
+Numeric Prod Version = "5,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "Experiment Control (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = ""
+File Version Ex = ""
+Internal Name = "ExperimentControl"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © S. Kuhr, 2009"
+Legal Copyright Ex = "Copyright © S. Kuhr, 2009"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "ExperimentControl.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Experiment Control"
+Product Name Ex = "Experiment Control"
+Product Version = "5"
+Product Version Ex = "5"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Debug64]
+Config Name = "Debug64"
+Is 64-Bit = True
+Is Release = False
+Default Calling Convention = "cdecl"
+Optimization Level = "No optimizations"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "None"
+Warning List None = "4,9,84,105,106,107,108,109,110,111"
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = False
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Assignment In Conditional Warning = False
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = True
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN /DEXPERIMENTCONTROL=1"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "Control/wheelwork.ico"
+Icon File = "/c/Users/Manuel/Desktop/ExperimentControl/Control/wheelwork.ico"
+Application Title = "Experiment Control"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = True
+Generate Map File = True
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "5,0,0,0"
+Numeric Prod Version = "5,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "Experiment Control (Debug x64)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = ""
+File Version Ex = ""
+Internal Name = "ExperimentControl"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © S. Kuhr, 2009"
+Legal Copyright Ex = "Copyright © S. Kuhr, 2009"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "ExperimentControl.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Experiment Control"
+Product Name Ex = "Experiment Control"
+Product Version = "5"
+Product Version Ex = "5"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release64]
+Config Name = "Release64"
+Is 64-Bit = True
+Is Release = True
+Default Calling Convention = "cdecl"
+Optimization Level = "No optimizations"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "None"
+Warning List None = "4,9,84,105,106,107,108,109,110,111"
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = False
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Assignment In Conditional Warning = False
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = True
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN /DEXPERIMENTCONTROL=1"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "Control/wheelwork.ico"
+Icon File = "/c/Users/Manuel/Desktop/ExperimentControl/Control/wheelwork.ico"
+Application Title = "Experiment Control"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = True
+Generate Map File = True
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "5,0,0,0"
+Numeric Prod Version = "5,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "Experiment Control (Release x64)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = ""
+File Version Ex = ""
+Internal Name = "ExperimentControl"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © S. Kuhr, 2009"
+Legal Copyright Ex = "Copyright © S. Kuhr, 2009"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "ExperimentControl.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Experiment Control"
+Product Name Ex = "Experiment Control"
+Product Version = "5"
+Product Version Ex = "5"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Enable C99 Extensions = True
+Uninitialized Locals Compile Warning = "Aggressive"
+Precompile Prefix Header = False
+Prefix Header File = ""
+
+[Run Options]
+Stack Size = 250000
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN /DEXPERIMENTCONTROL=1"
+
+[Include Paths]
+Include Path 1 Is Rel = True
+Include Path 1 Rel To = "Project"
+Include Path 1 Rel Path = "../../ImageMagick-6.8.6-Q16/include"
+Include Path 1 = "/c/Users/Manuel/ImageMagick-6.8.6-Q16/include"
+Include Path 2 Is Rel = True
+Include Path 2 Rel To = "Project"
+Include Path 2 Rel Path = ""
+Include Path 2 = "/c/Users/Manuel/Desktop/ExperimentControl"
+Include Path 3 Is Rel = True
+Include Path 3 Rel To = "Project"
+Include Path 3 Rel Path = "includes"
+Include Path 3 = "/c/Users/Manuel/Desktop/ExperimentControl/includes"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "EXE/ExperimentControl_dbg.exe"
+Executable File_Debug = "/c/Users/Manuel/Desktop/ExperimentControl/EXE/ExperimentControl_dbg.exe"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "EXE/ExperimentControl.exe"
+Executable File_Release = "/c/Users/Manuel/Desktop/ExperimentControl/EXE/ExperimentControl.exe"
+Executable File_Debug64 Is Rel = True
+Executable File_Debug64 Rel To = "Project"
+Executable File_Debug64 Rel Path = "ExperimentControl.exe"
+Executable File_Debug64 = "/c/Users/Manuel/Desktop/ExperimentControl/ExperimentControl.exe"
+Executable File_Release64 Is Rel = True
+Executable File_Release64 Rel To = "Project"
+Executable File_Release64 Rel Path = "ExperimentControl.exe"
+Executable File_Release64 = "/c/Users/Manuel/Desktop/ExperimentControl/ExperimentControl.exe"
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "Control/wheelwork.ico"
+Icon File = "/c/Users/Manuel/Desktop/ExperimentControl/Control/wheelwork.ico"
+Application Title = "Experiment Control"
+Numeric File Version = "5,0,0,0"
+Numeric Prod Version = "5,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "Experiment Control (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = ""
+File Version Ex = ""
+Internal Name = "ExperimentControl"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © S. Kuhr, 2009"
+Legal Copyright Ex = "Copyright © S. Kuhr, 2009"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "ExperimentControl.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Experiment Control"
+Product Name Ex = "Experiment Control"
+Product Version = "5"
+Product Version Ex = "5"
+Special Build = ""
+Special Build Ex = ""
+DLL Exports = "Include File Symbols"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = True
+Generate Map File = True
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[Distribution Kit]
+Distribution Kit GUID = "{270F0276-EC9D-4CC9-8858-CAEA7DB69354}"
+Installation Directory = "ExperimentControl"
+Installation Destination = 10
+Install Run-Time Engine = True
+Install RTE Privately = False
+Install Instrsup = False
+Install Instrsup Privately = False
+Install CVI_LVRT = False
+Install CVI_LVRT Privately = False
+Install Low-Level Support Driver = False
+Install ActiveX Container = False
+Media Size = 3
+kBytes Reserved on First Disk = 0
+Target Path Is Rel = True
+Target Path Rel To = "Project"
+Target Path Rel Path = "cvidistkit.ExperimentControl"
+Target Path = "/c/Users/Manuel/Desktop/ExperimentControl/cvidistkit.ExperimentControl"
+Language = "English"
+Core Group Index = 1
+DLL Group Index = -1
+Project File 0001 Is Rel = True
+Project File 0001 Rel To = "Project"
+Project File 0001 Rel Path = "AcquisitionUIR.uir"
+Project File 0001 = "/c/Users/Manuel/Desktop/ExperimentControl/AcquisitionUIR.uir"
+Project File 0002 Is Rel = True
+Project File 0002 Rel To = "Project"
+Project File 0002 Rel Path = "ExperimentControl.uir"
+Project File 0002 = "/c/Users/Manuel/Desktop/ExperimentControl/ExperimentControl.uir"
+Project File 0003 Is Rel = True
+Project File 0003 Rel To = "Project"
+Project File 0003 Rel Path = "ExperimentControl.exe"
+Project File 0003 = "/c/Users/Manuel/Desktop/ExperimentControl/ExperimentControl.exe"
+Redistribute DataSocket = 2
+Redistribute NIReports = 2
+Redistribute DDC = 0
+Redistribute CW3DGraph = 0
+Use Custom Script = False
+Run Executable After Setup Group Index = -1
+Run Executable After Setup File Index = -1
+Use Default Program Group Name = True
+Use Default Installation Name = True
+
+[Distribution Kit File Group 001]
+Group Name = "ExperimentControl Files"
+Destination Directory = "Application"
+Use Relative Path = False
+Create Shortcuts = 1
+Install Icons = True
+Distribute Multiple Objects = False
+Replace Mode = "If Newer"
+Register As ActiveX Servers = False
+File 0001 Is Rel = True
+File 0001 Rel To = "Project"
+File 0001 Rel Path = "AcquisitionUIR.uir"
+File 0001 = "/c/Users/Manuel/Desktop/ExperimentControl/AcquisitionUIR.uir"
+File 0002 Is Rel = True
+File 0002 Rel To = "Project"
+File 0002 Rel Path = "ExperimentControl.uir"
+File 0002 = "/c/Users/Manuel/Desktop/ExperimentControl/ExperimentControl.uir"
+File 0003 Is Rel = True
+File 0003 Rel To = "Project"
+File 0003 Rel Path = "../V5/V5.64/EXE/ExperimentControl.exe"
+File 0003 = "/c/Users/Manuel/Desktop/V5/V5.64/EXE/ExperimentControl.exe"
+
+[Distribution Kit Hardware Config]
+Include Hardware Config File = 0
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+tpcEnabled x64 = 0
+tpcOverrideEnvironment x64 = 0
+

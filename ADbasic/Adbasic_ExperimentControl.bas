@@ -1,0 +1,337 @@
+'<ADbasic Header, Headerversion 001.001>
+' Process_Number                 = 1
+' Initial_Processdelay           = 1000
+' Eventsource                    = Timer
+' Control_long_Delays_for_Stop   = No
+' Priority                       = High
+' Version                        = 1
+' ADbasic_Version                = 6.0.0
+' Optimize                       = Yes
+' Optimize_Level                 = 2
+' Stacksize                      = 1000
+' Info_Last_Save                 = ATOMARRAY-PC  AtomArray-PC\Atom Array
+'<Header End>
+#Include ADwinPro_All.inc
+
+'Maximale Experimentzeit : 30min. (bei 1MHz) ; am Ende des Experiments muss der PC den Prozess stoppen (mit Stop_Process)
+
+#include .\ADBasic_ExperimentControl_inc.inc
+
+
+dim i as long
+dim j as long
+dim c as long
+
+
+'#define DIO_Zeiger par_30
+
+
+
+'dim extBufferReadIndex as long
+'dim extBufferWriteIndex as long
+'dim nValuesToCopy as long 
+'dim module as long
+'dim tmp as long
+
+'dim oIndex as long
+
+dim testArray[8] as long at DM_LOCAL
+
+
+dim CYCLE_ODD as long
+dim AO_valueAdress as long
+
+dim initFlag as long
+dim AO as long
+dim maxAO as long
+
+dim pattern_SyncDigital  as long
+dim pattern_SyncAnalog as long
+dim waitForTrigger as long
+
+dim triggerSource[2] as long
+
+
+
+
+Lowinit:
+  
+  Stop_Process (2)
+  
+  '
+  ' init time measurement array
+  '
+  for i = 1 to N_TIMES 
+    TIME_MEAS[i] = 0
+  next i
+  
+    
+  Processdelay = P1_PROCESS_DELAY
+  
+  if (P1_AOnElements = 0) then
+    exit
+  endif
+   
+  triggerSource[1] = TRIGGER_DIGIO0_RAISING_EDGE
+  triggerSource[2] = TRIGGER_DIGIO1_RAISING_EDGE
+
+     
+  '
+  ' configure all DIOs as digital outputs 
+  '
+  
+  pattern_SyncDigital = 0
+  for i = 1 to P1_nDIOmodules 
+    P2_DigProg(P1_DIOmodules[i], 1111b)
+    pattern_SyncDigital  = pattern_SyncDigital + Shift_Left (1, P1_DIOmodules[i]-1)
+  next i
+  
+  
+  '
+  '  configure all AOs for sync
+  '
+  pattern_SyncAnalog = pattern_SyncDigital
+  for i = 1 to P1_nAOmodules
+    P2_Sync_Enable(P1_AOmodules[i], 11111111b)
+    pattern_SyncAnalog  = pattern_SyncAnalog + Shift_Left (1, P1_AOmodules[i]-1)
+  next i
+  
+  
+  
+  
+  '-----------------------------------------------------------------
+  '   copy analog values from external memory to local buffer
+  '-----------------------------------------------------------------
+  
+  
+  AO_readIndex = 1
+  AO_writeIndex = 1
+  extBufferReadIndex = 0
+  P1_TRIGGERTIME_INDEX = 1
+ 
+  P1_AOeventIndex = 1
+  P1_CYCLE_NO = 0
+  P1_ERRORCODE = 0
+  
+  waitForTrigger = 0
+  
+   
+  nValuesToCopy = P1_AOnElements
+  if (nValuesToCopy > P1_MAX_AOlocalBuffer) then nValuesToCopy = P1_MAX_AOlocalBuffer
+  memcpy (P1_AOextBuffer[1], P1_AOlocalBuffer[1], nValuesToCopy)
+  extBufferReadIndex = nValuesToCopy+1
+  
+  '----------------------------------------
+  '       initialize analog values
+  '----------------------------------------
+  if (P1_AOlocalBuffer[AO_readIndex]=0) then
+    do 
+      inc AO_readIndex
+      writeValueToDac (P1_AOlocalBuffer[AO_readIndex])
+      inc AO_readIndex
+    until (P1_AOlocalBuffer[AO_readIndex] <> 0)  
+  endif
+
+  '----------------------------------------
+  '       initialize digital values
+  '----------------------------------------
+  P1_DIOelementIndex = 1
+  for i = 1 to P1_nDIOmodules 
+    P2_Dig_Write_Latch(P1_DIOmodules[i], P1_DIObuffer[P1_DIOelementIndex+i])    
+  next i
+  P1_DIOelementIndex = P1_DIOelementIndex + P1_nDIOmodules + 1    
+  
+
+
+  CPU_Dig_IO_Config(100010b)
+  par_30 = CPU_Digin(1)
+  par_30 = CPU_Digin(0)
+  
+  P1_STOP_FLAG=0
+  if (P1_trigger > 0) then 
+    'CPU_Dig_IO_Config(triggerSource[P1_trigger])
+    do
+      inc par_31
+      par_30 = CPU_Digin(0)
+    until ((par_30=1) or (P1_STOP_FLAG=1))  'warten auf steigende Flanke 
+  
+    if (P1_STOP_FLAG=1) then 
+      Schluss()
+      exit
+    endif
+  endif
+   
+  
+   
+  
+Event:
+  t1 = Read_Timer()
+  if (P1_nDIOModules = 0) then end
+
+    
+  '
+  '  wait for trigger
+  '
+  if (waitForTrigger = 1) then
+    par_30 = CPU_Digin(0)
+    if (par_30 = 1) then
+      waitForTrigger = 0
+      inc P1_TRIGGERTIME_INDEX    
+    endif
+  else
+    if (P1_CYCLE_NO = P1_TRIGGER_TIME_DURING_SEQ[P1_TRIGGERTIME_INDEX]) then
+      CPU_Dig_IO_Config(100010b)
+      waitForTrigger = 1
+    endif
+  endif
+   
+  
+  if (waitForTrigger = 0) then 
+    '
+    '  continue regular execution
+    '
+    if (P1_STOP_FLAG = 1) then end
+  
+    CYCLE_ODD=(P1_CYCLE_NO and 1) 
+    if (CYCLE_ODD = 1) then
+      P2_Sync_All(pattern_SyncAnalog)  'output all channels synchonously
+    else
+      P2_Sync_All(pattern_SyncDigital)      'output only DIOs synchornously
+    endif
+ 
+ 
+    if (P1_DIObuffer[P1_DIOelementIndex] = P1_CYCLE_NO) then
+      for i = 1 to P1_nDIOmodules 
+        P2_Dig_Write_Latch(P1_DIOmodules[i], P1_DIObuffer[P1_DIOelementIndex+i])    
+      next i
+      P1_DIOelementIndex = P1_DIOelementIndex + P1_nDIOmodules + 1    
+    endif
+ 
+
+ 
+    if (P1_AOlocalBuffer[AO_readIndex] = P1_CYCLE_NO) then
+      do
+        inc AO_readIndex
+        tmp = P1_AOlocalBuffer[AO_readIndex]
+        writeValueToDac (tmp)
+        if (AO_readIndex >= P1_MAX_AOlocalBuffer) then 
+          AO_readIndex = 1 
+        else
+          inc AO_readIndex
+        endif
+        if (AO_readIndex = AO_writeIndex) then
+          if (P1_CYCLE_NO <>  P1_MAX_CYCLE_NO) then 
+            P1_ERRORCODE = ERRORCODE_AO_BUFFER_EMPTY
+            end
+          endif
+        endif
+      until (P1_AOlocalBuffer[AO_readIndex] <> P1_CYCLE_NO)  
+    endif
+  
+  
+    t2= ReadTimer()-t1
+    if (t2 < 100) then
+      if ((AO_readIndex-AO_writeIndex > AO_VALUES_TO_COPY) or (AO_readIndex < AO_writeIndex)) then 
+        if (extBufferReadIndex < P1_AOnElements) then
+          memcpy (P1_AOextBuffer[extBufferReadIndex], P1_AOlocalBuffer[AO_writeIndex], AO_VALUES_TO_COPY)
+          extBufferReadIndex = extBufferReadIndex + AO_VALUES_TO_COPY
+          AO_writeIndex = AO_writeIndex + AO_VALUES_TO_COPY
+          if (AO_writeIndex > P1_MAX_AOlocalBuffer) then AO_writeIndex = 1
+        endif
+      endif
+    endif
+ 
+
+    
+   
+    'if (P1_CYCLE_NO < N_TIMES) then 
+    '  TIME_MEAS[P1_CYCLE_NO+1] = t2
+    'endif
+  
+    inc P1_CYCLE_NO
+    if (P1_CYCLE_NO > P1_MAX_CYCLE_NO) then end  'geht dann in finish-Block (genau wie bei Stop_Process vom PC).
+
+    't2 = ReadTimer()-t1
+    'if (t2 > P1_PROCESS_DELAY) then
+    '  P1_ERRORCODE = ERRORCODE_PROCESS_TOO_LONG
+    '  end
+    'endif
+  endif
+  
+  
+  
+  
+finish:
+  'P1_AOnElements = 0
+  Schluss ()
+ 
+    
+
+sub writeValueToDac (X)
+  tmp = (X)
+  channel = tmp and 1111b
+  oIndex = tmp and 11111111b
+  module = Shift_Right (oIndex, 4)   'par_18 = P1_CYCLE_NO
+  value = Shift_Right (tmp, 8)
+  if (P1_AOoffsetsDuringSequence[oIndex] <> 0) then
+    'par_69 = oIndex
+    value = value  + P1_AOoffsetsDuringSequence[oIndex]
+    if (value > 65535) then 
+      value = 65535
+    else
+      if (value < 0) then 
+        value = 0
+      endif
+    endif
+  endif
+  
+  P2_Write_DAC (module, channel, value);
+endsub
+
+  
+      
+  
+   
+  
+  
+Sub Schluss()
+  j = P1_nDIOelements - P1_nDIOmodules
+  par_70 = j
+  for i = 1 to P1_nDIOmodules 
+    P2_Digout_Long(P1_DIOmodules[i], P1_DIObuffer[j+i])
+  next i
+
+    
+
+  for i = 1 to P1_nAOmodules
+    for j = 1 to 8
+      oIndex = P1_AOmodules[i] * 16 + j
+      value = P1_AOvaluesAtEndOfSequence[channel] + P1_AOoffsetsDuringSequence[oIndex]
+      if (value > 65535) then 
+        value = 65535
+      else
+        if (value < 0) then 
+          value = 0
+        endif
+      endif
+      P2_Dac(P1_AOmodules[i],j,P1_AOvaluesAtEndOfSequence[j+(i-1)*8])         
+    next j
+  next i
+  
+  P1_STOP_FLAG = 0
+  P2_OUTPUT_FLAG=0
+
+  Start_Process(2)
+EndSub
+
+  
+  
+  
+    
+'Stop_Process(2)
+  
+'Processdelay = 3000  '300=1MHz --> cycle time = 1 µs
+  
+
+
+

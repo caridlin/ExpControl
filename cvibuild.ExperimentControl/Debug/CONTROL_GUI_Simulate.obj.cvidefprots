@@ -1,0 +1,96 @@
+[DEBUG_DisplayWaveform]
+Class="Function"
+Prototype="void DEBUG_DisplayWaveform(t_waveform *wfm);"
+
+[DEBUG_DisplayOutData]
+Class="Function"
+Prototype="void DEBUG_DisplayOutData(t_outputData *out, int ch);"
+
+[DEBUG_DisplayAOBufferContents]
+Class="Function"
+Prototype="void DEBUG_DisplayAOBufferContents(short *outBuf, unsigned long NValues, int NChannels);"
+
+[SIMULATE_resizePanel]
+Class="Function"
+Prototype="void SIMULATE_resizePanel(int panel);"
+
+[analogChannelNamesToRing]
+Class="Function"
+Prototype="void analogChannelNamesToRing(int panel, int ctrl);"
+
+[SIMULATE_loadPanel]
+Class="Function"
+Prototype="void SIMULATE_loadPanel(t_sequence *seq);"
+
+[SIMULATE_setGraphAxes]
+Class="Function"
+Prototype="void SIMULATE_setGraphAxes(t_sequence *seq, double min, double max);"
+
+[SIMULATE_initPanel]
+Class="Function"
+Prototype="void SIMULATE_initPanel(t_sequence *seq);"
+
+[addTimeOffset]
+Class="Function"
+Prototype="unsigned long addTimeOffset(unsigned long time);"
+
+[SIMULATE_ADWIN_plotDACbufferContents]
+Class="Function"
+Prototype="void SIMULATE_ADWIN_plotDACbufferContents(t_sequence *seq, int channel);"
+
+[SIMULATE_plotDACbufferContents]
+Class="Function"
+Prototype="void SIMULATE_plotDACbufferContents(t_sequence *seq, int channel);"
+
+[SIMULATE_ADWIN_plotDIOBufferContents]
+Class="Function"
+Prototype="int SIMULATE_ADWIN_plotDIOBufferContents(t_sequence *seq, int progressDialog, int percStart);"
+
+[SIMULATE_plotDIOBufferContents]
+Class="Function"
+Prototype="int SIMULATE_plotDIOBufferContents(t_sequence *seq, int progressDialog, int percStart);"
+
+[SIMULATE_displayMemoryInfo]
+Class="Function"
+Prototype="void SIMULATE_displayMemoryInfo(t_sequence *seq, int panel, int ctrl);"
+
+[SIMULATE_calculateOutput]
+Class="Function"
+Prototype="int SIMULATE_calculateOutput(t_sequence *seq, int firstRepetition, int repetitionNr, int *panelProgr);"
+
+[SIMULATE_setMinMax]
+Class="Function"
+Prototype="void SIMULATE_setMinMax(t_sequence *seq, int update);"
+
+[SIMULATE_start]
+Class="Function"
+Prototype="void SIMULATE_start(t_sequence *seq, int update);"
+
+[SIMULATE_panelCallback]
+Class="Function"
+Prototype="int SIMULATE_panelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BTN_SimulateOutput_Update]
+Class="Function"
+Prototype="int BTN_SimulateOutput_Update(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[NUM_DAC_Changed]
+Class="Function"
+Prototype="int NUM_DAC_Changed(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SIMULATE_axisChanged_CB]
+Class="Function"
+Prototype="int SIMULATE_axisChanged_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SIMULATE_showAll_CB]
+Class="Function"
+Prototype="int SIMULATE_showAll_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SIMUALTE_changeRepetition_CB]
+Class="Function"
+Prototype="int SIMUALTE_changeRepetition_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SIMUALTE_update_CB]
+Class="Function"
+Prototype="int SIMUALTE_update_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
