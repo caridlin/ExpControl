@@ -9,7 +9,7 @@
 
 #define ADWIN_MAX_SLOTS 13
 
-
+/* Default config
 #define ADWIN_DIO1 1
 #define ADWIN_DIO2 2
 #define ADWIN_DIO3 3
@@ -27,8 +27,25 @@
 
 #define ADWIN_PROCESS_DATA_OUT 1
 #define ADWIN_PROCESS_DIRECT_IO 2
+*/
+
+#define ADWIN_DIO1 1
+#define ADWIN_DIO2 -1
+#define ADWIN_DIO3 -1
+
+#define ADWIN_AOUT1 3
+#define ADWIN_AOUT2 4
+#define ADWIN_AOUT3 -1
+#define ADWIN_AOUT4 -1
+#define ADWIN_AOUT5 -1
+#define ADWIN_AOUT6 -1
+
+#define ADWIN_AOUT7 -1
+#define ADWIN_AOUT8 -1
 
 
+#define ADWIN_PROCESS_DATA_OUT 1
+#define ADWIN_PROCESS_DIRECT_IO 2
 #define ADWIN_MAX_CYCLES 2147483646  
 
 // =============================
@@ -117,7 +134,8 @@
 #define ADWIN_ERR_TIMEOUT -2
 
 
-#define N_DAC_CHANNELS  (8*MAX_AO_DEVICES)
+//#define N_DAC_CHANNELS  (8*MAX_AO_DEVICES)
+#define N_DAC_CHANNELS  (16) //Hard coded for the endres lab's Adwin Pro II 
 
 #define ADMIN_MAX_OFFSET_INDEX (ADWIN_MAX_SLOTS << 4)
 

@@ -226,7 +226,7 @@ void DIGITALBLOCKS_setTableComlumWidth_channelNames (void)
 		totalWidth += width;
 	}
  
-	nameWidth = config->splitterVPos - totalWidth -6;
+	nameWidth = config->splitterVPos - totalWidth - 6;
 	SetTableColumnAttribute (panelSequence, SEQUENCE_TABLE_header1,
 							 BLOCK_TABLE_COL_channelName, ATTR_COLUMN_WIDTH,
 							 nameWidth);
@@ -311,11 +311,11 @@ void DIGITALBLOCKS_resizePanel (void)
 	
 	// dac table  1
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac1,
-					  ATTR_LEFT, 0);
+					  ATTR_LEFT, 1); 
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac1,
-					  ATTR_TOP, ctrlBottom (panelSequence, SEQUENCE_TABLE_header1));
+					  ATTR_TOP, ctrlBottom (panelSequence, SEQUENCE_TABLE_header1) + 10);
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac1,
-					  ATTR_WIDTH, config->splitterVPos);
+					  ATTR_WIDTH, config->splitterVPos); 
 
 	
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac2,
@@ -323,7 +323,7 @@ void DIGITALBLOCKS_resizePanel (void)
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac2,
 					  ATTR_TOP, ctrlBottom (panelSequence, SEQUENCE_TABLE_header1));
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac2,
-					  ATTR_WIDTH, max(0,panelWidth (panelSequence) - config->splitterVPos));
+					  ATTR_WIDTH, max(0,panelWidth (panelSequence) - config->splitterVPos + 10));
 	
 	if (config->splitterHPos > 0) {
 		SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac1, ATTR_HEIGHT, config->splitterHPos);
@@ -861,8 +861,9 @@ void DIGITALBLOCKS_displayChannelNames (t_sequence *seq)
 							   ATTR_TEXT_BGCOLOR,
 							   seq->DIO_invertDisplay[i] ? VAL_CYAN : TABLE_COLOR_BUTTON_INACTIVE[i%2]);
 	}
-	    
+	 tprintf("%d\n",N_DAC_CHANNELS);   
 	for (i = 0; i < N_DAC_CHANNELS; i++) {
+		
 		cell = MakePoint (BLOCK_TABLE_COL_channelName, i+1);
 		SetTableCellAttribute (panelSequence, SEQUENCE_TABLE_dac1, cell,
 							   ATTR_TEXT_BGCOLOR,
@@ -1605,8 +1606,8 @@ void DIGITALBLOCKS_setHeightForAllRows (t_sequence *seq)
 //		height =  i < seq->maxDigitalChannel ? config->buttonHeight : 1; 
 		height = config->buttonHeight;
 		if (seq->tableConfig.AOvisible[i] == 0) height = 1;
-		SetTableRowAttribute (panelSequence, SEQUENCE_TABLE_dac1, i+1, ATTR_ROW_HEIGHT, height);
-		SetTableRowAttribute (panelSequence, SEQUENCE_TABLE_dac2, i+1, ATTR_ROW_HEIGHT, height);
+		SetTableRowAttribute (panelSequence, SEQUENCE_TABLE_dac1, i+1, ATTR_ROW_HEIGHT, height + 5);
+		SetTableRowAttribute (panelSequence, SEQUENCE_TABLE_dac2, i+1, ATTR_ROW_HEIGHT, height + 5);
 	}
 	
 }
