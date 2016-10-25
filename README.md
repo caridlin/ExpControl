@@ -1,4 +1,4 @@
-How to Compile ExperimentContrik.cws
+How to Compile ExperimentControl.cws
 ==============
 
 * Install AdWin
