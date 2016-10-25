@@ -226,7 +226,7 @@ void DIGITALBLOCKS_setTableComlumWidth_channelNames (void)
 		totalWidth += width;
 	}
  
-	nameWidth = config->splitterVPos - totalWidth -6;
+	nameWidth = config->splitterVPos - totalWidth - 6;
 	SetTableColumnAttribute (panelSequence, SEQUENCE_TABLE_header1,
 							 BLOCK_TABLE_COL_channelName, ATTR_COLUMN_WIDTH,
 							 nameWidth);
@@ -244,7 +244,7 @@ void DIGITALBLOCKS_setTableComlumWidth_channelNames (void)
 void DIGITALBLOCKS_resizeProgressBar (void)
 {
 	SetCtrlAttribute (panelSequence, SEQUENCE_NUMERICSLIDE_progress, ATTR_LEFT, 
-					  ctrlLeft (panelSequence, SEQUENCE_TABLE_dac2));
+					  ctrlLeft (panelSequence, SEQUENCE_TABLE_dac2) + 100);
 	SetCtrlAttribute (panelSequence, SEQUENCE_NUMERICSLIDE_progress, ATTR_TOP, 
 					  ctrlTop (panelSequence, SEQUENCE_TABLE_dac2)-ctrlHeight (panelSequence,SEQUENCE_NUMERICSLIDE_progress)+4 );
 	SetCtrlAttribute (panelSequence, SEQUENCE_NUMERICSLIDE_progress, ATTR_WIDTH, 
@@ -311,19 +311,19 @@ void DIGITALBLOCKS_resizePanel (void)
 	
 	// dac table  1
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac1,
-					  ATTR_LEFT, 0);
+					  ATTR_LEFT, 1); // Left whole table 
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac1,
-					  ATTR_TOP, ctrlBottom (panelSequence, SEQUENCE_TABLE_header1));
+					  ATTR_TOP, ctrlBottom (panelSequence, SEQUENCE_TABLE_header1) + 10); // Top Whole table
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac1,
-					  ATTR_WIDTH, config->splitterVPos);
+					  ATTR_WIDTH, config->splitterVPos); // Whole table width 
 
-	
+	// timing table
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac2,
-					  ATTR_LEFT, ctrlRight(panelSequence, SEQUENCE_VSPLITTER));
+					  ATTR_LEFT, ctrlRight(panelSequence, SEQUENCE_VSPLITTER) + 10); // Left whole table
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac2,
-					  ATTR_TOP, ctrlBottom (panelSequence, SEQUENCE_TABLE_header1));
+					  ATTR_TOP, ctrlBottom (panelSequence, SEQUENCE_TABLE_header1) + 10); //Top whole table
 	SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac2,
-					  ATTR_WIDTH, max(0,panelWidth (panelSequence) - config->splitterVPos));
+					  ATTR_WIDTH, max(0,panelWidth (panelSequence) - config->splitterVPos - 200));
 	
 	if (config->splitterHPos > 0) {
 		SetCtrlAttribute (panelSequence, SEQUENCE_TABLE_dac1, ATTR_HEIGHT, config->splitterHPos);
@@ -861,8 +861,9 @@ void DIGITALBLOCKS_displayChannelNames (t_sequence *seq)
 							   ATTR_TEXT_BGCOLOR,
 							   seq->DIO_invertDisplay[i] ? VAL_CYAN : TABLE_COLOR_BUTTON_INACTIVE[i%2]);
 	}
-	
+	 tprintf("%d\n",N_DAC_CHANNELS);   
 	for (i = 0; i < N_DAC_CHANNELS; i++) {
+		
 		cell = MakePoint (BLOCK_TABLE_COL_channelName, i+1);
 		SetTableCellAttribute (panelSequence, SEQUENCE_TABLE_dac1, cell,
 							   ATTR_TEXT_BGCOLOR,
@@ -872,7 +873,7 @@ void DIGITALBLOCKS_displayChannelNames (t_sequence *seq)
 							   seq->AO_channelNames[i] == NULL ? "" : seq->AO_channelNames[i]);
 		
 	}
-	
+		  
 	
 }
     
@@ -1519,7 +1520,7 @@ void DIGITALBLOCKS_displayInTable (t_sequence *seq, int blockNr, int panel, int 
 							 ATTR_COLUMN_WIDTH, width);
 	SetTableColumnAttribute (panel, ctrlDigital, blockNr, ATTR_CELL_DIMMED, b->disable);
 	SetTableColumnAttribute (panel, ctrlDac, blockNr,
-							 ATTR_COLUMN_WIDTH, width);
+							 ATTR_COLUMN_WIDTH, width );
 	SetTableColumnAttribute (panel, ctrlDac, blockNr, ATTR_CELL_DIMMED, b->disable);
  	
 //	DebugPrintf ("   2b: %1.3f", timeStop_s (startTime));
@@ -1605,8 +1606,8 @@ void DIGITALBLOCKS_setHeightForAllRows (t_sequence *seq)
 //		height =  i < seq->maxDigitalChannel ? config->buttonHeight : 1; 
 		height = config->buttonHeight;
 		if (seq->tableConfig.AOvisible[i] == 0) height = 1;
-		SetTableRowAttribute (panelSequence, SEQUENCE_TABLE_dac1, i+1, ATTR_ROW_HEIGHT, height);
-		SetTableRowAttribute (panelSequence, SEQUENCE_TABLE_dac2, i+1, ATTR_ROW_HEIGHT, height);
+		SetTableRowAttribute (panelSequence, SEQUENCE_TABLE_dac1, i+1, ATTR_ROW_HEIGHT, height + 5);
+		SetTableRowAttribute (panelSequence, SEQUENCE_TABLE_dac2, i+1, ATTR_ROW_HEIGHT, height + 5);
 	}
 	
 }

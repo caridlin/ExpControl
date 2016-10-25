@@ -520,7 +520,7 @@ int clientTCPWriteAll (char *buffer, unsigned bufferLen, unsigned timeout, int s
 					if (showError) return TCP_displayError ("clientTCPWriteAll", "ClientTCPWrite", error);				
 					else return bytesWritten;
 //				}
-				bytesWritten = 0;
+				//bytesWritten = 0;
 			}
 			else {
 				if (showError) return TCP_displayError ("clientTCPWriteAll", "ClientTCPWrite", error);				

@@ -870,13 +870,12 @@ int HARDWARE_ADWIN_waitForDirectIOFlag (float timeout_s)
 int HARDWARE_ADWIN_sendDirectAnalogValue (int dacChannel, double analogValue)
 {
 	long value;
-	
-//	AnalogToDigital (analogValue, digitizeParameters_ADWIN());
+
 	
 	if ((dacChannel < 0) || (dacChannel >= N_DAC_CHANNELS)) return 0;
 	value = AnalogToDigital (analogValue, digitizeParameters_ADWIN());
 //	ADWIN_directIOValues[MAX_DIO_DEVICES+dacChannel] = value;
-	//DebugPrintf ("value=%d\n", value);
+	tprintf ("value=%d\n", value);
 	
 	HARDWARE_ADWIN_startProcessDirectIO ();
 	if (HARDWARE_ADWIN_waitForDirectIOFlag (1) != 0) return -1;

@@ -1,0 +1,136 @@
+[HARDWARE_isAnalogChannelActive]
+Class="Function"
+Prototype="int HARDWARE_isAnalogChannelActive(t_sequence *seq, int channel);"
+
+[HARDWARE_sendStoredValues]
+Class="Function"
+Prototype="void HARDWARE_sendStoredValues(t_sequence *seq);"
+
+[HARDWARE_rememberLastValues]
+Class="Function"
+Prototype="void HARDWARE_rememberLastValues(t_sequence *seq);"
+
+[HARDWARE_resetStoredValues]
+Class="Function"
+Prototype="void HARDWARE_resetStoredValues();"
+
+[HARDWARE_setTransmit_CMD_READY]
+Class="Function"
+Prototype="void HARDWARE_setTransmit_CMD_READY(int state);"
+
+[hardwareDetected]
+Class="Function"
+Prototype="int hardwareDetected();"
+
+[createErrorMSGTitle]
+Class="Function"
+Prototype="const char *createErrorMSGTitle(int iStatus);"
+
+[createErrorMSG]
+Class="Function"
+Prototype="char *createErrorMSG(int iStatus, int deviceNr, char *strFuncName);"
+
+[MainThread_MessageCB]
+Class="Function"
+Prototype="void MainThread_MessageCB(void *mesg);"
+
+[cmtErrorCheck]
+Class="Function"
+Prototype="int cmtErrorCheck(int iStatus, int deviceNr, char *strFuncName);"
+
+[UpdateNPoints]
+Class="Function"
+Prototype="int UpdateNPoints(int iStatus, int deviceNr, char *strFuncName);"
+
+[displayErrorMSG]
+Class="Function"
+Prototype="int displayErrorMSG(int iStatus, int deviceNr, char *strFuncName);"
+
+[displayCmtErrorMSG]
+Class="Function"
+Prototype="int displayCmtErrorMSG(int cmtStatusCode, char *strFuncName);"
+
+[HARDWARE_sendDirectDigitalValue]
+Class="Function"
+Prototype="int HARDWARE_sendDirectDigitalValue(int ch, short bit);"
+
+[HARDWARE_sendDirectAnalogValue]
+Class="Function"
+Prototype="int HARDWARE_sendDirectAnalogValue(int ch, double analogValue);"
+
+[HARDWARE_initializeBoards]
+Class="Function"
+Prototype="int HARDWARE_initializeBoards();"
+
+[HARDWARE_configureOutputs]
+Class="Function"
+Prototype="int HARDWARE_configureOutputs(t_sequence *seq);"
+
+[HARDWARE_resetOutputs]
+Class="Function"
+Prototype="int HARDWARE_resetOutputs(t_sequence *seq);"
+
+[digitizeParameters_PCI67XX]
+Class="Function"
+Prototype="t_digitizeParameters *digitizeParameters_PCI67XX(int timebase);"
+
+[HARDWARE_sendAllGpibCommands_setFlag]
+Class="Function"
+Prototype="void HARDWARE_sendAllGpibCommands_setFlag(int *commandTransmitted);"
+
+[HARDWARE_sendAllGpibCommands]
+Class="Function"
+Prototype="int HARDWARE_sendAllGpibCommands(t_sequence *seq, int beginningOfSequence);"
+
+[sub]
+Class="Function"
+Prototype="unsigned long sub(unsigned long time1, unsigned long time2);"
+
+[HARDWARE_SetGetInterruptedFlag]
+Class="Function"
+Prototype="int HARDWARE_SetGetInterruptedFlag(int set);"
+
+[HARDWARE_stopDataOutput]
+Class="Function"
+Prototype="int HARDWARE_stopDataOutput();"
+
+[HARDWARE_checkForDoubleBuffering]
+Class="Function"
+Prototype="void HARDWARE_checkForDoubleBuffering(t_outputData *o);"
+
+[OUTPUT_executeRepetition]
+Class="Function"
+Prototype="int OUTPUT_executeRepetition(t_sequence *seq, int firstRepetition);"
+
+[sequenceStarted]
+Class="Function"
+Prototype="int sequenceStarted();"
+
+[HARDWARE_setStartAOVoltages]
+Class="Function"
+Prototype="void HARDWARE_setStartAOVoltages(t_sequence *seq);"
+
+[setDigitalChannels_alwaysOnOff]
+Class="Function"
+Prototype="void setDigitalChannels_alwaysOnOff(t_sequence *seq);"
+
+[nPulses]
+Class="Function"
+Prototype="int nPulses(t_sequence *seq, int ch);"
+
+[startSequence]
+Class="Function"
+Prototype="int startSequence(t_sequence *seq);"
+
+[timeStrSec64]
+Class="Function"
+Prototype="char *timeStrSec64(long long sec64);"
+
+[HARDWARE_signalName]
+Class="Function"
+Prototype="char *HARDWARE_signalName(int i);"
+
+[HARDWARE_boot]
+Class="Function"
+Prototype="int HARDWARE_boot(int panel, int ctrl);"
+

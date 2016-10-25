@@ -1,0 +1,176 @@
+[ATOMDATA_init]
+Class="Function"
+Prototype="void ATOMDATA_init(t_atomData *a);"
+
+[CCDIMAGES_init]
+Class="Function"
+Prototype="void CCDIMAGES_init(t_ccdImages *c);"
+
+[CCDIMAGES_new]
+Class="Function"
+Prototype="t_ccdImages *CCDIMAGES_new();"
+
+[CCDIMAGES_free]
+Class="Function"
+Prototype="void CCDIMAGES_free(t_ccdImages *c);"
+
+[IMAGE_init]
+Class="Function"
+Prototype="void IMAGE_init(t_image *i);"
+
+[IMAGE_new]
+Class="Function"
+Prototype="t_image *IMAGE_new();"
+
+[IMAGE_free]
+Class="Function"
+Prototype="void IMAGE_free(t_image *i);"
+
+[CCDIMAGES_loadAndorSifFile]
+Class="Function"
+Prototype="int CCDIMAGES_loadAndorSifFile(const char *filename, t_ccdImages *img, int maxImages);"
+
+[CCDIMAGES_loadAndorSifFileOld]
+Class="Function"
+Prototype="int CCDIMAGES_loadAndorSifFileOld(const char *filename, t_ccdImages *img, int maxImages);"
+
+[IMAGE_phaseDifferenceForPoint]
+Class="Function"
+Prototype="void IMAGE_phaseDifferenceForPoint(t_image *i, double x, double y, double *phi1, double *phi2);"
+
+[IMAGE_coordinatesImageToLattice]
+Class="Function"
+Prototype="Point IMAGE_coordinatesImageToLattice(t_image *i, double x, double y, Point indexOffset);"
+
+[IMAGE_coordinatesLatticeToImage]
+Class="Function"
+Prototype="dPoint IMAGE_coordinatesLatticeToImage(t_image *i, Point p, Point indexOffset);"
+
+[IMAGE_calculateIndexOffset]
+Class="Function"
+Prototype="void IMAGE_calculateIndexOffset(t_image *img);"
+
+[IMAGE_setGridParameters]
+Class="Function"
+Prototype="void IMAGE_setGridParameters(t_image *i, double lambda, double thetaDeg1, double thetaDeg2, double phi1, double phi2);"
+
+[IMAGE_isMasked]
+Class="Function"
+Prototype="int IMAGE_isMasked(char *mask, int nPixel, int x1, int x2, int y1, int y2);"
+
+[IMAGE_setMask]
+Class="Function"
+Prototype="void IMAGE_setMask(char *mask, int nPixel, int x1, int x2, int y1, int y2);"
+
+[IMAGE_1DGauss]
+Class="Function"
+Prototype="double IMAGE_1DGauss(double x, double *a, int n);"
+
+[IMAGE_1DGauss_no_offset]
+Class="Function"
+Prototype="double IMAGE_1DGauss_no_offset(double x, double *a, int n);"
+
+[IMAGE_2DGauss]
+Class="Function"
+Prototype="double IMAGE_2DGauss(double x, double *a, int n);"
+
+[IMAGE_fitSingleAtom]
+Class="Function"
+Prototype="t_atomData IMAGE_fitSingleAtom(t_image *img, int xC, int yC, int ROIsize);"
+
+[IMAGE_printAllSingleAtoms]
+Class="Function"
+Prototype="void IMAGE_printAllSingleAtoms(int panel, int ctrl, t_image *img);"
+
+[IMAGE_findConnMarkNext]
+Class="Function"
+Prototype="void IMAGE_findConnMarkNext(t_image *img, char *mask, int x, int y, float thresMin, float thresMax, struct ListStructTag *pointList, int iterationDepth);"
+
+[IMAGE_findCenterAndRadiusOfPointList]
+Class="Function"
+Prototype="void IMAGE_findCenterAndRadiusOfPointList(struct ListStructTag *pointList, double *xCenter, double *yCenter, double *radius);"
+
+[IMAGE_findInterconnectedRegions]
+Class="Function"
+Prototype="struct ListStructTag *IMAGE_findInterconnectedRegions(t_image *img, float thresMin, float thresMax, unsigned int minSize, int panel, int ctrl);"
+
+[IMAGE_subtractBackground]
+Class="Function"
+Prototype="double IMAGE_subtractBackground(t_image *img);"
+
+[IMAGE_findAllSingleAtoms_new]
+Class="Function"
+Prototype="void IMAGE_findAllSingleAtoms_new(t_image *img, float thresMin, float thresMax, double sigmaMin, double sigmaMax);"
+
+[IMAGE_bin]
+Class="Function"
+Prototype="float *IMAGE_bin(t_image *img, int binSize, int doublePoints);"
+
+[IMAGE_bin2]
+Class="Function"
+Prototype="float *IMAGE_bin2(t_ccdImages *img, int imageNum, int binSize, int doublePoints);"
+
+[IMAGE_findAllSingleAtoms]
+Class="Function"
+Prototype="void IMAGE_findAllSingleAtoms(t_image *img, double thresholdMin, double thresholdMax, double sigmaMin, double sigmaMax);"
+
+[IMAGE_fitSingleBeam]
+Class="Function"
+Prototype="void IMAGE_fitSingleBeam(t_image *img, double sigmaMin, double sigmaMax);"
+
+[IMAGE_findPhase]
+Class="Function"
+Prototype="int IMAGE_findPhase(t_image *img);"
+
+[IMAGE_findMinMax]
+Class="Function"
+Prototype="void IMAGE_findMinMax(t_image *img);"
+
+[IMAGE_showInGraph]
+Class="Function"
+Prototype="void IMAGE_showInGraph(int panel, int ctrl, t_image *img, const char *txt);"
+
+[IMAGE_showLattice]
+Class="Function"
+Prototype="void IMAGE_showLattice(int panel, int ctrl, t_image *img);"
+
+[IMAGE_showPointListInGraph]
+Class="Function"
+Prototype="void IMAGE_showPointListInGraph(int panel, int ctrl, struct ListStructTag *listOfPoints);"
+
+[IMAGE_showAtomsInGraph]
+Class="Function"
+Prototype="void IMAGE_showAtomsInGraph(int panel, int ctrl, t_image *img);"
+
+[IMAGE_getValue]
+Class="Function"
+Prototype="float IMAGE_getValue(t_image *img, int x, int y);"
+
+[IMAGE_findFocus]
+Class="Function"
+Prototype="double IMAGE_findFocus(t_ccdImages *img, double *pifocVoltages, int numPifocVoltages, char *logFilename);"
+
+[IMAGE_focusMeasure]
+Class="Function"
+Prototype="double IMAGE_focusMeasure(t_ccdImages *img, int imageNum);"
+
+[IMAGE_assignFromCCDimage]
+Class="Function"
+Prototype="void IMAGE_assignFromCCDimage(t_image *img, t_ccdImages *ccd, int n, int nBackgr, int centerX, int centerY, int h);"
+
+[ThrowWandException]
+Class="Function"
+Prototype="void ThrowWandException(struct _MagickWand *wand);"
+
+[IMAGE_bitmapToMagickWand]
+Class="Function"
+Prototype="struct _MagickWand *IMAGE_bitmapToMagickWand(int bitmapID);"
+
+[IMAGE_MagickWandToBitmap]
+Class="Function"
+Prototype="void IMAGE_MagickWandToBitmap(struct _MagickWand *wand, int *bitmapID);"
+
+[IMAGE_rotateScaleAndMoveBitmap]
+Class="Function"
+Prototype="void IMAGE_rotateScaleAndMoveBitmap(int panel, int ctrl, double rotationAngle, double scale, int offsetx, int offsety, t_waveform *dmdWaveform);"
+

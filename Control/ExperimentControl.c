@@ -328,7 +328,7 @@ int main(int argc, char *argv[])
 	}
 	
 	setLaunchState (1);
-//	displayMemoryInfo ();
+	displayMemoryInfo ();
 	DisplayPanel (panelMain2);
 	SetPanelAttribute (panelMain2, ATTR_WINDOW_ZOOM, VAL_NO_ZOOM);
 	SetActivePanel (panelMain2);

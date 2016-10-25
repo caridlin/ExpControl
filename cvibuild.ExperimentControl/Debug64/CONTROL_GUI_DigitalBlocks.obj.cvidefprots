@@ -1,0 +1,348 @@
+[arrow]
+Class="Function"
+Prototype="const char *arrow(int value);"
+
+[DIGITALBLOCKS_setTableComlumWidth_channelNames]
+Class="Function"
+Prototype="void DIGITALBLOCKS_setTableComlumWidth_channelNames();"
+
+[DIGITALBLOCKS_resizeProgressBar]
+Class="Function"
+Prototype="void DIGITALBLOCKS_resizeProgressBar();"
+
+[DIGITALBLOCKS_resizePanel]
+Class="Function"
+Prototype="void DIGITALBLOCKS_resizePanel();"
+
+[DIGITALBLOCKS_insertGpibCommandsToMenu]
+Class="Function"
+Prototype="void DIGITALBLOCKS_insertGpibCommandsToMenu(t_sequence *seq, int gpibCommandNr);"
+
+[DIGITALBLOCKS_insertWaveformsToMenu]
+Class="Function"
+Prototype="void DIGITALBLOCKS_insertWaveformsToMenu(t_sequence *seq, int channel);"
+
+[DIGITALBLOCKS_getFirstOfGroup]
+Class="Function"
+Prototype="t_digitalBlock *DIGITALBLOCKS_getFirstOfGroup(t_sequence *seq, int nr);"
+
+[DIGITALBLOCKS_createBitmapForChannel]
+Class="Function"
+Prototype="int DIGITALBLOCKS_createBitmapForChannel(t_sequence *seq, t_digitalBlock *start, int ch, int panel, int ctrl, int analogCh);"
+
+[DIGITALBLOCKS_createBitmaps]
+Class="Function"
+Prototype="void DIGITALBLOCKS_createBitmaps(t_sequence *seq, t_digitalBlock *b, int DACchannel, int DIOchannel);"
+
+[DIGITALBLOCKS_updateColumnWidthsAndBlockNrs]
+Class="Function"
+Prototype="void DIGITALBLOCKS_updateColumnWidthsAndBlockNrs(t_sequence *seq);"
+
+[DIGITALBLOCKS_smallWfmInitPanel]
+Class="Function"
+Prototype="void DIGITALBLOCKS_smallWfmInitPanel();"
+
+[DIGITALBLOCKS_smallWfmShowPanel]
+Class="Function"
+Prototype="void DIGITALBLOCKS_smallWfmShowPanel(int top, int left, t_sequence *seq, int wfmNr);"
+
+[DIGITALBLOCKS_initPanel]
+Class="Function"
+Prototype="int DIGITALBLOCKS_initPanel();"
+
+[DIGITALBLOCKS_flipChannel]
+Class="Function"
+Prototype="void DIGITALBLOCKS_flipChannel(t_sequence *seq, int ch);"
+
+[DIGITALBLOCKS_displayChannelNames]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayChannelNames(t_sequence *seq);"
+
+[DIGITALBLOCKS_displayDirectIOButton]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayDirectIOButton(t_sequence *seq, int channel);"
+
+[DIGITALBLOCKS_displayAllDirectIOButtons]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayAllDirectIOButtons(t_sequence *seq);"
+
+[timeToInt]
+Class="Function"
+Prototype="unsigned long timeToInt(double t);"
+
+[ulToTime]
+Class="Function"
+Prototype="double ulToTime(unsigned long long time);"
+
+[setTime]
+Class="Function"
+Prototype="void setTime(int panel, int ctrl, unsigned long long uLtime, int sign);"
+
+[setTime2]
+Class="Function"
+Prototype="void setTime2(int panel, int ctrl, unsigned long long uLtime, int sign);"
+
+[setTimeTableCell]
+Class="Function"
+Prototype="void setTimeTableCell(int panel, int ctrl, Point cell, unsigned long long uLtime, int sign);"
+
+[setDoubleTime]
+Class="Function"
+Prototype="void setDoubleTime(int panel, int ctrl, double dTime);"
+
+[DIGITALBLOCKS_displayGlobalAnalogVoltages]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayGlobalAnalogVoltages();"
+
+[DIGITALBLOCKS_displayDACChannelInTable]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayDACChannelInTable(int panel, int ctrlDac, t_sequence *seq, t_digitalBlock *b, int i);"
+
+[DIGITALBLOCKS_displayDigitalChannelSingle]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayDigitalChannelSingle(t_sequence *seq, t_digitalBlock *block, int ch);"
+
+[DIGITALBLOCKS_setNTableColumns]
+Class="Function"
+Prototype="void DIGITALBLOCKS_setNTableColumns(int panel, int ctrlHeader, int ctrlDac, int ctrlDigital, int nBlocks);"
+
+[DIGITALBLOCKS_displayInTable]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayInTable(t_sequence *seq, int blockNr, int panel, int ctrlHeader, int ctrlDac, int ctrlDigital);"
+
+[DIGITALBLOCKS_displayDIOChannel]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayDIOChannel(t_sequence *seq, int DIOchannel, int createBitmaps, int panel, int ctrlDigital);"
+
+[DIGITALBLOCKS_setHeightForAllRows]
+Class="Function"
+Prototype="void DIGITALBLOCKS_setHeightForAllRows(t_sequence *seq);"
+
+[DIGITALBLOCKS_displayAllAnalogChannels_fast]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayAllAnalogChannels_fast(t_sequence *seq, t_digitalBlock **bl, int nBlocks, int panel, int ctrlAnalog);"
+
+[DIGITALBLOCKS_displayDigitalChannel_fast]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayDigitalChannel_fast(t_sequence *seq, t_digitalBlock **bl, int nBlocks, int panel, int ctrlDigital, int channel);"
+
+[DIGITALBLOCKS_updateCorrespondingChannels]
+Class="Function"
+Prototype="void DIGITALBLOCKS_updateCorrespondingChannels(t_sequence *seq, int wfmNr);"
+
+[DIGITALBLOCKS_isFirstOfCompressedGroup]
+Class="Function"
+Prototype="int DIGITALBLOCKS_isFirstOfCompressedGroup(t_digitalBlock *b);"
+
+[DIGITALBLOCKS_displayAllInTable_fast]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayAllInTable_fast(t_sequence *seq, int panel, int ctrlHeader, int ctrlDac, int ctrlDigital);"
+
+[DIGITALBLOCKS_displayAllBlocks]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayAllBlocks(t_sequence *seq);"
+
+[DIGITALBLOCKS_displayBlockNrInTable]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayBlockNrInTable(t_digitalBlock *b);"
+
+[DIGITALBLOCKS_EDIT_insertNew]
+Class="Function"
+Prototype="int DIGITALBLOCKS_EDIT_insertNew(t_sequence *seq, int nr, int behind);"
+
+[DIGITALBLOCKS_EDIT_deleteBlocks]
+Class="Function"
+Prototype="int DIGITALBLOCKS_EDIT_deleteBlocks(t_sequence *seq, Rect selection);"
+
+[DIGITALBLOCKS_setBlockMode]
+Class="Function"
+Prototype="void DIGITALBLOCKS_setBlockMode(t_sequence *seq, t_digitalBlock *b, int mode);"
+
+[DIGITALBLOCKS_EDIT_setLoopReps]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_setLoopReps(t_sequence *seq, Rect selection, int top, int left);"
+
+[DIGITALBLOCKS_EDIT_setLoop]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_setLoop(t_sequence *seq, Rect selection);"
+
+[DIGITALBLOCKS_EDIT_deleteLoop]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_deleteLoop(t_sequence *seq, int nr);"
+
+[DIGITALBLOCKS_EDIT_resetBlockContents]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_resetBlockContents(t_sequence *seq, int nr);"
+
+[DIGITALBLOCKS_EDIT_setAsTimereference]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_setAsTimereference(t_sequence *seq, int blockNr);"
+
+[DIGITALBLOCKS_configureBlockPopUpMenu]
+Class="Function"
+Prototype="void DIGITALBLOCKS_configureBlockPopUpMenu(t_sequence *seq, Rect selection);"
+
+[DIGITALBLOCKS_EDIT_initClipboard]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_initClipboard();"
+
+[DIGITALBLOCKS_EDIT_copyToClipboard]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_copyToClipboard(t_sequence *seq, Rect selection);"
+
+[DIGITALBLOCKS_EDIT_paste]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_paste(t_sequence *seq, int position, int behind);"
+
+[DIGITALBLOCKS_displaySequenceDuration]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displaySequenceDuration(t_sequence *seq);"
+
+[DIGITALBLOCKS_displayAbsoluteTime]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayAbsoluteTime(t_sequence *seq, t_digitalBlock *b, int panel, int ctrlHeader);"
+
+[DIGITALBLOCKS_displayAllAbsoluteTimes]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayAllAbsoluteTimes(t_sequence *seq);"
+
+[DIGITALBLOCKS_editVariableTime]
+Class="Function"
+Prototype="void DIGITALBLOCKS_editVariableTime(t_digitalBlock *block, int top, int left);"
+
+[VARTIME_BTNDone]
+Class="Function"
+Prototype="int VARTIME_BTNDone(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[VARTIME_BTNAbort]
+Class="Function"
+Prototype="int VARTIME_BTNAbort(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[VARTIME_edited]
+Class="Function"
+Prototype="int VARTIME_edited(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BLOCK_editVariablePulse]
+Class="Function"
+Prototype="void BLOCK_editVariablePulse(t_digitalBlock *d, int channel);"
+
+[BLOCK_variablePulseAbort]
+Class="Function"
+Prototype="int BLOCK_variablePulseAbort(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BLOCK_variablePulseDone]
+Class="Function"
+Prototype="int BLOCK_variablePulseDone(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TABLE_initCommonProperties]
+Class="Function"
+Prototype="void TABLE_initCommonProperties(int panel, int control, int isLeft);"
+
+[TABLE_HEADER_init]
+Class="Function"
+Prototype="void TABLE_HEADER_init(int panel, int control, int isLeft);"
+
+[TABLE_DAC_init]
+Class="Function"
+Prototype="void TABLE_DAC_init(int panel, int control, int isLeft);"
+
+[TABLE_DIGITAL_init]
+Class="Function"
+Prototype="void TABLE_DIGITAL_init(int panel, int control, int isLeft);"
+
+[TABLE_initAll]
+Class="Function"
+Prototype="void TABLE_initAll();"
+
+[DIGITALBLOCKS_insertTableColumns]
+Class="Function"
+Prototype="void DIGITALBLOCKS_insertTableColumns(int panel, int ctrlHeader, int ctrlDac, int ctrlDigital, int startCol, int nColumns);"
+
+[DIGITALBLOCKS_deleteTableColumns]
+Class="Function"
+Prototype="void DIGITALBLOCKS_deleteTableColumns(int panel, int ctrlHeader, int ctrlDac, int ctrlDigital, int startCol, int nColumns);"
+
+[DIGITALBLOCKS_displayHeaderInTable]
+Class="Function"
+Prototype="void DIGITALBLOCKS_displayHeaderInTable(t_sequence *seq, t_digitalBlock *b, int panel, int ctrlHeader);"
+
+[TABLE_digital1_CB]
+Class="Function"
+Prototype="int TABLE_digital1_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TABLE_digital2_CB]
+Class="Function"
+Prototype="int TABLE_digital2_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TABLE_header1_CB]
+Class="Function"
+Prototype="int TABLE_header1_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DIGITALBLOCKS_EDIT_groupBlocks]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_groupBlocks(t_sequence *seq, Rect selection);"
+
+[DIGITALBLOCKS_EDIT_ungroupBlocks]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_ungroupBlocks(t_sequence *seq, Rect selection);"
+
+[DIGITALBLOCKS_EDIT_disableBlocks]
+Class="Function"
+Prototype="void DIGITALBLOCKS_EDIT_disableBlocks(t_sequence *seq, Rect selection, int disable);"
+
+[TABLE_header2_CB]
+Class="Function"
+Prototype="int TABLE_header2_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TABLE_changeCellIncDecValue]
+Class="Function"
+Prototype="void TABLE_changeCellIncDecValue(int panel, int control, double changeMultiply);"
+
+[TABLE_dac1_CB]
+Class="Function"
+Prototype="int TABLE_dac1_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TABLE_dac2_CB]
+Class="Function"
+Prototype="int TABLE_dac2_CB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DIGITALBLOCKS_smallWfmPanelClicked]
+Class="Function"
+Prototype="int DIGITALBLOCKS_smallWfmPanelClicked(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DIGITALBLOCKS_smallWfmPanelDoneBtnClicked]
+Class="Function"
+Prototype="int DIGITALBLOCKS_smallWfmPanelDoneBtnClicked(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DIGITALBLOCKS_smallWfmPanelStepCtrlClicked]
+Class="Function"
+Prototype="int DIGITALBLOCKS_smallWfmPanelStepCtrlClicked(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DIGITALBLOCKS_smallWfmPanelCtrlClicked]
+Class="Function"
+Prototype="int DIGITALBLOCKS_smallWfmPanelCtrlClicked(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DIGITALBLOCKS_splitterMoved]
+Class="Function"
+Prototype="int DIGITALBLOCKS_splitterMoved(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DIGITALBLOCKS_VsplitterMoved]
+Class="Function"
+Prototype="int DIGITALBLOCKS_VsplitterMoved(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[VARTIME_panelCallback]
+Class="Function"
+Prototype="int VARTIME_panelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BLOCK_loopAbort]
+Class="Function"
+Prototype="int BLOCK_loopAbort(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BLOCK_loopDone]
+Class="Function"
+Prototype="int BLOCK_loopDone(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ADDRSIM_panel_CB]
+Class="Function"
+Prototype="int ADDRSIM_panel_CB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+

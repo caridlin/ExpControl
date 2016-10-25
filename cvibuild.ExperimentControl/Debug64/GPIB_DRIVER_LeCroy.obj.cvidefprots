@@ -1,0 +1,12 @@
+[GPIB_deviceParameters_LeCroyLW120]
+Class="Function"
+Prototype="t_gpibDevice *GPIB_deviceParameters_LeCroyLW120();"
+
+[digitizeParameters_LeCroyLW120]
+Class="Function"
+Prototype="t_digitizeParameters *digitizeParameters_LeCroyLW120(int channel, unsigned long timebase);"
+
+[GPIB_transmitWaveform_LeCroy]
+Class="Function"
+Prototype="int GPIB_transmitWaveform_LeCroy(t_sequence *seq, t_gpibCommand *g, int transmitData, int dummy2);"
+

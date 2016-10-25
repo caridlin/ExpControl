@@ -494,7 +494,6 @@ int CVICALLBACK WATCHDOG_LED_CB (int panel, int control, int event,
 			WATCHDOG_setLed2(0);
 			return 1;
 	}
-	return 0;
 }
 
 

@@ -1,0 +1,24 @@
+[HARDWARE_DAQmx_displayError]
+Class="Function"
+Prototype="int HARDWARE_DAQmx_displayError(int errorCode);"
+
+[HARDWARE_NIUSB_CreateTask_AnalogInput]
+Class="Function"
+Prototype="long HARDWARE_NIUSB_CreateTask_AnalogInput(void **taskOut1, const char *channel);"
+
+[HARDWARE_NIUSB_createTasks]
+Class="Function"
+Prototype="int HARDWARE_NIUSB_createTasks(t_sequence *seq);"
+
+[HARDWARE_NIUSB_clearTasks]
+Class="Function"
+Prototype="int HARDWARE_NIUSB_clearTasks(t_sequence *seq);"
+
+[HARDWARE_NIUSB_readValue]
+Class="Function"
+Prototype="int HARDWARE_NIUSB_readValue(void *th, double *value);"
+
+[HARDWARE_NIUSB_TestDataAcquisition]
+Class="Function"
+Prototype="int HARDWARE_NIUSB_TestDataAcquisition(const char *deviceStr, double *value);"
+
