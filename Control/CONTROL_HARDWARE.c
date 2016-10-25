@@ -1857,7 +1857,7 @@ int OUTPUT_executeRepetition (t_sequence *seq, int firstRepetition)
 // ===========================================================
 	// see what checkboxes are checked
 	int ccdSendOnFirst;
-	int ccdSendOnEvery;
+	int ccdSendOnEvery=0;		  //given an initial value of ccdSendOnEvery, otherwise will stop in a repitition 
 	int confSendOnFirst;
 	int confSendOnEvery;
 	GetCtrlVal(CCD, CCD_CHECKBOX_FIRST, &ccdSendOnFirst);

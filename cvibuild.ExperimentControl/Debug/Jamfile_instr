@@ -86,5 +86,5 @@ Depends "c:\\Users\\Manuel\\Desktop\\ExpControl\\cvibuild.ExperimentControl\\Deb
 NoCare "c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin\\msvc\\visa.lib" ;
 Depends "c:\\Users\\Manuel\\Desktop\\ExpControl\\cvibuild.ExperimentControl\\Debug\\ExperimentControl_dbg.exe" : "C:\\Program Files (x86)\\Windows Kits\\8.1\\Lib\\winv6.3\\um\\x86\\winmm.lib" ;
 NoCare "C:\\Program Files (x86)\\Windows Kits\\8.1\\Lib\\winv6.3\\um\\x86\\winmm.lib" ;
-Depends "c:\\Users\\Manuel\\Desktop\\ExpControl\\cvibuild.ExperimentControl\\Debug\\ExperimentControl_dbg.exe" : "c:\\Program Files (x86)\\Windows Kits\\8.1\\Lib\\winv6.3\\um\\x86\\WS2_32.Lib" ;
-NoCare "c:\\Program Files (x86)\\Windows Kits\\8.1\\Lib\\winv6.3\\um\\x86\\WS2_32.Lib" ;
+Depends "c:\\Users\\Manuel\\Desktop\\ExpControl\\cvibuild.ExperimentControl\\Debug\\ExperimentControl_dbg.exe" : "C:\\Program Files (x86)\\Windows Kits\\8.1\\Lib\\winv6.3\\um\\x86\\WS2_32.Lib" ;
+NoCare "C:\\Program Files (x86)\\Windows Kits\\8.1\\Lib\\winv6.3\\um\\x86\\WS2_32.Lib" ;

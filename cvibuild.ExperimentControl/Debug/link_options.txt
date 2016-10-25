@@ -78,4 +78,4 @@
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib
--more:c:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\WS2_32.Lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\WS2_32.Lib

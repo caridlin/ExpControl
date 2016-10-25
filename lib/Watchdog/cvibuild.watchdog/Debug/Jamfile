@@ -1,0 +1,57 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog"
+	"z:\\singleatoms\\Software\\ExperimentControl\\V5\\V5.22\\Control"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2015\\include"
+	"c:\\Users\\Manuel\\Desktop\\ExperimentControl\\includes"
+	"c:\\ADwin\\ADbasic\\ARM\\LIB\\Include"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "tools.c" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Control" ;
+LOCATE on "tools.h" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Control" ;
+LOCATE on "UIR_watchdog.h" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog" ;
+LOCATE on "watchdog.c" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog" ;
+LOCATE on "watchdog.h" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog" ;
+LOCATE on "watchdog_variables.h" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog" ;
+Object "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\tools.obj" : "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Control\\tools.c" ;
+FILENUM on "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\tools.obj" = 1 ;
+DEFPROTS on "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\tools.obj" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\tools.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\tools.obj" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\tools.obj.out" ;
+PrjObjects += "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\tools.obj" ;
+Object "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog.obj" : "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\watchdog.c" ;
+FILENUM on "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog.obj" = 2 ;
+DEFPROTS on "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog.obj" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog.obj" = "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog.obj.out" ;
+PrjObjects += "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog.obj" ;
+Object "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\resources.res" : "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\resources.in.rc" ;
+MainFromObjects "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog_dbg.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog_dbg.exe" : "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\link_options.txt" ;
+Depends "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog_dbg.exe" : "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\resources.res" ;
+Depends "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\resources.res" :  "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\UIR_watchdog.uir" ;
+Depends all : "c:\\Users\\Manuel\\Desktop\\ExperimentControl\\Watchdog\\cvibuild.watchdog\\Debug\\watchdog_dbg.exe" ;

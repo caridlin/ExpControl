@@ -1,4 +1,0 @@
-[TCP_cmdStrID]
-Class="Function"
-Prototype="int TCP_cmdStrID(const char *cmdStr);"
-

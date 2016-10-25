@@ -2,7 +2,6 @@ CCFLAGS = -g ;
 HDRS = 	"c:\\Users\\Manuel\\ImageMagick-6.8.6-Q16\\include"
 	"c:\\Users\\Manuel\\Desktop\\ExpControl"
 	"c:\\Users\\Manuel\\Desktop\\ExpControl\\includes"
-	"c:\\Users\\Manuel\\Desktop\\ExperimentControl\\includes"
 	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\word"
 	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\excel"
 	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl"

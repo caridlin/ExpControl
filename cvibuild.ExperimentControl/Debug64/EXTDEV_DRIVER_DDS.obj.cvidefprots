@@ -1,8 +1,0 @@
-[EXTDEV_DDS_transmitFrequency]
-Class="Function"
-Prototype="int EXTDEV_DDS_transmitFrequency(void *functionData);"
-
-[EXTDEV_DDS_THREAD_transmitFrequency]
-Class="Function"
-Prototype="void EXTDEV_DDS_THREAD_transmitFrequency(t_sequence *seq, t_gpibCommand *g, t_ext_device *extdev);"
-

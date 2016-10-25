@@ -1,4 +1,0 @@
-[CreateNIUSB_AnalogInput]
-Class="Function"
-Prototype="long CreateNIUSB_AnalogInput(void **taskOut1);"
-

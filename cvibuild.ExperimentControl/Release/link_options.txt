@@ -1,60 +1,60 @@
 -nologo
--out:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\ExperimentControl.exe
+-out:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\ExperimentControl.exe
 -arch:x86
 -timestamp
--res:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\resources.res
+-res:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\resources.res
 -entry:_CVIWinMainStartupCode@0
 -base:0x400000
--linked:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\linkersummary.txt
--dlldeps:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\dlldependencies.txt
--licensing:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\linkerlicensing.txt
--browsedeps:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\moduledependencies.txt
--map:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\map_file.txt
+-linked:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\linkersummary.txt
+-dlldeps:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\dlldependencies.txt
+-licensing:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\linkerlicensing.txt
+-browsedeps:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\moduledependencies.txt
+-map:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\map_file.txt
 -stackreserve:1048576
 -stackcommit:4096
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\Adwin.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_CalculateOutput.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_DataSocket.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_DataStructure.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_Definitions.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_DMDIMAGE.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_DMDSHAPE.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_Functions.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_CCD.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_Config.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_DigitalBlocks.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_EditPoints.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_ExtDev.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_Gpib.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_IMPORT.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_LOOP_CONF.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_MAIN.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_Simulate.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_Waveform.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_HARDWARE.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_HARDWARE_adwin.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_HARDWARE_DAQmx.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_HARDWARE_GPIB.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\CONTROL_LoadSave.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\ExperimentControl.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\EXTDEV_DRIVER_DDS.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_Agilent.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_Anritsu.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_Berkeley.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_LeCroy.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_Marconi.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_RohdeSchwarz.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_StanfordResearchSystems.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_ThurlbyThandar.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\imageProcessing.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\INTERFACE_TCP_IP.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\NIUSB_AnalogInput.obj
--in:c:\Users\Manuel\Desktop\ExperimentControl\cvibuild.ExperimentControl\Release\tools.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\Adwin.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_CalculateOutput.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_DataSocket.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_DataStructure.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_Definitions.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_DMDIMAGE.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_DMDSHAPE.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_Functions.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_CCD.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_Config.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_DigitalBlocks.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_EditPoints.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_ExtDev.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_Gpib.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_IMPORT.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_LOOP_CONF.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_MAIN.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_Simulate.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_GUI_Waveform.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_HARDWARE.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_HARDWARE_adwin.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_HARDWARE_DAQmx.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_HARDWARE_GPIB.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\CONTROL_LoadSave.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\ExperimentControl.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\EXTDEV_DRIVER_DDS.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_Agilent.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_Anritsu.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_Berkeley.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_LeCroy.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_Marconi.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_RohdeSchwarz.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_StanfordResearchSystems.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\GPIB_DRIVER_ThurlbyThandar.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\imageProcessing.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\INTERFACE_TCP_IP.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\NIUSB_AnalogInput.obj
+-in:c:\Users\Manuel\Desktop\ExpControl\cvibuild.ExperimentControl\Release\tools.obj
 -more:c:\program files (x86)\national instruments\cvi2015\bin\msvc\cvistart.lib
 -more:c:\program files (x86)\national instruments\cvi2015\bin\msvc\cvi.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
--more:c:\Users\Manuel\Desktop\ExperimentControl\lib\CORE_RL_magick_.lib
--more:c:\Users\Manuel\Desktop\ExperimentControl\lib\CORE_RL_wand_.lib
+-more:c:\Users\Manuel\Desktop\ExpControl\lib\CORE_RL_magick_.lib
+-more:c:\Users\Manuel\Desktop\ExpControl\lib\CORE_RL_wand_.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cviauto.lib
 -more:c:\ProgramData\National Instruments\CVI2015\bin\msvc\cvidemoa.bli
 -more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\cvidotnet.lib
@@ -66,6 +66,7 @@
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2015\bin\msvc\gpib.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2015\toolslib\toolbox\msvc\inifile.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\ivi.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
@@ -76,4 +77,4 @@
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib
--more:c:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\WS2_32.Lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\WS2_32.Lib
